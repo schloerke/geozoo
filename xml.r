@@ -1,4 +1,4 @@
-source("/Users/barret/Sites/Geometric Website/geometric-data/cube/codes/writeXML.R")
+source("/Users/barret/Documents/GeoZoo/writeXML.R")
 
 write.xml <- function(object.function,filepath,title) {
 
