@@ -13,7 +13,7 @@ ggobi.geozoo <- function(data){
 	g.display <- display(gg[1], "2D Tour")
 	edges(g.display) <- gg[2]
 	
-#	invisible(gg)
+	invisible(gg)
 }
 
 
