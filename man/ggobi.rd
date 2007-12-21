@@ -15,11 +15,8 @@ ggobi.geozoo(data, ...)
 \seealso{
 }
 \examples{
-## 3-D Cube
-ggobi(cube(p=3))
+cube(p = 3)
 
-## 4-D Solid Sphere
-ggobi(sphere.solid(p=4))
-
+sphere.solid(p=4)
 }
 \keyword{dynamic}
