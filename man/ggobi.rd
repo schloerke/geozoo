@@ -2,7 +2,7 @@
 \alias{ggobi}
 \title{GGobi adaptation for GeoZoo}
 \description{
-  Allows GeoZoo objects to be put into GGobi through rggobi with a prespified color and 2D Tour mode.
+  Allows GeoZoo objects to be put into GGobi through rggobi with a pre-specified color and 2D Tour mode.
   \code{ggobi}.
 }
 \usage{
