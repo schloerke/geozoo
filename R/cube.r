@@ -5,7 +5,6 @@ cube.vertices <- function(p){
 }
 
 cube.wires <- function(p) {
-	library(bitops)
 	vertices <- 0:(2 ^ p - 1)
 	from <- vertices[rep(1:length(vertices), each = p)]
 	edges <- 2 ^ (0:(p-1))
@@ -24,10 +23,7 @@ cube <- function(p = 3){
 		list(points = vert, edges = wires),
 		class = "geozoo"
 	)
-
 }
-
-
 
 ## Cube Solid
 cube.solid <- function(p = 3){

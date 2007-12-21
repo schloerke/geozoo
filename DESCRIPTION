@@ -6,6 +6,6 @@ Description: The package allows geometric objects defined in geozoo to be displa
 Author: Barret Scloerke <bigbear1711@iastate.edu>, with
   contributions from Dianne Cook <dicook@iastate.edu> and Hadley Wickham <h.wickham@gmail.com>.
 Maintainer: Barret Scloerke <bigbear1711@iastate.edu>
-Depends: R (>= 1.8.0), rggobi
+Depends: R (>= 1.8.0), rggobi, bitops
 License: GPL-2
 URL: http://streaming.stat.iastate.edu/~dicook/geometric-data/, http://www.ggobi.org

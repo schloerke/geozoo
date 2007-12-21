@@ -1,6 +1,6 @@
 library(rggobi)
 
-ggobi.geozoo <- function(data){
+ggobi.geozoo <- function(data, ...) {
 	gg <- ggobi(data$points)
 	glyph_colour(gg[1]) <- 6
 	glyph_size(gg[1]) <- 3

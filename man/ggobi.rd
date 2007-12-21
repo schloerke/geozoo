@@ -1,21 +1,18 @@
-\name{ggobi}
-\alias{ggobi}
+\name{ggobi.geozoo}
+\alias{ggobi.geozoo}
 \title{GGobi adaptation for GeoZoo}
 \description{
   Allows GeoZoo objects to be put into GGobi through rggobi with a pre-specified color and 2D Tour mode.
   \code{ggobi}.
 }
 \usage{
-ggobi(object.function())
+ggobi.geozoo(data, ...)
 }
 \arguments{
-  \item{file}{a connection or a character string giving the
-    name of the file to load.}
-  \item{envir}{the environment where the data should be
-    loaded.}
+  \item{data}{The geozoo data object to view}
+  \item{...}{}
 }
 \seealso{
-#  \code{\link{save}}.
 }
 \examples{
 ## 3-D Cube
@@ -25,4 +22,4 @@ ggobi(cube(p=3))
 ggobi(sphere.solid(p=4))
 
 }
-\keyword{ggobi}
+\keyword{dynamic}
