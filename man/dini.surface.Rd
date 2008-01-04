@@ -17,7 +17,7 @@ dini.surface(n = 10000, a = 1, b = 1)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Dini surface
