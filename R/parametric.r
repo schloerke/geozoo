@@ -124,8 +124,8 @@ ellipsoid.row <- function( a, b, c) {
 
 
 ## Enneper
-enneper <- function( n = 10000, a = 4){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, enneper.row( a)))), ncol = 3, byrow = TRUE)
+enneper.surface <- function( n = 10000, a = 4){
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, enneper.surface.row( a)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -134,7 +134,7 @@ enneper <- function( n = 10000, a = 4){
 	)
 }
 
-enneper.row <- function( a = 4) {
+enneper.surface.row <- function( a = 4) {
 	u <- runif( 1, min = - a, max = a)
 	v <- runif( 1, min = - a, max = a)
 	x <- u - u ^ 3 / 3 + u * v ^ 2
@@ -168,8 +168,8 @@ klein.fig.eight.row <- function( a = 3, b = 1) {
 
 
 ## Roman Surface
-roman <- function( n = 10000, a = 1){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, roman.row( a)))), ncol = 3, byrow = TRUE)
+roman.surface <- function( n = 10000, a = 1){
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, roman.surface.row( a)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -177,7 +177,7 @@ roman <- function( n = 10000, a = 1){
 		class = "geozoo"
 	)
 }
-roman.row <- function( a = 1) {
+roman.surface.row <- function( a = 1) {
 	u <- runif( 1, min = 0, max = pi)
 	v <- runif( 1, min = 0, max = pi)
 	x <- a ^ 2 * cos( v) * cos( v) * sin( 2 * u) / 2
