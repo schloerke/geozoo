@@ -12,7 +12,7 @@ roman.surface(n = 10000, a = 1)
   \item{n}{ number of points }
   \item{a}{ maximum radius of object }
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Roman surface.

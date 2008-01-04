@@ -16,7 +16,7 @@ enneper.surface(n = 10000, a = 4)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates an Enneper Surface

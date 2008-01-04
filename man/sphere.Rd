@@ -10,7 +10,7 @@ sphere(p = 3)
 \arguments{
   \item{p}{ dimension of object }
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a sphere with points on the surface.

@@ -11,7 +11,7 @@ mobius(p, n = 10000)
   \item{p}{ dimension of object.  3 or 4 }
   \item{n}{ number of points }
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a mobius strip.

@@ -12,7 +12,7 @@ torus(p = 3, n = 10000)
   \item{p}{ dimension of object }
   \item{n}{ number of points }
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a torus.
