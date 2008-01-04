@@ -13,11 +13,8 @@ enneper.surface(n = 10000, a = 4)
   \item{a}{ angle, radians, minimum and maximum.  -a < angle < a }
 }
 \value{
-  ~Describe the value returned
-  If it is a LIST, use
   \item{points }{location of points}
   \item{edges }{edges of the object}
-  ...
 }
 \references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }

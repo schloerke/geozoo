@@ -11,11 +11,8 @@ cube.dotline(p = 3)
   \item{p}{ dimension of object }
 }
 \value{
-  ~Describe the value returned
-  If it is a LIST, use
   \item{points }{location of points}
   \item{edges }{edges of the object}
-  ...
 }
 \references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }

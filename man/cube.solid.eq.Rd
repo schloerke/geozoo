@@ -12,11 +12,8 @@ cube.solid.eq(p = 3, n = 8)
   \item{n}{ length of number of points in each dimension }
 }
 \value{
-  ~Describe the value returned
-  If it is a LIST, use
   \item{points }{location of points}
   \item{edges }{edges of the object}
-  ...
 }
 \references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }

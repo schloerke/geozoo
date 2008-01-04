@@ -15,11 +15,8 @@ ellipsoid(n = 10000, a = 1, b = 1, c = 3)
   \item{c}{ radius in z direction }
 }
 \value{
-  ~Describe the value returned
-  If it is a LIST, use
   \item{points }{location of points}
   \item{edges }{edges of the object}
-  ...
 }
 \references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }
