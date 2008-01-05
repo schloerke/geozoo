@@ -1,6 +1,6 @@
 \name{dini.surface.row}
 \alias{dini.surface.row}
 \title{ Dini Surface Row Function }
-\description{ }
+\description{     }
 \examples{  }
 \keyword{ internal }

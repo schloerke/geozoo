@@ -1,6 +1,6 @@
 \name{mobius.row}
 \alias{mobius.row}
 \title{ Mobius Row Function }
-\description{ }
+\description{     }
 \examples{  }
 \keyword{ internal }

@@ -1,7 +1,7 @@
 \name{ellipsoid.row}
 \alias{ellipsoid.row}
 \title{ Ellipsoid Row Function}
-\description{
+\description{    
 }
 \examples{
 }

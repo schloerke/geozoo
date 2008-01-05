@@ -15,7 +15,5 @@ write.xml(object.function, filepath, title)
 }
 \author{ Barret Schloerke }
 \examples{
-## Saves a cube in the fourth dimension to the folder "example" that already exists with a title of "Cube-4"
-write.xml(cube(p=4),"/example","Cube-4")
 }
 \keyword{ dynamic }

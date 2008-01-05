@@ -1,7 +1,7 @@
 \name{norm}
 \alias{norm}
 \title{ Find the Normal}
-\description{
+\description{  
 }
 \examples{
 }

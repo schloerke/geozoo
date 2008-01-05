@@ -1,6 +1,6 @@
 \name{torus.row}
 \alias{torus.row}
 \title{ Torus Row Function }
-\description{ }
+\description{   }
 \examples{  }
 \keyword{ internal }

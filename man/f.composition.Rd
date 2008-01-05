@@ -1,6 +1,6 @@
 \name{f.composition}
 \alias{f.composition}
 \title{ Internal Simplex Function }
-\description{ }
+\description{    }
 \examples{  }
 \keyword{ internal }
