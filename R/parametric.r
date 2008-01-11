@@ -2,7 +2,7 @@
 
 ## Boy Surface
 boy.surface <- function( n = 10000){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, boy.surface.row( )))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .boy.surface.row( )))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -11,7 +11,7 @@ boy.surface <- function( n = 10000){
 	)
 }
 
-boy.surface.row <- function( ){
+.boy.surface.row <- function( ){
 	u <- runif( 1, min = 0, max = pi)
 	v <- runif( 1, min = 0, max = pi)
 	a <- cos( v) * sin( u)
@@ -27,7 +27,7 @@ boy.surface.row <- function( ){
 
 ## Conic Spiral
 conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -36,7 +36,7 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
 	)
 }
 
-conic.spiral.row <- function( a, b, c, w) {
+.conic.spiral.row <- function( a, b, c, w) {
 	u <- runif( 1, min = 0, max = 2 * pi)
 	v <- runif( 1, min = 0, max = 2 * pi)
 
@@ -50,7 +50,7 @@ conic.spiral.row <- function( a, b, c, w) {
 
 ## Conic Spiral Nautilus
 conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -62,7 +62,7 @@ conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
 
 ## Cross Cap
 cross.cap <- function( n = 10000){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, cross.cap.row( )))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .cross.cap.row( )))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -71,7 +71,7 @@ cross.cap <- function( n = 10000){
 	)
 }
 
-cross.cap.row <- function( ) {
+.cross.cap.row <- function( ) {
 	u <- runif( 1, min = 0, max = pi)
 	v <- runif( 1, min = 0, max = pi)
 	x <- cos( u) * sin( 2 * v)
@@ -83,7 +83,7 @@ cross.cap.row <- function( ) {
 
 ## Dini Surface
 dini.surface <- function( n = 10000, a = 1, b = 1){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, dini.surface.row( a, b)))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .dini.surface.row( a, b)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -92,7 +92,7 @@ dini.surface <- function( n = 10000, a = 1, b = 1){
 	)
 }
 
-dini.surface.row <- function( a = 1, b = 1) {
+.dini.surface.row <- function( a = 1, b = 1) {
 	u <- runif( 1, min = 0, max = 4 * pi)
 	v <- runif( 1, min = 0.0000000001, max = 2)
 	x <- a * cos( u) * sin( v)
@@ -104,7 +104,7 @@ dini.surface.row <- function( a = 1, b = 1) {
 
 ## Ellipsoid
 ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, ellipsoid.row( a, b, c)))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .ellipsoid.row( a, b, c)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -113,7 +113,7 @@ ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
 	)
 }
 
-ellipsoid.row <- function( a, b, c) {
+.ellipsoid.row <- function( a, b, c) {
 	u <- runif( 1, min = 0, max = 2 * pi)
 	v <- runif( 1, min = 0, max = 2 * pi)
 	x <- a * cos( u) * sin( v)
@@ -125,7 +125,7 @@ ellipsoid.row <- function( a, b, c) {
 
 ## Enneper
 enneper.surface <- function( n = 10000, a = 4){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, enneper.surface.row( a)))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .enneper.surface.row( a)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -134,7 +134,7 @@ enneper.surface <- function( n = 10000, a = 4){
 	)
 }
 
-enneper.surface.row <- function( a = 4) {
+.enneper.surface.row <- function( a = 4) {
 	u <- runif( 1, min = - a, max = a)
 	v <- runif( 1, min = - a, max = a)
 	x <- u - u ^ 3 / 3 + u * v ^ 2
@@ -147,7 +147,7 @@ enneper.surface.row <- function( a = 4) {
 
 ## Klein Figure Eight
 klein.fig.eight <- function( n = 10000, a = 3, b = 1){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, klein.fig.eight.row( a, b)))), ncol = 4, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .klein.fig.eight.row( a, b)))), ncol = 4, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -155,7 +155,8 @@ klein.fig.eight <- function( n = 10000, a = 3, b = 1){
 		class = "geozoo"
 	)
 }
-klein.fig.eight.row <- function( a = 3, b = 1) {
+
+.klein.fig.eight.row <- function( a = 3, b = 1) {
 	u <- runif( 1, min = - pi, max = pi)
 	v <- runif( 1, min = - pi, max = pi)
 	x <- ( b * cos( v) + a) * cos( u)
@@ -169,7 +170,7 @@ klein.fig.eight.row <- function( a = 3, b = 1) {
 
 ## Roman Surface
 roman.surface <- function( n = 10000, a = 1){
-	vert <- matrix( do.call( "rbind", as.list( replicate( n, roman.surface.row( a)))), ncol = 3, byrow = TRUE)
+	vert <- matrix( do.call( "rbind", as.list( replicate( n, .roman.surface.row( a)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
 	structure( 
@@ -177,7 +178,7 @@ roman.surface <- function( n = 10000, a = 1){
 		class = "geozoo"
 	)
 }
-roman.surface.row <- function( a = 1) {
+.roman.surface.row <- function( a = 1) {
 	u <- runif( 1, min = 0, max = pi)
 	v <- runif( 1, min = 0, max = pi)
 	x <- a ^ 2 * cos( v) * cos( v) * sin( 2 * u) / 2

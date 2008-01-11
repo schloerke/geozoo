@@ -1,17 +1,17 @@
 ## Sphere
-norm <-function(x) { 
+.norm <-function(x) { 
 	sqrt(sum(x ^ 2))
 }
 
-norm.vec <-function(x) {
-	x <- x/norm(x)
+.norm.vec <-function(x) {
+	x <- x/.norm(x)
 	x
 }
 
 sphere <-function(p = 3) {
 	n <- 500
 	tmp <- matrix(rnorm(n * p),ncol = p)
-	vert <- t(apply(tmp,1,norm.vec))
+	vert <- t(apply(tmp,1,.norm.vec))
 	wires <- NULL
 	structure(
 		list(points = vert, edges = wires),
@@ -29,7 +29,7 @@ sphere.solid.eq <- function(p = 3,n = 8){
 
 	for( i in 1:nrow(cube.solid.eq)) {
 		tmp <- cube.solid.eq[i,]
-		if (norm(tmp) <= (1/2)){
+		if (.norm(tmp) <= (1/2)){
 			sphere.solid.eq <- rbind(sphere.solid.eq,tmp)
 		}
 	}
@@ -46,7 +46,7 @@ sphere.solid.eq <- function(p = 3,n = 8){
 sphere.solid <-function(p = 3) {
 	n <- p * 500
 	tmp <- matrix(rnorm(n * p),ncol = p)
-	tmp2 <- t(apply(tmp,1,norm.vec))
+	tmp2 <- t(apply(tmp,1,.norm.vec))
 	sphere.solid <- tmp2 * runif(n) ^ (1/p)
 	vert <- sphere.solid
 	wires <- NULL

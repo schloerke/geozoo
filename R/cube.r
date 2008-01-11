@@ -1,10 +1,10 @@
 ##Cube Vertice and Wire Function
-cube.vertices <- function(p){
+.cube.vertices <- function(p){
 	cube.vertices <- do.call(expand.grid, rep(list(c(0,1)), p))
 	as.matrix(cube.vertices)
 }
 
-cube.wires <- function(p) {
+.cube.wires <- function(p) {
 	vertices <- 0:(2 ^ p - 1)
 	from <- vertices[rep(1:length(vertices), each = p)]
 	edges <- 2 ^ (0:(p-1))
@@ -17,8 +17,8 @@ cube.wires <- function(p) {
 
 ##CUBE
 cube <- function(p = 3){
-	vert <- cube.vertices(p)
-	wires <- cube.wires(p)
+	vert <- .cube.vertices(p)
+	wires <- .cube.wires(p)
 	structure(
 		list(points = vert, edges = wires),
 		class = "geozoo"
@@ -30,8 +30,8 @@ cube.solid <- function(p = 3){
   # M <- min(850 * 2 ^ p, 75000)
 	suppressWarnings(solid <- matrix( runif(850 * 2 ^ p), ncol = p))
 
-	vert <- rbind(cube.vertices(p), solid)
-	wires <- cube.wires(p)
+	vert <- rbind(.cube.vertices(p), solid)
+	wires <- .cube.wires(p)
 
 	structure(
 		list(points = vert, edges = wires),
@@ -43,9 +43,9 @@ cube.solid <- function(p = 3){
 
 ##Cube SolidEQ
 cube.solid.eq <- function(p = 3,n = 8){
-	cube.vertices <- do.call(expand.grid, rep(list(c((0:n)/n)),p))
-	vert <- unique(rbind(cube.vertices(p),as.matrix(cube.vertices)))
-	wires <- cube.wires(p)
+	cube.verts <- do.call(expand.grid, rep(list(c((0:n)/n)),p))
+	vert <- unique(rbind(.cube.vertices(p),as.matrix(cube.verts)))
+	wires <- .cube.wires(p)
 	structure(
 		list(points = vert, edges = wires),
 		class = "geozoo"
@@ -56,7 +56,7 @@ cube.solid.eq <- function(p = 3,n = 8){
 
 ## Cube Face
 cube.face <- function(p = 3){
-	cube.verts <- cube.vertices(p)
+	cube.verts <- .cube.vertices(p)
 	tmp <- NULL
 	faces <- NULL
 	for (i in 1:p) {
@@ -67,7 +67,7 @@ cube.face <- function(p = 3){
 	}
 	vert <- rbind(cube.verts,faces)	
 
-	wires <- cube.wires(p)
+	wires <- .cube.wires(p)
 	structure(
 		list(points = vert, edges = wires),
 		class = "geozoo"
@@ -79,9 +79,9 @@ cube.face <- function(p = 3){
 
 ## Cube Dot Line
 cube.dotline <- function(p = 3){
-	cube.verts <- cube.vertices(p)
+	cube.verts <- .cube.vertices(p)
 
-	cube.wire <- cube.wires(p)
+	cube.wire <- .cube.wires(p)
 	
 	dot.lines <-NULL
 	n <- 8

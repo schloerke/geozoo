@@ -1,5 +1,5 @@
 write.xml <- function(object.function,filepath,title) {
-  f.writeXML(
+  .f.writeXML(
     dat1 = object.function$points,
     filename = filepath,
     data.num = 2,
@@ -13,7 +13,7 @@ write.xml <- function(object.function,filepath,title) {
   )
 }
 
-f.writeXML<-function(dat1,filename,data.num=1,data.name="data",
+.f.writeXML<-function(dat1,filename,data.num=1,data.name="data",
   default.color="5",default.glyph="fc 2",catvars1=NULL,
   dat1.colors=NULL,dat1.glyphs=NULL,dat1.id=NULL,
   dat1.description=NULL,dat1.name="Data 1",
