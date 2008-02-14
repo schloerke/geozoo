@@ -16,7 +16,7 @@
 }
 
 ##CUBE
-cube <- function(p = 3){
+cube.iterate <- function(p = 3){
 	vert <- .cube.vertices(p)
 	wires <- .cube.wires(p)
 	structure(
@@ -26,7 +26,7 @@ cube <- function(p = 3){
 }
 
 ## Cube Solid
-cube.solid <- function(p = 3){
+cube.solid.random <- function(p = 3){
   # M <- min(850 * 2 ^ p, 75000)
 	suppressWarnings(solid <- matrix( runif(850 * 2 ^ p), ncol = p))
 
@@ -42,7 +42,7 @@ cube.solid <- function(p = 3){
 
 
 ##Cube SolidEQ
-cube.solid.eq <- function(p = 3,n = 8){
+cube.solid.grid <- function(p = 3,n = 8){
 	cube.verts <- do.call(expand.grid, rep(list(c((0:n)/n)),p))
 	vert <- unique(rbind(.cube.vertices(p),as.matrix(cube.verts)))
 	wires <- .cube.wires(p)

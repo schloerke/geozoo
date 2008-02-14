@@ -1,0 +1,22 @@
+\name{sphere.hollow}
+\alias{sphere.hollow}
+\title{ Sphere }
+\description{
+A function to generate a sphere with points on the surface.
+}
+\usage{
+sphere.hollow(p = 3)
+}
+\arguments{
+  \item{p}{ dimension of object }
+}
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/} }
+\author{ Barret Schloerke }
+\examples{
+## Generates a sphere with points on the surface.
+sphere.hollow(p = 3)
+
+## Through rggobi
+ggobi(sphere.hollow(p = 4))
+}
+\keyword{ dynamic }

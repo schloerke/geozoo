@@ -1,11 +1,11 @@
-ggobi(cube())  #p>0 for group
+ggobi(cube.iterate())  #p>0 for group
 ggobi(cube.face())
-ggobi(cube.solid())
-ggobi(cube.solid.eq())
+ggobi(cube.solid.random())
+ggobi(cube.solid.grid())
 ggobi(cube.dotline())
-ggobi(sphere())
-ggobi(sphere.solid())
-ggobi(sphere.solid.eq())
+ggobi(sphere.hollow())
+ggobi(sphere.solid.random())
+ggobi(sphere.solid.grid())
 ggobi(simplex())
 ggobi(torus())
 ggobi(torus.flat())
@@ -20,4 +20,5 @@ ggobi(enneper())
 ggobi(klein.fig.eight())
 ggobi(roman())
 
-ggobi(mobius()) #p = 3 or 4
+ggobi(mobius()) #p = 3
+ggobi(mobius.experiement()) #p = 5

@@ -8,7 +8,7 @@
 	x
 }
 
-sphere <-function(p = 3) {
+sphere.hollow <-function(p = 3) {
 	n <- 500
 	tmp <- matrix(rnorm(n * p),ncol = p)
 	vert <- t(apply(tmp,1,.norm.vec))
@@ -20,20 +20,20 @@ sphere <-function(p = 3) {
 }
 
 ##Sphere Solid-EQ
-sphere.solid.eq <- function(p = 3,n = 8){
-	cube.solid.eq <- do.call(expand.grid, rep(list(c((0:n)/n)),p))
-	cube.solid.eq <- as.matrix(cube.solid.eq)
+sphere.solid.grid <- function(p = 3,n = 8){
+	cube.solid.grid <- do.call(expand.grid, rep(list(c((0:n)/n)),p))
+	cube.solid.grid <- as.matrix(cube.solid.grid)
 
-	cube.solid.eq <- cube.solid.eq - .5
-	sphere.solid.eq <- NULL
+	cube.solid.grid <- cube.solid.grid - .5
+	sphere <- NULL
 
-	for( i in 1:nrow(cube.solid.eq)) {
-		tmp <- cube.solid.eq[i,]
+	for( i in 1:nrow(cube.solid.grid)) {
+		tmp <- cube.solid.grid[i,]
 		if (.norm(tmp) <= (1/2)){
-			sphere.solid.eq <- rbind(sphere.solid.eq,tmp)
+			sphere <- rbind(sphere,tmp)
 		}
 	}
-	vert <- sphere.solid.eq
+	vert <- sphere
 	wires <- NULL
 	structure(
 		list(points = vert, edges = wires),
@@ -43,7 +43,7 @@ sphere.solid.eq <- function(p = 3,n = 8){
 }
 
 ## Sphere Solid
-sphere.solid <-function(p = 3) {
+sphere.solid.random <-function(p = 3) {
 	n <- p * 500
 	tmp <- matrix(rnorm(n * p),ncol = p)
 	tmp2 <- t(apply(tmp,1,.norm.vec))

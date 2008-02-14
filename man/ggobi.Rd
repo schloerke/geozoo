@@ -15,8 +15,8 @@ ggobi.geozoo(data, ...)
 \seealso{
 }
 \examples{
-ggobi(cube(p = 3))
+ggobi(cube.iterate(p = 3))
 
-ggobi(sphere.solid(p=4))
+ggobi(sphere.solid.random(p=4))
 }
 \keyword{dynamic}
