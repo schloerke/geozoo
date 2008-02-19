@@ -1,6 +1,6 @@
 Package: geozoo
-Version: 0.3
-Date: 2008-12-25
+Version: 0.4
+Date: 2008-2-19
 Title: Zoo of Geometric Objects
 Description: The package allows geometric objects defined in geozoo to be displayed in GGobi through the use of rggobi.
 Author: Barret Scloerke <bigbear@iastate.edu>, with
