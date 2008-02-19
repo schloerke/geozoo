@@ -1,10 +1,10 @@
-Functions were renamed to match the paper on Geo Zoo.
+Functions were renamed to match the up coming paper on Geo Zoo.
 Split mobius function into mobius and mobius.experiment.  Updates will come.
 
 
-cube.iterate <- cube
-cube.solid.grid <- cube.solid.eq
-cube.solid.random <- cube.solid
-sphere.hollow <- sphere
-sphere.solid.grid <- sphere.solid.eq
-sphere.solid.random <- sphere.solid
+cube.iterate() <- cube()
+cube.solid.grid() <- cube.solid.eq()
+cube.solid.random <- cube.solid()
+sphere.hollow() <- sphere()
+sphere.solid.grid() <- sphere.solid.eq()
+sphere.solid.random() <- sphere.solid()
