@@ -26,9 +26,9 @@ cube.iterate <- function(p = 3){
 }
 
 ## Cube Solid
-cube.solid.random <- function(p = 3){
-  # M <- min(850 * 2 ^ p, 75000)
-	suppressWarnings(solid <- matrix( runif(850 * 2 ^ p), ncol = p))
+cube.solid.random <- function(p, n = 850 * 2^p){
+  	n <- min(n, 75000)
+	suppressWarnings(solid <- matrix( runif(n * p), ncol = p))
 
 	vert <- rbind(.cube.vertices(p), solid)
 	wires <- .cube.wires(p)

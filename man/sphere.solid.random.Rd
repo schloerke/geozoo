@@ -5,10 +5,11 @@
 A function to generate a solid sphere with random points.
 }
 \usage{
-sphere.solid.random(p = 3)
+sphere.solid.random(p, n = p * 500)
 }
 \arguments{
   \item{p}{ dimension of object }
+  \item{n}{ number of points }
 }
 \references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/} }
 \author{ Barret Schloerke }

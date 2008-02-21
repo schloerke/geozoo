@@ -5,10 +5,11 @@
 A function to generate a sphere with points on the surface.
 }
 \usage{
-sphere.hollow(p = 3)
+sphere.hollow(p, n * 500)
 }
 \arguments{
   \item{p}{ dimension of object }
+  \item{n}{ number of points }
 }
 \references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/} }
 \author{ Barret Schloerke }

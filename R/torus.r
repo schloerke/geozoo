@@ -16,17 +16,20 @@ torus <- function(p = 3,n = 10000){
 
 .torus.row <-function(radius,p) {
 	##Generates Angles
-	angles <- runif(p-1, min = 0, max = 2 * pi)
+	t <- runif(p-1, min = 0, max = 2 * pi)
 
 	##Generates Row of Data
-	torus <- c(rep(cos(angles[p-1]) * radius[p-1], p-1), sin(angles[p-1]) * radius[p-1])
+	torus <- c(
+		rep(cos(t[p-1]) * radius[p-1], p-1), 
+		sin(t[p-1]) * radius[p-1]
+	)
 	
 	if(p>2)
 	for (i in (p-1):2) {
 		for(j in (i-1):1){
-			torus[j] <- (torus[j] + radius[i-1]) * cos(angles[i-1])
+			torus[j] <- (torus[j] + radius[i-1]) * cos(t[i-1])
 		}
-		torus[i] <- (torus[i]+radius[i-1]) * sin(angles[i-1])
+		torus[i] <- (torus[i]+radius[i-1]) * sin(t[i-1])
 	}
 	torus
 }

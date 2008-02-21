@@ -1,15 +1,11 @@
 ## Sphere
-.norm <-function(x) { 
-	sqrt(sum(x ^ 2))
-}
 
 .norm.vec <-function(x) {
-	x <- x/.norm(x)
+	x <- x/	sqrt(sum(x ^ 2))
 	x
 }
 
-sphere.hollow <-function(p = 3) {
-	n <- 500
+sphere.hollow <-function(p, n= p * 500) {
 	tmp <- matrix(rnorm(n * p),ncol = p)
 	vert <- t(apply(tmp,1,.norm.vec))
 	wires <- NULL
@@ -43,12 +39,8 @@ sphere.solid.grid <- function(p = 3,n = 8){
 }
 
 ## Sphere Solid
-sphere.solid.random <-function(p = 3) {
-	n <- p * 500
-	tmp <- matrix(rnorm(n * p),ncol = p)
-	tmp2 <- t(apply(tmp,1,.norm.vec))
-	sphere.solid <- tmp2 * runif(n) ^ (1/p)
-	vert <- sphere.solid
+sphere.solid.random <-function(p, n = p * 500) {
+	vert <- sphere.hollow(p, n) * runif(n) ^ (1/p)
 	wires <- NULL
 	structure(
 		list(points = vert, edges = wires),
