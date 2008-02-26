@@ -5,7 +5,7 @@
 A function to generate a sphere with points on the surface.
 }
 \usage{
-sphere.hollow(p, n * 500)
+sphere.hollow(p, n = p * 500)
 }
 \arguments{
   \item{p}{ dimension of object }

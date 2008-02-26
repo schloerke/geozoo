@@ -18,6 +18,6 @@ sphere.solid.grid(p = 3, n = 8)
 sphere.solid.grid(p = 3, n = 8)
 
 ## Through rggobi
-ggobi(sphere.solid.grid(p = 4,n = 20))
+ggobi(sphere.solid.grid(p = 4,n = 5))
 }
 \keyword{ dynamic }
