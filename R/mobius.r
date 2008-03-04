@@ -1,11 +1,11 @@
 ## Mobius
-mobius <- function(p=3,n=10000){
+mobius <- function(n=10000){
 	cat("\n",
 		"NOTE:",
 		"\n","\t","On the Main Window:  Tools > Variable Manipulation ",
 		"\n","\t","1.  Highlight all rows","\n","\t","2.  Click 'Limits...' at the bottom","\n","\t","3.  Make 'Minimum' and 'Maximum' the global minimum and maximum of the object.","\n","\n")
 
-	vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.row(3)))),ncol=3,byrow=TRUE)
+	vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.row()))),ncol=3,byrow=TRUE)
 	wires <- NULL
 
 	structure( 
@@ -14,7 +14,7 @@ mobius <- function(p=3,n=10000){
 	)
 	}
 
-.mobius.row<- function(p){
+.mobius.row<- function(){
 
 	##Generates Angles
 	a <- runif(1,min=0,max=2*pi)
@@ -35,7 +35,7 @@ mobius.experiment <- function(p=5,n=10000){
 		"NOTE:",
 		"\n","\t","On the Main Window:  Tools > Variable Manipulation ",
 		"\n","\t","1.  Highlight all rows","\n","\t","2.  Click 'Limits...' at the bottom","\n","\t","3.  Make 'Minimum' and 'Maximum' the global minimum and maximum of the object.","\n","\n")
-	p = 5
+
 	vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.experiment.row()))),ncol=3,byrow=TRUE)
 	wires <- NULL
 

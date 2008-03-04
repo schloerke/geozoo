@@ -12,7 +12,7 @@ klein.fig.eight(n = 10000, a = 3, b = 1)
   \item{a}{ radius of outer radius }
   \item{b}{ radius of inner radius }
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
+\references{ \url{http://www.ggobi.org/packages/geozoo} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a figure eight Klein bottle.

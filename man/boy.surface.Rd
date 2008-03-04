@@ -11,7 +11,7 @@ boy.surface(n = 10000)
 \arguments{
   \item{n}{ the number of points used when creating the object.   }
 }
-\seealso{\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}}
+\seealso{\url{http://www.ggobi.org/packages/geozoo}}
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Boy Surface

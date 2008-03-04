@@ -10,7 +10,7 @@ simplex(p = 3)
 \arguments{
   \item{p}{ dimension of object }
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/simplex/} }
+\references{ \url{http://www.ggobi.org/packages/geozoo} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a simplex

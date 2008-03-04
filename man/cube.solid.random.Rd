@@ -15,7 +15,7 @@ cube.solid.random(p, n = 850 * 2^p)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
+\references{ \url{http://www.ggobi.org/packages/geozoo} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a solid cube with random points

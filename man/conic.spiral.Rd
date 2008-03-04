@@ -17,7 +17,7 @@ conic.spiral(n = 10000, a = 0.2, b = 1, c = 0.1, w = 2)
   \item{points }{location of points}
   \item{edges }{edges of the object (null)}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
+\references{ \url{http://www.ggobi.org/packages/geozoo} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Conic Spiral

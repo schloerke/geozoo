@@ -14,7 +14,7 @@ cross.cap(n = 10000)
   \item{points }{location of points}
   \item{edges }{edges of the object (null)}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
+\references{ \url{http://www.ggobi.org/packages/geozoo} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Cross Cap
