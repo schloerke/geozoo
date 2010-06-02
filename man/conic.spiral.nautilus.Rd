@@ -18,13 +18,14 @@ conic.spiral.nautilus(n = 10000, a = 0.2, b = 0.1, c = 0, w = 2)
   \item{points }{location of points}
   \item{edges }{edges of the object (null)}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Nautilus Conic Spiral
-conic.spiral.nautilus( n = 10000 )
+conic.spiral.nautilus( n = 1000 )
 
+\dontrun{
 ## Through rggobi
 ggobi(conic.spiral.nautilus(n = 10000))
-}
+}}
 \keyword{ dynamic }

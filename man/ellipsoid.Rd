@@ -18,13 +18,14 @@ ellipsoid(n = 10000, a = 1, b = 1, c = 3)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates an ellipsoid
-ellipsoid(n = 10000, a = 1, b = 1, c = 3)
+ellipsoid(n = 1000, a = 1, b = 1, c = 3)
 
+\dontrun{
 ## Through rggobi
 ggobi(ellipsoid(n = 10000, a = 1, b = 1, c = 3))
-}
+}}
 \keyword{ dynamic }

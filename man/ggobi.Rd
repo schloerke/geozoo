@@ -15,8 +15,9 @@ ggobi.geozoo(data, ...)
 \seealso{
 }
 \examples{
+\dontrun{
 ggobi(cube.iterate(p = 3))
 
 ggobi(simplex(p=4))
-}
+}}
 \keyword{dynamic}

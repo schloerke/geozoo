@@ -17,13 +17,14 @@ conic.spiral(n = 10000, a = 0.2, b = 1, c = 0.1, w = 2)
   \item{points }{location of points}
   \item{edges }{edges of the object (null)}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Conic Spiral
-conic.spiral( n = 10000 )
+conic.spiral( n = 1000 )
 
+\dontrun{
 ## Through rggobi
 ggobi(conic.spiral(n = 10000))
-}
+}}
 \keyword{ dynamic }

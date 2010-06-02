@@ -14,13 +14,14 @@ cross.polytope(p = 3)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a 3-D Cross Polytope
 cross.polytope(p = 3)
 
+\dontrun{
 ## Through rggobi in 4-D
 ggobi(cross.polytope(p = 4))
-}
+}}
 \keyword{ dynamic }

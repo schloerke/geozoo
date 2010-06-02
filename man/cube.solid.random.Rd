@@ -15,13 +15,14 @@ cube.solid.random(p, n = 850 * 2^p)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a solid cube with random points
-cube.solid.random(p = 3,)
+cube.solid.random(p = 3, n = 1000)
 
+\dontrun{
 ## Through rggobi
 ggobi(cube.solid.random(p = 3,))
-}
+}}
 \keyword{ dynamic }

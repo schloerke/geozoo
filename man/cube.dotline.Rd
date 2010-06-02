@@ -14,13 +14,14 @@ cube.dotline(p = 3)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a cube with points along its wire frame
 cube.dotline(p = 3)
 
+\dontrun{
 ## Through rggobi
 ggobi(cube.dotline(p = 3))
-}
+}}
 \keyword{ dynamic }

@@ -10,13 +10,14 @@ simplex(p = 3)
 \arguments{
   \item{p}{ dimension of object }
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/simplex/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a simplex
 simplex(p = 3)
 
+\dontrun{
 ## Through rggobi
 ggobi(simplex(p = 3))
-}
+}}
 \keyword{ dynamic }

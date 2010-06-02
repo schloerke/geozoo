@@ -12,13 +12,14 @@ klein.fig.eight(n = 10000, a = 3, b = 1)
   \item{a}{ radius of outer radius }
   \item{b}{ radius of inner radius }
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a figure eight Klein bottle.
-klein.fig.eight(n = 10000, a = 3, b = 1)
+klein.fig.eight(n = 1000, a = 3, b = 1)
 
+\dontrun{
 ## Through rggobi
 ggobi(klein.fig.eight(n = 10000, a = 3, b = 1))
-}
+}}
 \keyword{ dynamic }

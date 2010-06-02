@@ -1,3 +1,11 @@
+June 1, 2010
+examples were updated to use tourr.
+
+
+
+
+
+
 Feb 21, 2008
 cube.solid.random() was updated. One entrie was added and a maximum point output was inserted.
 sphere.hollow() and sphere.solid.random() were updated.  An entrie was added to the functions and sphere.solid.random() now uses sphere.hollow.

@@ -15,13 +15,14 @@ cube.solid.grid(p = 3, n = 8)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a solid cube with equidistant points
 cube.solid.grid(p = 3, n = 8)
 
+\dontrun{
 ## Through rggobi
 ggobi(cube.solid.grid(p = 3, n = 8))
-}
+}}
 \keyword{ dynamic }

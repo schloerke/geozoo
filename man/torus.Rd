@@ -12,13 +12,15 @@ torus(p = 3, n = 10000)
   \item{p}{ dimension of object }
   \item{n}{ number of points }
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a torus.
-torus(p = 3, n = 5000)
+torus(p = 3, n = 1000)
 
+\dontrun{
 ## Through rggobi
 ggobi(torus(p = 4, n = 5000))
+}
 }
 \keyword{ dynamic }

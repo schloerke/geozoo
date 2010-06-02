@@ -17,13 +17,14 @@ dini.surface(n = 10000, a = 1, b = 1)
   \item{points }{location of points}
   \item{edges }{edges of the object}
 }
-\references{ \url{http://www.ggobi.org/packages/geozoo} }
+\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/other/} }
 \author{ Barret Schloerke }
 \examples{
 ## Generates a Dini surface
-dini.surface(n = 10000, a = 1, b = 1)
+dini.surface(n = 1000, a = 1, b = 1)
 
+\dontrun{
 ## Through rggobi
 ggobi(dini.surface(n = 10000, a = 1, b = 1))
-}
+}}
 \keyword{ dynamic }
