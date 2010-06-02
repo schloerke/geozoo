@@ -1,6 +1,8 @@
-library(rggobi)
-
 ggobi.geozoo <- function(data, ...) {
+  if (!require("rggobi")) {
+    stop("rggobi package not available")
+  }
+  
 	gg <- ggobi(data$points)
 	glyph_colour(gg[1]) <- 6
 	glyph_size(gg[1]) <- 3
@@ -15,24 +17,4 @@ ggobi.geozoo <- function(data, ...) {
 	
 	invisible(gg)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
