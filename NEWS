@@ -1,31 +1,36 @@
-June 1, 2010
-examples were updated to use tourr.
+geozoo 0.4.3
+-------------------------
+
+DESCRIPTION File
+
+* Changed maintainer email from bigbear@iastate.edu to schlorke@gmail.com
+
+Internal
+
+* updated to follow roxygen compilation
+
+* can be compiled with devtools
 
 
+Previous Changes
 
+* June 1, 2010
+  examples were updated to use tourr.
 
+* Feb 21, 2008
+  cube.solid.random() was updated. One entrie was added and a maximum point output was inserted.
+  sphere.hollow() and sphere.solid.random() were updated.  An entrie was added to the functions and sphere.solid.random() now uses sphere.hollow.
 
+* Feb 19, 2008
+  Functions were renamed to match the up coming paper on Geo Zoo.
+  Split mobius function into mobius and mobius.experiment.  Updates will come.
 
-Feb 21, 2008
-cube.solid.random() was updated. One entrie was added and a maximum point output was inserted.
-sphere.hollow() and sphere.solid.random() were updated.  An entrie was added to the functions and sphere.solid.random() now uses sphere.hollow.
-
-
-
-
-
-
-Feb 19, 2008
-Functions were renamed to match the up coming paper on Geo Zoo.
-Split mobius function into mobius and mobius.experiment.  Updates will come.
-
-
-cube.iterate() <- cube()
-cube.solid.grid() <- cube.solid.eq()
-cube.solid.random <- cube.solid()
-sphere.hollow() <- sphere()
-sphere.solid.grid() <- sphere.solid.eq()
-sphere.solid.random() <- sphere.solid()
+  cube.iterate() <- cube()
+  cube.solid.grid() <- cube.solid.eq()
+  cube.solid.random <- cube.solid()
+  sphere.hollow() <- sphere()
+  sphere.solid.grid() <- sphere.solid.eq()
+  sphere.solid.random() <- sphere.solid()
 
 
 
