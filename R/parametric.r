@@ -1,16 +1,29 @@
 ##Parametric Eqn's
 
-## Boy Surface
+#' Boy Surface
+#'
+#' A function to produce a Boy Surface.
+#'
+#' @param n number of points
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a Boy Surface
+#' boy.surface(n = 1000)
+#'
+#' @keywords dynamic
+#' @export
 boy.surface <- function( n = 10000){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .boy.surface.row( )))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
+#' @keywords internal
 .boy.surface.row <- function( ){
 	u <- runif( 1, min = 0, max = pi)
 	v <- runif( 1, min = 0, max = pi)
@@ -25,17 +38,37 @@ boy.surface <- function( n = 10000){
 }
 
 
-## Conic Spiral
+#' Conic Spiral
+#'
+#' A function to produce a conic spiral
+#'
+#' @param n number of points
+#' @param a final radius of cone
+#' @param b height of object
+#' @param c inner radius
+#' @param w number of spirals
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a Conic Spiral
+#' conic.spiral(n = 1000)
+#'
+#' @keywords dynamic
+#' @export
 conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
+#' @keywords internal
 .conic.spiral.row <- function( a, b, c, w) {
 	u <- runif( 1, min = 0, max = 2 * pi)
 	v <- runif( 1, min = 0, max = 2 * pi)
@@ -48,29 +81,64 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
 
 
 
-## Conic Spiral Nautilus
+#' Conic Spiral (Nautilus Shape)
+#'
+#' A function to produce a Conic Spiral in a nautilus shape
+#'
+#' @param n number of points
+#' @param a final radius of cone
+#' @param b height of object
+#' @param c inner radius
+#' @param w number of spirals
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a Nautilus Conic Spiral
+#' conic.spiral.nautilus( n = 1000 )
+#'
+#' @keywords dynamic
+#' @export
 conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
 
-## Cross Cap
+#' Cross Cap
+#'
+#' A function to generate a cross cap
+#'
+#' @param n number of points
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a Cross Cap
+#' cross.cap( n = 1000 )
+#'
+#' @keywords dynamic
+#' @export
 cross.cap <- function( n = 10000){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .cross.cap.row( )))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
+#' @keywords internal
 .cross.cap.row <- function( ) {
 	u <- runif( 1, min = 0, max = pi)
 	v <- runif( 1, min = 0, max = pi)
@@ -81,17 +149,35 @@ cross.cap <- function( n = 10000){
 }
 
 
-## Dini Surface
+#' Dini Surface
+#'
+#' A function to generate a dini surface.
+#'
+#' @param n number of points
+#' @param a outer radius of object
+#' @param b space between loops
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a Dini Surface
+#' dini.surface(n = 1000, a = 1, b = 1)
+#'
+#' @keywords dynamic
+#' @export
 dini.surface <- function( n = 10000, a = 1, b = 1){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .dini.surface.row( a, b)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
+#' @keywords internal
 .dini.surface.row <- function( a = 1, b = 1) {
 	u <- runif( 1, min = 0, max = 4 * pi)
 	v <- runif( 1, min = 0.0000000001, max = 2)
@@ -102,17 +188,36 @@ dini.surface <- function( n = 10000, a = 1, b = 1){
 }
 
 
-## Ellipsoid
+#' Ellipsoid
+#'
+#' A function to generate an ellipsoid
+#'
+#' @param n number of points
+#' @param a radius in x direction
+#' @param b radius in y direction
+#' @param c radius in z direction
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates an ellipsoid
+#' ellipsoid(n = 1000, a = 1, b = 1, c = 3)
+#'
+#' @keywords dynamic
+#' @export
 ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .ellipsoid.row( a, b, c)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
+#' @keywords internal
 .ellipsoid.row <- function( a, b, c) {
 	u <- runif( 1, min = 0, max = 2 * pi)
 	v <- runif( 1, min = 0, max = 2 * pi)
@@ -123,17 +228,34 @@ ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
 }
 
 
-## Enneper
+#' Enneper's Surface
+#'
+#' A function to generate Enneper's surface
+#'
+#' @param n number of points
+#' @param a angle, radians, minimum and maximum.  -a < angle < a
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates an Enneper Surface
+#' enneper.surface(n = 1000, a = 4)
+#'
+#' @keywords dynamic
+#' @export
 enneper.surface <- function( n = 10000, a = 4){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .enneper.surface.row( a)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
+#' @keywords internal
 .enneper.surface.row <- function( a = 4) {
 	u <- runif( 1, min = - a, max = a)
 	v <- runif( 1, min = - a, max = a)
@@ -145,17 +267,35 @@ enneper.surface <- function( n = 10000, a = 4){
 
 
 
-## Klein Figure Eight
+#' Figure Eight Klein Bottle
+#'
+#' A function to generate a figure eight Klein bottle
+#'
+#' @param n number of points
+#' @param a radius of outer radius
+#' @param b radius of inner radius
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a figure eight Klein bottle.
+#' klein.fig.eight(n = 1000, a = 3, b = 1)
+#'
+#' @keywords dynamic
+#' @export
 klein.fig.eight <- function( n = 10000, a = 3, b = 1){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .klein.fig.eight.row( a, b)))), ncol = 4, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
 
+#' @keywords internal
 .klein.fig.eight.row <- function( a = 3, b = 1) {
 	u <- runif( 1, min = - pi, max = pi)
 	v <- runif( 1, min = - pi, max = pi)
@@ -168,16 +308,34 @@ klein.fig.eight <- function( n = 10000, a = 3, b = 1){
 
 
 
-## Roman Surface
+#' Roman Surface
+#'
+#' A function to generate a Roman surface, also known as a Steiner surface
+#'
+#' @param n number of points
+#' @param a maximum radius of object
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a Roman surface.
+#' roman.surface(n = 1000, a = 1)
+#'
+#' @keywords dynamic
+#' @export
 roman.surface <- function( n = 10000, a = 1){
 	vert <- matrix( do.call( "rbind", as.list( replicate( n, .roman.surface.row( a)))), ncol = 3, byrow = TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 }
+
+#' @keywords internal
 .roman.surface.row <- function( a = 1) {
 	u <- runif( 1, min = 0, max = pi)
 	v <- runif( 1, min = 0, max = pi)

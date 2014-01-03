@@ -1,24 +1,24 @@
 \name{boy.surface}
 \alias{boy.surface}
-\title{ Boy Surface for GeoZoo}
-\description{
-A function to produce a Boy Surface. 
-}
+\title{Boy Surface}
 \usage{
-boy.surface(n = 10000)
-
+  boy.surface(n = 10000)
 }
 \arguments{
-  \item{n}{ the number of points used when creating the object.   }
+  \item{n}{number of points}
 }
-\seealso{\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}}
-\author{ Barret Schloerke }
+\description{
+  A function to produce a Boy Surface.
+}
 \examples{
 ## Generates a Boy Surface
-boy.surface( n = 1000 )
+boy.surface(n = 1000)
+}
+\author{
+  Barret Schloerke
+}
+\references{
+  \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+}
+\keyword{dynamic}
 
-\dontrun{
-## Through rggobi
-ggobi(boy.surface(n = 10000))
-}}
-\keyword{ dynamic }

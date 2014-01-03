@@ -1,17 +1,28 @@
 \name{print.geozoo}
 \alias{print.geozoo}
-\title{ Print }
-\description{
-Prints GeoZoo objects with tourr or prints them
+\title{Print}
+\usage{
+  \method{print}{geozoo} (x, ...)
 }
 \arguments{
-  \item{x}{ geozoo object}
-  \item{...}{ other arguements}
+  \item{x}{geozoo object}
+
+  \item{...}{other arguements}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/} }
-\author{ Barret Schloerke }
+\description{
+  Prints geozoo objects with tourr or prints them
+}
 \examples{
+\dontrun{
 example(boy.surface)
 example(cube.face)
 }
-\keyword{ dynamic }
+}
+\author{
+  Barret Schloerke
+}
+\references{
+  \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/}
+}
+\keyword{dynamic}
+

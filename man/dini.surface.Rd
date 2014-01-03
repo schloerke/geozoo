@@ -1,30 +1,32 @@
 \name{dini.surface}
 \alias{dini.surface}
-\title{ Dini Surface}
-\description{
-A function to generate a dini surface.
-}
+\title{Dini Surface}
 \usage{
-dini.surface(n = 10000, a = 1, b = 1)
+  dini.surface(n = 10000, a = 1, b = 1)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{n}{ number of points }
-  \item{a}{ outer radius of object }
-  \item{b}{ space between loops }
+  \item{n}{number of points}
+
+  \item{a}{outer radius of object}
+
+  \item{b}{space between loops}
 }
 \value{
-  \item{points }{location of points}
-  \item{edges }{edges of the object}
+  \item{points }{location of points} \item{edges }{edges of
+  the object (null)}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/other/} }
-\author{ Barret Schloerke }
+\description{
+  A function to generate a dini surface.
+}
 \examples{
-## Generates a Dini surface
+## Generates a Dini Surface
 dini.surface(n = 1000, a = 1, b = 1)
+}
+\author{
+  Barret Schloerke
+}
+\references{
+  \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+}
+\keyword{dynamic}
 
-\dontrun{
-## Through rggobi
-ggobi(dini.surface(n = 10000, a = 1, b = 1))
-}}
-\keyword{ dynamic }

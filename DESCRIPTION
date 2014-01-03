@@ -3,10 +3,24 @@ Version: 0.4.3
 Date: 2013-12-18
 Title: Zoo of Geometric Objects
 Description: The package allows geometric objects defined in geozoo to be displayed in GGobi through the use of rggobi.
-Depends: R (>= 1.8.0), bitops, tourr
-Enhances: rggobi
 Author: Barret Scloerke <schloerke@gmail.com>, with contributions from Dianne
     Cook <dicook@iastate.edu> and Hadley Wickham <h.wickham@gmail.com>.
 Maintainer: Barret Scloerke <schloerke@gmail.com>
+Depends:
+    R (>= 1.8.0),
+    bitops
+Suggests:
+    tourr
 License: GPL-2
-URL: http://streaming.stat.iastate.edu/~dicook/geometric-data/, http://www.ggobi.org
+URL: http://streaming.stat.iastate.edu/~dicook/geometric-data/,
+    http://www.ggobi.org
+Collate:
+    'cross.polytope.r'
+    'cube.r'
+    'mobius.r'
+    'parametric.r'
+    'print.r'
+    'simplex.r'
+    'sphere.r'
+    'torus.r'
+    'xml.r'

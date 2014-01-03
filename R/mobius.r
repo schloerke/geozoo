@@ -1,4 +1,17 @@
-## Mobius
+#' Mobius
+#'
+#' A function to generate a mobius strip in the third or fourth dimension.
+#'
+#' @param p dimension of object.  (3)
+#' @param n number of points
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a mobius strip.
+#' mobius(3, n = 1000)
+#'
+#' @keywords dynamic
+#' @export
 mobius <- function(p=3,n=10000){
 	cat("\n",
 		"NOTE:",
@@ -8,13 +21,14 @@ mobius <- function(p=3,n=10000){
 	vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.row(3)))),ncol=3,byrow=TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 	}
 
-.mobius.row<- function(p){
+#' @keywords internal
+.mobius.row <- function(p) {
 
 	##Generates Angles
 	a <- runif(1,min=0,max=2*pi)
@@ -29,7 +43,20 @@ mobius <- function(p=3,n=10000){
 	mobius
 }
 
-## Mobius
+#' Mobius Experiment
+#'
+#' A function to generate a 5-D mobius strip in the third dimension.
+#'
+#' @param p dimension of object.  (5)
+#' @param n number of points
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a mobius strip.
+#' mobius.experiment(5, n = 1000)
+#'
+#' @keywords dynamic
+#' @export
 mobius.experiment <- function(p=5,n=10000){
 	cat("\n",
 		"NOTE:",
@@ -39,12 +66,13 @@ mobius.experiment <- function(p=5,n=10000){
 	vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.experiment.row()))),ncol=3,byrow=TRUE)
 	wires <- NULL
 
-	structure( 
-		list( points = vert, edges = wires), 
+	structure(
+		list( points = vert, edges = wires),
 		class = "geozoo"
 	)
 	}
 
+#' @keywords internal
 .mobius.experiment.row<- function(){
 
 	##Generates Angles
@@ -64,7 +92,7 @@ mobius.experiment <- function(p=5,n=10000){
 		rot.2 <- matrix(c(cos(2*k),-sin(2*k),0,sin(2*k),cos(2*k),0,0,0,1),ncol=3,byrow=TRUE)
 	## Trans perpendicular to z axis
 		trans <- matrix(c(4*cos(2*k),4*sin(2*k),0),ncol=1)
-	
+
 	mobius<-rot.2%*%rot.1%*%mobius+trans
 
 

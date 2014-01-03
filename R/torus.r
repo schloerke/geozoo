@@ -1,4 +1,21 @@
-## Torus
+
+#' Torus
+#'
+#' A function to generate a torus in any dimension
+#'
+#' @param p dimension of object
+#' @param n number of points
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a torus
+#' torus(p = 3, n = 1000)
+#'
+#' @keywords dynamic
+#' @export
 torus <- function(p = 3,n = 10000){
 	radius <- (2 ^ ((p - 2):0))
 	vert <- matrix(do.call("rbind", as.list(replicate(n, .torus.row(radius,p)))),ncol = p,byrow = TRUE)
@@ -14,16 +31,17 @@ torus <- function(p = 3,n = 10000){
 	)
 }
 
+#' @keywords internal
 .torus.row <-function(radius,p) {
 	##Generates Angles
 	t <- runif(p-1, min = 0, max = 2 * pi)
 
 	##Generates Row of Data
 	torus <- c(
-		rep(cos(t[p-1]) * radius[p-1], p-1), 
+		rep(cos(t[p-1]) * radius[p-1], p-1),
 		sin(t[p-1]) * radius[p-1]
 	)
-	
+
 	if(p>2)
 	for (i in (p-1):2) {
 		for(j in (i-1):1){
@@ -34,7 +52,23 @@ torus <- function(p = 3,n = 10000){
 	torus
 }
 
-##Flat Torus
+#' Flat Torus
+#'
+#' A function to generate a flat torus in any dimension
+#'
+#' @param p dimension of object (number of circles x2)
+#' @param n number of points
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a Flat Torus
+#' torus.flat(p = 4, n = 1000)
+#'
+#' @keywords dynamic
+#' @export
 torus.flat <-function(p = 4,n = 10000){
 	p <- floor(p / 2)
 	vert <- do.call("rbind", replicate(n,.torus.flat.row(p), simplify = FALSE))
@@ -46,6 +80,7 @@ torus.flat <-function(p = 4,n = 10000){
 
 }
 
+#' @keywords internal
 .torus.flat.row <-function(p){
 	a <-runif(p,min = 0,max = 2 * pi)
 	as.vector(rbind(cos(a),sin(a)))

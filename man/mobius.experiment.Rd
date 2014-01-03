@@ -1,21 +1,21 @@
-\name{mobius}
-\alias{mobius}
-\title{Mobius}
+\name{mobius.experiment}
+\alias{mobius.experiment}
+\title{Mobius Experiment}
 \usage{
-  mobius(p = 3, n = 10000)
+  mobius.experiment(p = 5, n = 10000)
 }
 \arguments{
-  \item{p}{dimension of object.  (3)}
+  \item{p}{dimension of object.  (5)}
 
   \item{n}{number of points}
 }
 \description{
-  A function to generate a mobius strip in the third or
-  fourth dimension.
+  A function to generate a 5-D mobius strip in the third
+  dimension.
 }
 \examples{
 ## Generates a mobius strip.
-mobius(3, n = 1000)
+mobius.experiment(5, n = 1000)
 }
 \author{
   Barret Schloerke

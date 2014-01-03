@@ -1,26 +1,30 @@
 \name{torus}
 \alias{torus}
-\title{ Torus }
-\description{
-A function to generate a torus in any dimension.
-}
+\title{Torus}
 \usage{
-torus(p = 3, n = 10000)
+  torus(p = 3, n = 10000)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{p}{ dimension of object }
-  \item{n}{ number of points }
-}
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/} }
-\author{ Barret Schloerke }
-\examples{
-## Generates a torus.
-torus(p = 3, n = 1000)
+  \item{p}{dimension of object}
 
-\dontrun{
-## Through rggobi
-ggobi(torus(p = 4, n = 5000))
+  \item{n}{number of points}
 }
+\value{
+  \item{points }{location of points} \item{edges }{edges of
+  the object (null)}
 }
-\keyword{ dynamic }
+\description{
+  A function to generate a torus in any dimension
+}
+\examples{
+## Generates a torus
+torus(p = 3, n = 1000)
+}
+\author{
+  Barret Schloerke
+}
+\references{
+  \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/}
+}
+\keyword{dynamic}
+

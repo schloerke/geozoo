@@ -1,4 +1,5 @@
 ## Simplex
+#' @keywords internal
 .f.helmert <- function(d){
 	helmert <- rep(1/sqrt(d), d)
 	for(i in 1:(d-1)){
@@ -9,6 +10,7 @@
 	}
 	return(helmert)
 }
+#' @keywords internal
 .f.composition <- function(data){
 	d <- dim(data)[2]
 	hm <- .f.helmert(d)
@@ -16,6 +18,23 @@
 	return((x %*% t(hm))[,-1])
 }
 
+
+#' Simplex
+#'
+#' A function to generate a simplex
+#'
+#' @param p dimension of object
+#' @return
+#'  \item{points }{location of points}
+#'  \item{edges }{edges of the object (null)}
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/simplex/}
+#' @author Barret Schloerke
+#' @examples
+#' ## Generates a simplex
+#' simplex(p = 3)
+#'
+#' @keywords dynamic
+#' @export
 simplex <- function(p = 3){
 	vert <- .f.composition(diag(p+1))
 

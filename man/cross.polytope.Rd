@@ -1,27 +1,29 @@
 \name{cross.polytope}
 \alias{cross.polytope}
-\title{ Cross Polytope }
-\description{
-A function generate a cross polytope, cube dual, with vertices and a wire frame.
-}
+\title{Cross Polytope}
 \usage{
-cross.polytope(p = 3)
+  cross.polytope(p = 3)
 }
 \arguments{
-  \item{p}{ dimension of object}
+  \item{p}{dimension of object}
 }
 \value{
-  \item{points }{location of points}
-  \item{edges }{edges of the object}
+  \item{points }{location of points} \item{edges }{edges of
+  the object}
 }
-\references{ \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/} }
-\author{ Barret Schloerke }
+\description{
+  A function generate a cross polytope, cube dual, with
+  vertices and a wire frame.
+}
 \examples{
 ## Generates a 3-D Cross Polytope
 cross.polytope(p = 3)
+}
+\author{
+  Barret Schloerke
+}
+\references{
+  \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+}
+\keyword{dynamic}
 
-\dontrun{
-## Through rggobi in 4-D
-ggobi(cross.polytope(p = 4))
-}}
-\keyword{ dynamic }
