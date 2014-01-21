@@ -1,0 +1,27 @@
+\name{print.geozooNoScale}
+\alias{print.geozooNoScale}
+\title{Print Without Rescale}
+\usage{
+  \method{print}{geozooNoScale} (x, ...)
+}
+\arguments{
+  \item{x}{geozoo object}
+
+  \item{...}{other arguements}
+}
+\description{
+  Prints objects without rescaling them to 0,1 in each dim
+}
+\examples{
+\dontrun{
+torus()
+}
+}
+\author{
+  Barret Schloerke
+}
+\references{
+  \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/}
+}
+\keyword{dynamic}
+

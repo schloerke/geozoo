@@ -1,4 +1,5 @@
 S3method(print,geozoo)
+S3method(print,geozooNoScale)
 export(boy.surface)
 export(conic.spiral)
 export(conic.spiral.nautilus)
