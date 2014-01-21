@@ -5,6 +5,7 @@
 #'
 #' @param p dimension of object
 #' @param n number of points
+#' @param radius radiuses of the torus, set from largest to smallest
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
@@ -16,8 +17,11 @@
 #'
 #' @keywords dynamic
 #' @export
-torus <- function(p = 3,n = 10000){
-  radius = (2 ^ ((p - 2):0))
+torus <- function(p = 3,n = 10000, radius = (2 ^ ((p - 2):0))){
+  if(length(radius) != p) {
+    stop("'radius' length does not equal p")
+  }
+
   vert <- matrix(do.call("rbind", as.list(replicate(n, .torus.row(radius, p)))),ncol = p,byrow = TRUE)
   wires <- NULL
 
