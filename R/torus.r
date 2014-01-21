@@ -18,7 +18,7 @@
 #' @keywords dynamic
 #' @export
 torus <- function(p = 3,n = 10000, radius = (2 ^ ((p - 2):0))){
-  if(length(radius) != p) {
+  if(length(radius) != (p - 1)) {
     stop("'radius' length does not equal p")
   }
 
