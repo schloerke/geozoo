@@ -32,3 +32,29 @@ print.geozoo <- function(x, ...){
   }
 
 }
+
+
+
+#' Print Without Rescale
+#'
+#' Prints objects without rescaling them to 0,1 in each dim
+#'
+#' @S3method print geozooNoScale
+#' @method print geozooNoScale
+#' @param x geozoo object
+#' @param ... other arguements
+#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/}
+#' @author Barret Schloerke
+#' @examples
+#' \dontrun{
+#' torus()
+#' }
+#' @keywords dynamic
+print.geozooNoScale <- function(x, ...) {
+  print("asdfasdf")
+  class(x) <- class(x)[-1]
+  print(class(x))
+  print(x, rescale = FALSE, ...)
+}
+
+

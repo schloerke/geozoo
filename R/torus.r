@@ -27,7 +27,7 @@ torus <- function(p = 3,n = 10000, radius = (2 ^ ((p - 2):0))){
 
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale","geozoo")
   )
 }
 
