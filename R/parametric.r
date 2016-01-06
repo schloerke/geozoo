@@ -14,11 +14,19 @@
 #' @keywords dynamic
 #' @export
 boy.surface <- function( n = 10000){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .boy.surface.row( )))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .boy.surface.row())
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
-    list( points = vert, edges = wires),
+    list(points = vert, edges = wires),
     class = c("geozooNoScale", "geozoo")
   )
 }
@@ -30,9 +38,21 @@ boy.surface <- function( n = 10000){
   a <- cos( v) * sin( u)
   b <- sin( v) * sin( u)
   c <- cos( u)
-  x <- 1 / 2 * ( ( 2 * a ^ 2 - b ^ 2 - c ^ 2) + 2 * b * c * ( b ^ 2 - c ^ 2) + c * a * ( a ^ 2 - c ^ 2) + a * b * ( b ^ 2 - a ^ 2))
-  y <- sqrt( 3) / 2 * ( ( b ^ 2 - c ^ 2) + c * a * ( c ^ 2 - a ^ 2) + a * b * ( b ^ 2 - a ^ 2))
-  z <- ( a + b + c) * ( ( a + b + c) ^ 3 + 4 * ( b - a) * ( c - b) * ( a - c))
+  x <- 1 / 2 * (
+      ( 2 * a ^ 2 - b ^ 2 - c ^ 2) +
+      2 * b * c * ( b ^ 2 - c ^ 2) +
+      c * a * ( a ^ 2 - c ^ 2) +
+      a * b * ( b ^ 2 - a ^ 2)
+    )
+  y <- sqrt(3) / 2 * (
+    ( b ^ 2 - c ^ 2) +
+    c * a * ( c ^ 2 - a ^ 2) +
+    a * b * ( b ^ 2 - a ^ 2)
+  )
+  z <- ( a + b + c) * (
+    ( a + b + c) ^ 3 +
+    4 * ( b - a) * ( c - b) * ( a - c)
+  )
   z <- z / 8
   return( cbind( x, y, z))
 }
@@ -59,11 +79,19 @@ boy.surface <- function( n = 10000){
 #' @keywords dynamic
 #' @export
 conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .conic.spiral.row(a, b, c, w))
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
-    list( points = vert, edges = wires),
+    list(points = vert, edges = wires),
     class = c("geozooNoScale", "geozoo")
   )
 }
@@ -73,8 +101,10 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
   u <- runif( 1, min = 0, max = 2 * pi)
   v <- runif( 1, min = 0, max = 2 * pi)
 
-  x <- a * ( 1 - v / ( 2 * pi)) * cos( w * v) * ( 1 + cos( u)) + c * cos( w * v)
-  y <- a * ( 1 - v / ( 2 * pi)) * sin( w * v) * ( 1 + cos( u)) + c * sin( w * v)
+  x <- a * ( 1 - v / ( 2 * pi)) * cos( w * v) * ( 1 + cos( u)) +
+    c * cos( w * v)
+  y <- a * ( 1 - v / ( 2 * pi)) * sin( w * v) * ( 1 + cos( u)) +
+    c * sin( w * v)
   z <- ( b * v + a * ( 1 - v / ( 2 * pi)) * sin( u)) / ( 2 * pi)
   return( cbind( x, y, z))
 }
@@ -102,11 +132,19 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
 #' @keywords dynamic
 #' @export
 conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .conic.spiral.row( a, b, c, w)))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .conic.spiral.row(a, b, c, w))
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
-    list( points = vert, edges = wires),
+    list(points = vert, edges = wires),
     class = c("geozooNoScale", "geozoo")
   )
 }
@@ -129,11 +167,19 @@ conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
 #' @keywords dynamic
 #' @export
 cross.cap <- function( n = 10000){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .cross.cap.row( )))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .cross.cap.row())
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
-    list( points = vert, edges = wires),
+    list(points = vert, edges = wires),
     class = c("geozooNoScale", "geozoo")
   )
 }
@@ -168,7 +214,15 @@ cross.cap <- function( n = 10000){
 #' @keywords dynamic
 #' @export
 dini.surface <- function( n = 10000, a = 1, b = 1){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .dini.surface.row( a, b)))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .dini.surface.row( a, b))
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
@@ -208,11 +262,19 @@ dini.surface <- function( n = 10000, a = 1, b = 1){
 #' @keywords dynamic
 #' @export
 ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .ellipsoid.row( a, b, c)))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .ellipsoid.row(a, b, c))
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
-    list( points = vert, edges = wires),
+    list(points = vert, edges = wires),
     class = c("geozooNoScale", "geozoo")
   )
 }
@@ -246,7 +308,15 @@ ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
 #' @keywords dynamic
 #' @export
 enneper.surface <- function( n = 10000, a = 4){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .enneper.surface.row( a)))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .enneper.surface.row(a))
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
@@ -286,7 +356,16 @@ enneper.surface <- function( n = 10000, a = 4){
 #' @keywords dynamic
 #' @export
 klein.fig.eight <- function( n = 10000, a = 3, b = 1){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .klein.fig.eight.row( a, b)))), ncol = 4, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .klein.fig.eight.row(a, b))
+      )
+    ),
+    ncol = 4,
+    byrow = TRUE
+  )
   wires <- NULL
 
   structure(
@@ -326,11 +405,19 @@ klein.fig.eight <- function( n = 10000, a = 3, b = 1){
 #' @keywords dynamic
 #' @export
 roman.surface <- function( n = 10000, a = 1){
-  vert <- matrix( do.call( "rbind", as.list( replicate( n, .roman.surface.row( a)))), ncol = 3, byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .roman.surface.row(a))
+      )
+    ),
+    ncol = 3, byrow = TRUE
+  )
   wires <- NULL
 
   structure(
-    list( points = vert, edges = wires),
+    list(points = vert, edges = wires),
     class = c("geozooNoScale", "geozoo")
   )
 }

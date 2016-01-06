@@ -22,7 +22,15 @@ torus <- function(p = 3,n = 10000, radius = 2 ^ ( (p - 2):0) ){
     stop("'radius' length does not equal p")
   }
 
-  vert <- matrix(do.call("rbind", as.list(replicate(n, .torus.row(radius, p)))),ncol = p,byrow = TRUE)
+  vert <- matrix(
+    do.call(
+      "rbind",
+      as.list(
+        replicate(n, .torus.row(radius, p))
+      )
+    ),
+    ncol = p, byrow = TRUE
+  )
   wires <- NULL
 
   structure(

@@ -1,7 +1,6 @@
 linters: with_defaults(
     infix_spaces_linter = NULL, # 93
     multiple_dots_linter = NULL, # 47
-    line_length_linter = NULL, # 18
     NULL
   )
 exclusions: c(
