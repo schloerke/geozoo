@@ -1,0 +1,27 @@
+# Sample .travis.yml for R projects from https://github.com/craigcitro/r-travis
+
+language: r
+sudo: required
+
+r_github_packages:
+  - jimhester/lintr # R lint testing
+  - jimhester/covr  # code coverage check
+
+after_success:
+  - Rscript -e 'covr::codecov()'
+after_failure:
+  - ./travis-tool.sh dump_logs
+
+env:
+  - WARNINGS_ARE_ERRORS=1
+
+branches:
+  only:
+    - master
+    - dev
+    - travis
+
+notifications:
+  email:
+    on_success: change
+    on_failure: change
