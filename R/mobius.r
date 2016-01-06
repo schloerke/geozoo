@@ -18,7 +18,7 @@ mobius <- function(p = 3, n = 10000){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .mobius.row(3))
+        replicate(n, mobius_row(3))
       )
     ),
     ncol = 3,
@@ -33,7 +33,7 @@ mobius <- function(p = 3, n = 10000){
 }
 
 #' @keywords internal
-.mobius.row <- function(p) {
+mobius_row <- function(p) {
 
   ##Generates Angles
   a <- runif(1,min=0,max=2*pi)
@@ -74,7 +74,7 @@ mobius.experiment <- function(p = 5, n = 10000){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .mobius.experiment.row())
+        replicate(n, mobius_experiment_row())
       )
     ),
     ncol = 3,
@@ -89,14 +89,14 @@ mobius.experiment <- function(p = 5, n = 10000){
 }
 
 #' @keywords internal
-.mobius.experiment.row<- function(){
+mobius_experiment_row <- function(){
 
   ##Generates Angles
   a <- runif(1, min = 0, max = 2 * pi)
   a <- c(a, a / 2)
 
   ##Generates Small Radius
-  radius<-c(1,runif(1,min=-.4,max=.4))
+  radius <- c(1,runif(1,min=-.4,max=.4))
 
   ##Generates Row of Data
   mobius <- c(
@@ -107,9 +107,9 @@ mobius.experiment <- function(p = 5, n = 10000){
 
   k <- runif(1, min = 0, max = pi)
   ## Rot over x axis
-  rot.1 <- matrix(c(0,cos(k),-sin(k),1,0,0,0,sin(k),cos(k)),ncol=3,byrow=TRUE)
+  rot_1 <- matrix(c(0,cos(k),-sin(k),1,0,0,0,sin(k),cos(k)),ncol=3,byrow=TRUE)
   ## Rot over z axis
-  rot.2 <- matrix(
+  rot_2 <- matrix(
     c(
       cos(2*k),
       -sin(2*k),
@@ -123,7 +123,7 @@ mobius.experiment <- function(p = 5, n = 10000){
   ## Trans perpendicular to z axis
   trans <- matrix(c(4 * cos(2 * k), 4 * sin(2 * k),0), ncol = 1)
 
-  mobius <- rot.2 %*% rot.1 %*% mobius + trans
+  mobius <- rot_2 %*% rot_1 %*% mobius + trans
 
   mobius
 }

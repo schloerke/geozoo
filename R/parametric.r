@@ -18,7 +18,7 @@ boy.surface <- function( n = 10000){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .boy.surface.row())
+        replicate(n, boy_surface_row())
       )
     ),
     ncol = 3, byrow = TRUE
@@ -32,7 +32,7 @@ boy.surface <- function( n = 10000){
 }
 
 #' @keywords internal
-.boy.surface.row <- function( ){
+boy_surface_row <- function( ){
   u <- runif( 1, min = 0, max = pi)
   v <- runif( 1, min = 0, max = pi)
   a <- cos( v) * sin( u)
@@ -83,7 +83,7 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .conic.spiral.row(a, b, c, w))
+        replicate(n, conic_spiral_row(a, b, c, w))
       )
     ),
     ncol = 3, byrow = TRUE
@@ -97,7 +97,7 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
 }
 
 #' @keywords internal
-.conic.spiral.row <- function( a, b, c, w) {
+conic_spiral_row <- function( a, b, c, w) {
   u <- runif( 1, min = 0, max = 2 * pi)
   v <- runif( 1, min = 0, max = 2 * pi)
 
@@ -136,7 +136,7 @@ conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .conic.spiral.row(a, b, c, w))
+        replicate(n, conic_spiral_row(a, b, c, w))
       )
     ),
     ncol = 3, byrow = TRUE
@@ -171,7 +171,7 @@ cross.cap <- function( n = 10000){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .cross.cap.row())
+        replicate(n, cross_cap_row())
       )
     ),
     ncol = 3, byrow = TRUE
@@ -185,7 +185,7 @@ cross.cap <- function( n = 10000){
 }
 
 #' @keywords internal
-.cross.cap.row <- function( ) {
+cross_cap_row <- function( ) {
   u <- runif( 1, min = 0, max = pi)
   v <- runif( 1, min = 0, max = pi)
   x <- cos( u) * sin( 2 * v)
@@ -218,7 +218,7 @@ dini.surface <- function( n = 10000, a = 1, b = 1){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .dini.surface.row( a, b))
+        replicate(n, dini_surface_row( a, b))
       )
     ),
     ncol = 3, byrow = TRUE
@@ -232,7 +232,7 @@ dini.surface <- function( n = 10000, a = 1, b = 1){
 }
 
 #' @keywords internal
-.dini.surface.row <- function( a = 1, b = 1) {
+dini_surface_row <- function( a = 1, b = 1) {
   u <- runif( 1, min = 0, max = 4 * pi)
   v <- runif( 1, min = 0.0000000001, max = 2)
   x <- a * cos( u) * sin( v)
@@ -266,7 +266,7 @@ ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .ellipsoid.row(a, b, c))
+        replicate(n, ellipsoid_row(a, b, c))
       )
     ),
     ncol = 3, byrow = TRUE
@@ -280,7 +280,7 @@ ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
 }
 
 #' @keywords internal
-.ellipsoid.row <- function( a, b, c) {
+ellipsoid_row <- function( a, b, c) {
   u <- runif( 1, min = 0, max = 2 * pi)
   v <- runif( 1, min = 0, max = 2 * pi)
   x <- a * cos( u) * sin( v)
@@ -312,7 +312,7 @@ enneper.surface <- function( n = 10000, a = 4){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .enneper.surface.row(a))
+        replicate(n, enneper_surface_row(a))
       )
     ),
     ncol = 3, byrow = TRUE
@@ -326,7 +326,7 @@ enneper.surface <- function( n = 10000, a = 4){
 }
 
 #' @keywords internal
-.enneper.surface.row <- function( a = 4) {
+enneper_surface_row <- function( a = 4) {
   u <- runif( 1, min = - a, max = a)
   v <- runif( 1, min = - a, max = a)
   x <- u - u ^ 3 / 3 + u * v ^ 2
@@ -360,7 +360,7 @@ klein.fig.eight <- function( n = 10000, a = 3, b = 1){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .klein.fig.eight.row(a, b))
+        replicate(n, klein_fig_eight_row(a, b))
       )
     ),
     ncol = 4,
@@ -375,7 +375,7 @@ klein.fig.eight <- function( n = 10000, a = 3, b = 1){
 }
 
 #' @keywords internal
-.klein.fig.eight.row <- function( a = 3, b = 1) {
+klein_fig_eight_row <- function( a = 3, b = 1) {
   u <- runif( 1, min = - pi, max = pi)
   v <- runif( 1, min = - pi, max = pi)
   x <- ( b * cos( v) + a) * cos( u)
@@ -409,7 +409,7 @@ roman.surface <- function( n = 10000, a = 1){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .roman.surface.row(a))
+        replicate(n, roman_surface_row(a))
       )
     ),
     ncol = 3, byrow = TRUE
@@ -423,7 +423,7 @@ roman.surface <- function( n = 10000, a = 1){
 }
 
 #' @keywords internal
-.roman.surface.row <- function( a = 1) {
+roman_surface_row <- function( a = 1) {
   u <- runif( 1, min = 0, max = pi)
   v <- runif( 1, min = 0, max = pi)
   x <- a ^ 2 * cos( v) * cos( v) * sin( 2 * u) / 2

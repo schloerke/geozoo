@@ -26,7 +26,7 @@ torus <- function(p = 3,n = 10000, radius = 2 ^ ( (p - 2):0) ){
     do.call(
       "rbind",
       as.list(
-        replicate(n, .torus.row(radius, p))
+        replicate(n, torus_row(radius, p))
       )
     ),
     ncol = p, byrow = TRUE
@@ -40,7 +40,7 @@ torus <- function(p = 3,n = 10000, radius = 2 ^ ( (p - 2):0) ){
 }
 
 #' @keywords internal
-.torus.row <-function(radius, p) {
+torus_row <-function(radius, p) {
   ##Generates Angles
   t <- runif(p-1, min = 0, max = 2 * pi)
 
@@ -80,7 +80,7 @@ torus <- function(p = 3,n = 10000, radius = 2 ^ ( (p - 2):0) ){
 #' @export
 torus.flat <-function(p = 4,n = 10000){
   p <- floor(p / 2)
-  vert <- do.call("rbind", replicate(n,.torus.flat.row(p), simplify = FALSE))
+  vert <- do.call("rbind", replicate(n, torus_flat_row(p), simplify = FALSE))
   wires <- NULL
   structure(
     list(points = vert, edges = wires),
@@ -89,7 +89,7 @@ torus.flat <-function(p = 4,n = 10000){
 }
 
 #' @keywords internal
-.torus.flat.row <-function(p){
+torus_flat_row <-function(p){
   a <-runif(p,min = 0,max = 2 * pi)
   as.vector(rbind(cos(a),sin(a)))
 }

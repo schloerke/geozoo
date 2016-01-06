@@ -17,7 +17,7 @@ cross.polytope(p = 3)
 A function generate a cross polytope, cube dual, with vertices and a wire frame.
 }
 \examples{
-## Generates a 3-D Cross Polytope
+# Generates a 3-D Cross Polytope
 cross.polytope(p = 3)
 
 }

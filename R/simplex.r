@@ -1,6 +1,6 @@
 ## Simplex
 #' @keywords internal
-.f.helmert <- function(d){
+f_helmert <- function(d){
   helmert <- rep(1/sqrt(d), d)
   for (i in 1:(d-1)){
     x <- rep(1/sqrt(i * (i + 1)), i)
@@ -11,9 +11,9 @@
   return(helmert)
 }
 #' @keywords internal
-.f.composition <- function(data){
+f_composition <- function(data){
   d <- dim(data)[2]
-  hm <- .f.helmert(d)
+  hm <- f_helmert(d)
   x <- data - matrix(1/d, dim(data)[1], d)
   return((x %*% t(hm))[,-1])
 }
@@ -36,7 +36,7 @@
 #' @keywords dynamic
 #' @export
 simplex <- function(p = 3){
-  vert <- .f.composition(diag(p+1))
+  vert <- f_composition(diag(p+1))
 
   wires <- do.call(expand.grid, list(c(1:nrow(vert)),c(1:nrow(vert))))
 

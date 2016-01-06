@@ -4,7 +4,7 @@
 \alias{torus}
 \title{Torus}
 \usage{
-torus(p = 3, n = 10000, radius = (2^((p - 2):0)))
+torus(p = 3, n = 10000, radius = 2^((p - 2):0))
 }
 \arguments{
 \item{p}{dimension of object}
