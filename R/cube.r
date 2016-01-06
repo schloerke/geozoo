@@ -7,6 +7,7 @@ cube_vertices <- function(p) {
 }
 
 #' @keywords internal
+#' @importFrom bitops bitXor
 cube_wires <- function(p) {
   vertices <- 0:(2 ^ p - 1)
   from <- vertices[rep(1:length(vertices), each = p)]

@@ -8,7 +8,8 @@ Author: Barret Scloerke <schloerke@gmail.com>, with contributions from Dianne
     Cook <dicook@iastate.edu> and Hadley Wickham <h.wickham@gmail.com>.
 Maintainer: Barret Scloerke <schloerke@gmail.com>
 Depends:
-    R (>= 1.8.0),
+    R (>= 1.8.0)
+Imports:
     bitops
 Suggests:
     tourr,
