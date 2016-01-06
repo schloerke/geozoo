@@ -25,13 +25,13 @@ print.geozoo <- function(x, ...){
     message("Edges will not be printed using 'tourr'\n")
   }
 
-  if (! require(tourr) ) {
-    as.data.frame(x)
+  if ((! requireNamespace("tourr")) || (! interactive()) ) {
+    as.list(x)
   } else {
     tourr::animate(
       x$points,
-      tour_path = tour::grand_tour(),
-      tour::display_xy(...),
+      tour_path = tourr::grand_tour(),
+      tourr::display_xy(...),
       ...
     )
   }
@@ -56,8 +56,6 @@ print.geozoo <- function(x, ...){
 #' }
 #' @keywords dynamic
 print.geozooNoScale <- function(x, ...) {
-  print("asdfasdf")
   class(x) <- class(x)[-1]
-  print(class(x))
   print(x, rescale = FALSE, ...)
 }
