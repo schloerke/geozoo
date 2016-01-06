@@ -12,6 +12,7 @@ Depends:
     bitops
 Suggests:
     tourr,
+    roxygen2 (>= 5.0.0),
     testthat
 License: GPL-2
 URL: http://streaming.stat.iastate.edu/~dicook/geometric-data/,
@@ -26,3 +27,4 @@ Collate:
     'sphere.r'
     'torus.r'
     'xml.r'
+RoxygenNote: 5.0.1
