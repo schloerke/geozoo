@@ -8,7 +8,7 @@
 #' @author Barret Schloerke
 #' @keywords dynamic
 write.xml <- function(object.function,filepath,title) {
-  .f.writeXML(
+  f_write_XML(
     dat1 = object.function$points,
     filename = filepath,
     data.num = 2,
@@ -23,7 +23,7 @@ write.xml <- function(object.function,filepath,title) {
 }
 
 #' @keywords internal
-.f.writeXML<-function(dat1,filename,data.num=1,data.name="data",
+f_write_XML <- function(dat1,filename,data.num=1,data.name="data",
   default.color="5",default.glyph="fc 2",catvars1=NULL,
   dat1.colors=NULL,dat1.glyphs=NULL,dat1.id=NULL,
   dat1.description=NULL,dat1.name="Data 1",
@@ -62,10 +62,10 @@ for (i in 1:p1) {
   }
   else if (i%in%catvars1) {
     cat(sep="","  <categoricalvariable name=\"",var.name1[i],
-        "\" levels=\"auto\"/>\n",file=filename,append=T)
+        "\" levels=\"auto\"/>\n",file=filename,append=T) # nolint
   }
   else {
-    cat(sep="","  <realvariable name=\"",var.name1[i],"\"/>\n",
+    cat(sep="","  <realvariable name=\"",var.name1[i],"\"/>\n", # nolint
       file=filename,append=T)
   }
 }
@@ -116,10 +116,10 @@ cat(sep="","<variables count=\"",p2,"\">\n",file=filename,append=T)
 for (i in 1:p2) {
   if (i%in%catvars2) {
     cat(sep="","<categoricalvariable name=\"",var.name2[i],
-      "\" levels=\"auto\"/>\n",file=filename,append=T)
+      "\" levels=\"auto\"/>\n",file=filename,append=T) # nolint
   }
   else
-  cat(sep="","<realvariable name=\"",var.name2[i],"\"/>\n",
+  cat(sep="","<realvariable name=\"",var.name2[i],"\"/>\n", # nolint
     file=filename,append=T)
 }
 cat(sep="","</variables>\n",file=filename,append=T)
@@ -128,8 +128,6 @@ cat(sep="","<records count=\"",n2,"\" glyph=\"",default.glyph,
 row.name2<-rownames(dat2)
 if (is.null(row.name2))
   row.name2<-c(1:n2)
-#if (is.null(dat2.id))
-#  dat2.id<-c(1:n2)
 if (length(dat2.colors)<n2) {
   if (!is.null(dat2.colors))
     cat("Length of data 2 colors vector is not the same as the number of rows.\n")
@@ -216,10 +214,10 @@ cat(sep="","<variables count=\"",p3,"\">\n",file=filename,append=T)
 for (i in 1:p3) {
   if (i%in%catvars3) {
     cat(sep="","<categoricalvariable name=\"",var.name3[i],
-      "\" levels=\"auto\"/>\n",file=filename,append=T)
+      "\" levels=\"auto\"/>\n",file=filename,append=T) # nolint
   }
   else
-  cat(sep="","<realvariable name=\"",var.name3[i],"\"/>\n",
+  cat(sep="","<realvariable name=\"",var.name3[i],"\"/>\n", # nolint
     file=filename,append=T)
 }
 cat(sep="","</variables>\n",file=filename,append=T)

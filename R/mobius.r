@@ -13,7 +13,6 @@
 #' @keywords dynamic
 #' @export
 mobius <- function(p = 3, n = 10000){
-  display_limits_note()
 
   vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.row(3)))),ncol=3,byrow=TRUE)
   wires <- NULL

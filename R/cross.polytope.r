@@ -22,7 +22,7 @@
 #' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
 #' @author Barret Schloerke
 #' @examples
-#' ## Generates a 3-D Cross Polytope
+#' # Generates a 3-D Cross Polytope
 #' cross.polytope(p = 3)
 #'
 #' @keywords dynamic

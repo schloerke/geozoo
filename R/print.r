@@ -28,7 +28,12 @@ print.geozoo <- function(x, ...){
   if (! require(tourr) ) {
     as.data.frame(x)
   } else {
-    tourr::animate(x$points, tour_path = grand_tour(), display_xy(...), ...)
+    tourr::animate(
+      x$points,
+      tour_path = tour::grand_tour(),
+      tour::display_xy(...),
+      ...
+    )
   }
 
 }
