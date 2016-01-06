@@ -5,8 +5,10 @@ linters: with_defaults(
     spaces_left_parentheses_linter = NULL, # 42
     line_length_linter = NULL, # 26
     commas_linter = NULL, # 15
-    open_curly_linter = NULL, # 7
     NULL
+  )
+exclusions: c(
+    "R/xml.r"
   )
 lintr_code_to_create_lintr:
   library(magrittr)
