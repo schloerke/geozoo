@@ -4,3 +4,5 @@ load.r
 man/.DS_Store
 ..Rcheck
 .git
+.lintr
+.travis.yml
