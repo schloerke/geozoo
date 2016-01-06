@@ -56,7 +56,7 @@ sphere.hollow <-function(p, n = p * 500) {
 #' @keywords dynamic
 #' @export
 sphere.solid.grid <- function(p = 3,n = 8){
-  cube.solid.grid <- do.call(expand.grid, rep(list(c((0:n)/n)),p))
+  cube.solid.grid <- do.call(expand.grid, rep(list(c( (0:n) / n)),p))
   cube.solid.grid <- as.matrix(cube.solid.grid)
 
   cube.solid.grid <- cube.solid.grid - .5

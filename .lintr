@@ -1,10 +1,7 @@
 linters: with_defaults(
-    infix_spaces_linter = NULL, # 359
-    no_tab_linter = NULL, # 287
-    multiple_dots_linter = NULL, # 49
-    spaces_left_parentheses_linter = NULL, # 42
-    line_length_linter = NULL, # 26
-    commas_linter = NULL, # 15
+    infix_spaces_linter = NULL, # 93
+    multiple_dots_linter = NULL, # 47
+    line_length_linter = NULL, # 18
     NULL
   )
 exclusions: c(

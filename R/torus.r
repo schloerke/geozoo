@@ -17,8 +17,8 @@
 #'
 #' @keywords dynamic
 #' @export
-torus <- function(p = 3,n = 10000, radius = (2 ^ ((p - 2):0))){
-  if(length(radius) != (p - 1)) {
+torus <- function(p = 3,n = 10000, radius = 2 ^ ( (p - 2):0) ){
+  if (length(radius) != (p - 1)) {
     stop("'radius' length does not equal p")
   }
 
@@ -44,7 +44,7 @@ torus <- function(p = 3,n = 10000, radius = (2 ^ ((p - 2):0))){
 
   if(p>2)
   for (i in (p-1):2) {
-    for(j in (i-1):1){
+    for (j in (i-1):1) {
       torus[j] <- (torus[j] + radius[i-1]) * cos(t[i-1])
     }
     torus[i] <- (torus[i]+radius[i-1]) * sin(t[i-1])

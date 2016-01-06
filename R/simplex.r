@@ -2,9 +2,9 @@
 #' @keywords internal
 .f.helmert <- function(d){
   helmert <- rep(1/sqrt(d), d)
-  for(i in 1:(d-1)){
-    x <- rep(1/sqrt(i*(i+1)), i)
-    x <- c(x, -i/sqrt(i*(i+1)))
+  for (i in 1:(d-1)){
+    x <- rep(1/sqrt(i * (i + 1)), i)
+    x <- c(x, -i/sqrt(i * (i + 1)))
     x <- c(x, rep(0, d - i - 1))
     helmert <- rbind(helmert, x)
   }

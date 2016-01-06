@@ -1,7 +1,7 @@
 ##Cube Vertice and Wire Function
 #' @keywords internal
 .cube.vertices <- function(p){
-  cube.vertices <- do.call(expand.grid, rep(list(c(0,1)), p))
+  cube.vertices <- do.call(expand.grid, rep(list(c(0, 1)), p))
   as.matrix(cube.vertices)
 }
 
@@ -92,7 +92,7 @@ cube.solid.random <- function(p, n = 850 * 2^p){
 #' @keywords dynamic
 #' @export
 cube.solid.grid <- function(p = 3,n = 8){
-  cube.verts <- do.call(expand.grid, rep(list(c((0:n)/n)),p))
+  cube.verts <- do.call(expand.grid, rep(list(c( (0:n) / n)),p))
   vert <- unique(rbind(.cube.vertices(p),as.matrix(cube.verts)))
   wires <- .cube.wires(p)
   structure(
@@ -168,14 +168,18 @@ cube.dotline <- function(p = 3){
     x <- cube.wire[j,2]
     y <- cube.wire[j,1]
     d1 <- (cube.verts[x,] - cube.verts[y,])
-    d3 <- sum((d1) ^ 2)
+    d3 <- sum(d1 ^ 2)
     if (d3 == 1) {
       d2 <- sum(abs(d1))
       if (d2 == 1){
         for (k in 1:p) {
           if (d1[k] == 1){
             tmp <- matrix(rep(cube.verts[y,],n+1), ncol = p, byrow = TRUE)
-            tmp[2:(n+1),k] <- seq(length = (n), from = (0+1/(n+1)), by = (1/(n+1)))
+            tmp[2:(n+1),k] <- seq(
+              length = n,
+              from = 1 / (n+1),
+              by = 1 / (n + 1)
+            )
             dot.lines <- rbind(dot.lines,tmp[2:(n+1),])
           }
         }
