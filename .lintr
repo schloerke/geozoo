@@ -1,0 +1,26 @@
+linters: with_defaults(
+    infix_spaces_linter = NULL, # 359
+    no_tab_linter = NULL, # 287
+    multiple_dots_linter = NULL, # 49
+    spaces_left_parentheses_linter = NULL, # 42
+    line_length_linter = NULL, # 26
+    commas_linter = NULL, # 15
+    open_curly_linter = NULL, # 7
+    absolute_paths_linter = NULL, # 6
+    camel_case_linter = NULL, # 2
+    commented_code_linter = NULL, # 2
+    object_usage_linter = NULL, # 2
+    trailing_blank_lines_linter = NULL, # 2
+    assignment_linter = NULL, # 1
+    NULL
+  )
+lintr_code_to_create_lintr:
+  library(magrittr)
+  library(dplyr)
+  lintr::lint_package() %>%
+    as.data.frame %>%
+    group_by(linter) %>%
+    tally(sort = TRUE) %$%
+    sprintf("linters: with_defaults(\n    %s\n    NULL\n  )\n",
+            paste0(linter, " = NULL, # ", n, collapse="\n    ")) %>%
+    cat()

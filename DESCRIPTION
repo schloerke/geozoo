@@ -11,7 +11,8 @@ Depends:
     R (>= 1.8.0),
     bitops
 Suggests:
-    tourr
+    tourr,
+    testthat
 License: GPL-2
 URL: http://streaming.stat.iastate.edu/~dicook/geometric-data/,
     http://www.ggobi.org
