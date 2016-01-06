@@ -2,7 +2,7 @@
 #'
 #' Prints geozoo objects with tourr or prints them
 #'
-#' @S3method print geozoo
+#' @export
 #' @method print geozoo
 #' @param x geozoo object
 #' @param ... other arguements
@@ -39,7 +39,7 @@ print.geozoo <- function(x, ...){
 #'
 #' Prints objects without rescaling them to 0,1 in each dim
 #'
-#' @S3method print geozooNoScale
+#' @export
 #' @method print geozooNoScale
 #' @param x geozoo object
 #' @param ... other arguements
@@ -56,5 +56,3 @@ print.geozooNoScale <- function(x, ...) {
   print(class(x))
   print(x, rescale = FALSE, ...)
 }
-
-
