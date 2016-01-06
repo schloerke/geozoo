@@ -237,7 +237,7 @@ dini_surface_row <- function( a = 1, b = 1) {
   v <- runif( 1, min = 0.0000000001, max = 2)
   x <- a * cos( u) * sin( v)
   y <- a * sin( u) * sin( v)
-  z <- a * ( cos(v) + log(tan(v/2))) + b*u
+  z <- a * ( cos(v) + log(tan(v / 2))) + (b * u)
   return( cbind( x, y, z))
 }
 

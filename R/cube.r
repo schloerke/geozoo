@@ -10,7 +10,7 @@ cube_vertices <- function(p) {
 cube_wires <- function(p) {
   vertices <- 0:(2 ^ p - 1)
   from <- vertices[rep(1:length(vertices), each = p)]
-  edges <- 2 ^ (0:(p-1))
+  edges <- 2 ^ (0:(p - 1))
   to <- bitXor(from, edges)
   wires <- subset(data.frame(from, to), from < to) + 1
   row.names(wires) <- 1:nrow(wires)
@@ -60,7 +60,7 @@ cube.iterate <- function(p = 3){
 #'
 #' @keywords dynamic
 #' @export
-cube.solid.random <- function(p, n = 850 * 2^p){
+cube.solid.random <- function(p, n = 850 * (2 ^ p)){
     n <- min(n, 75000)
   suppressWarnings(solid <- matrix( runif(n * p), ncol = p))
 
@@ -163,7 +163,7 @@ cube.dotline <- function(p = 3){
 
   cube_wire <- cube_wires(p)
 
-  dot_lines <-NULL
+  dot_lines <- NULL
   n <- 8
   for (j in 1:(nrow(cube_wire))) {
     x <- cube_wire[j,2]
@@ -175,19 +175,22 @@ cube.dotline <- function(p = 3){
       if (d2 == 1){
         for (k in 1:p) {
           if (d1[k] == 1){
-            tmp <- matrix(rep(cube_verts[y,],n+1), ncol = p, byrow = TRUE)
-            tmp[2:(n+1),k] <- seq(
+            tmp <- matrix(
+              rep(cube_verts[y,], n + 1),
+              ncol = p, byrow = TRUE
+            )
+            tmp[2:(n + 1), k] <- seq(
               length = n,
-              from = 1 / (n+1),
+              from = 1 / (n + 1),
               by = 1 / (n + 1)
             )
-            dot_lines <- rbind(dot_lines,tmp[2:(n+1),])
+            dot_lines <- rbind(dot_lines,tmp[2:(n + 1), ])
           }
         }
       }
     }
   }
-  vert <- rbind(cube_verts,dot_lines)
+  vert <- rbind(cube_verts, dot_lines)
   structure(
     list(points = vert, edges = cube_wire),
     class = c("geozooNoScale", "geozoo")

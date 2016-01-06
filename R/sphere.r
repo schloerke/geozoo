@@ -1,11 +1,11 @@
 ## Sphere
 #' @keywords internal
-l2norm <-function(x) {
+l2norm <- function(x) {
   x <- sqrt(sum(x ^ 2))
   x
 }
 #' @keywords internal
-l2norm_vec <-function(x) {
+l2norm_vec <- function(x) {
   x <- x / sqrt(sum(x ^ 2))
   x
 }
@@ -27,7 +27,7 @@ l2norm_vec <-function(x) {
 #'
 #' @keywords dynamic
 #' @export
-sphere.hollow <-function(p, n = p * 500) {
+sphere.hollow <- function(p, n = p * 500) {
   tmp <- matrix(rnorm(n * p),ncol = p)
   vert <- t(apply(tmp, 1, l2norm_vec))
   wires <- NULL
@@ -64,7 +64,7 @@ sphere.solid.grid <- function(p = 3,n = 8){
 
   for( i in 1:nrow(cube_solid_grid)) {
     tmp <- cube_solid_grid[i,]
-    if (l2norm(tmp) <= (1/2)){
+    if (l2norm(tmp) <= (1 / 2)){
       sphere <- rbind(sphere,tmp)
     }
   }
@@ -94,9 +94,9 @@ sphere.solid.grid <- function(p = 3,n = 8){
 #'
 #' @keywords dynamic
 #' @export
-sphere.solid.random <-function(p, n = p * 500) {
-  sphere <- sphere.hollow(p,n)$points
-  vert <- sphere * runif(n) ^ (1/p)
+sphere.solid.random <- function(p, n = p * 500) {
+  sphere <- sphere.hollow(p, n)$points
+  vert <- sphere * runif(n) ^ (1 / p)
   wires <- NULL
   structure(
     list(points = vert, edges = wires),

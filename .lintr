@@ -1,5 +1,4 @@
 linters: with_defaults(
-    infix_spaces_linter = NULL, # 93
     NULL
   )
 exclusions: c(
