@@ -13,23 +13,16 @@
 #' @keywords dynamic
 #' @export
 mobius <- function(p = 3, n = 10000){
-  cat("\n",
-    "NOTE:",
-    "\n","\t","On the Main Window:  Tools > Variable Manipulation ",
-    "\n","\t","1.  Highlight all rows",
-    "\n","\t","2.  Click 'Limits...' at the bottom",
-    "\n","\t","3.  Make 'Minimum' and 'Maximum' the global minimum and ",
-    "maximum of the object.","\n","\n"
-  )
+  display_limits_note()
 
   vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.row(3)))),ncol=3,byrow=TRUE)
   wires <- NULL
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
-  }
+}
 
 #' @keywords internal
 .mobius.row <- function(p) {
@@ -61,20 +54,18 @@ mobius <- function(p = 3, n = 10000){
 #'
 #' @keywords dynamic
 #' @export
-mobius.experiment <- function(p=5,n=10000){
-  cat("\n",
-    "NOTE:",
-    "\n","\t","On the Main Window:  Tools > Variable Manipulation ",
-    "\n","\t","1.  Highlight all rows","\n","\t","2.  Click 'Limits...' at the bottom","\n","\t","3.  Make 'Minimum' and 'Maximum' the global minimum and maximum of the object.","\n","\n")
-  p = 5
-  vert<-matrix(do.call("rbind", as.list(replicate(n, .mobius.experiment.row()))),ncol=3,byrow=TRUE)
+mobius.experiment <- function(p = 5, n = 10000){
+
+  p <- 5
+
+  vert <- matrix(do.call("rbind", as.list(replicate(n, .mobius.experiment.row()))),ncol=3,byrow=TRUE)
   wires <- NULL
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
-  }
+}
 
 #' @keywords internal
 .mobius.experiment.row<- function(){

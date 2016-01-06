@@ -33,7 +33,7 @@ sphere.hollow <-function(p, n = p * 500) {
   wires <- NULL
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -72,7 +72,7 @@ sphere.solid.grid <- function(p = 3,n = 8){
   wires <- NULL
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 
 }
@@ -100,7 +100,7 @@ sphere.solid.random <-function(p, n = p * 500) {
   wires <- NULL
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 
 }

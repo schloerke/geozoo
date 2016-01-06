@@ -38,7 +38,7 @@ cube.iterate <- function(p = 3){
   wires <- .cube.wires(p)
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -68,7 +68,7 @@ cube.solid.random <- function(p, n = 850 * 2^p){
 
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -97,7 +97,7 @@ cube.solid.grid <- function(p = 3,n = 8){
   wires <- .cube.wires(p)
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -134,7 +134,7 @@ cube.face <- function(p = 3){
   wires <- .cube.wires(p)
   structure(
     list(points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 
 }
@@ -185,7 +185,7 @@ cube.dotline <- function(p = 3){
   vert <- rbind(cube.verts,dot.lines)
   structure(
     list(points = vert, edges = cube.wire),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 
 }

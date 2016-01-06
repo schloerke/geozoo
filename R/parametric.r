@@ -19,7 +19,7 @@ boy.surface <- function( n = 10000){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -64,7 +64,7 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -107,7 +107,7 @@ conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -134,7 +134,7 @@ cross.cap <- function( n = 10000){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -173,7 +173,7 @@ dini.surface <- function( n = 10000, a = 1, b = 1){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -213,7 +213,7 @@ ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -251,7 +251,7 @@ enneper.surface <- function( n = 10000, a = 4){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -291,7 +291,7 @@ klein.fig.eight <- function( n = 10000, a = 3, b = 1){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 
@@ -331,7 +331,7 @@ roman.surface <- function( n = 10000, a = 1){
 
   structure(
     list( points = vert, edges = wires),
-    class = "geozoo"
+    class = c("geozooNoScale", "geozoo")
   )
 }
 

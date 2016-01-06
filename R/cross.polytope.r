@@ -33,6 +33,6 @@ cross.polytope <- function(p = 3){
         points = .cross.polytope.verts(p),
         edges = .cross.polytope.wires(p)
       ),
-      class = "geozoo"
+      class = c("geozooNoScale", "geozoo")
     )
 }
