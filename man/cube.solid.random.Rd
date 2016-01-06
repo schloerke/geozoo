@@ -4,7 +4,7 @@
 \alias{cube.solid.random}
 \title{Solid Cube}
 \usage{
-cube.solid.random(p, n = 850 * 2^p)
+cube.solid.random(p, n = 850 * (2^p))
 }
 \arguments{
 \item{p}{dimension of object}
