@@ -11,7 +11,7 @@ Authors@R: c(
 Depends:
     R (>= 1.8.0)
 Imports:
-    bitops
+    bitops,
     stats
 Suggests:
     tourr,
