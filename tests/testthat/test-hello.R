@@ -1,4 +1,30 @@
-context("hello world")
-test_that("true", {
+context("run everything with defaults")
+
+test_that("base functions", {
+  a <- cube.iterate()
+  a <- cube.face()
+  a <- cube.solid.random()
+  a <- cube.solid.grid()
+  a <- cube.dotline()
+  a <- sphere.hollow()
+  a <- sphere.solid.random()
+  a <- sphere.solid.grid()
+  a <- simplex()
+  a <- torus()
+  a <- torus.flat()
+
+  a <- boy.surface()
+  a <- conic.spiral()
+  a <- conic.spiral.nautilus()
+  a <- cross.cap()
+  a <- dini.surface()
+  a <- ellipsoid()
+  a <- enneper.surface()
+  a <- klein.fig.eight()
+  a <- roman.surface()
+
+  a <- mobius()
+  a <- mobius.experiment()
+
   expect_true(TRUE)
 })

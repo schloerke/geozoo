@@ -33,7 +33,7 @@ mobius <- function(p = 3, n = 10000){
 }
 
 #' @keywords internal
-mobius_row <- function(p) {
+mobius_row <- function(p = 3) {
 
   ##Generates Angles
   a <- runif(1, min = 0, max = 2 * pi)

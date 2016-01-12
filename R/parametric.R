@@ -13,7 +13,7 @@
 #'
 #' @keywords dynamic
 #' @export
-boy.surface <- function( n = 10000){
+boy.surface <- function(n = 10000) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -78,7 +78,7 @@ boy_surface_row <- function( ){
 #'
 #' @keywords dynamic
 #' @export
-conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
+conic.spiral <- function(n = 10000, a = .2, b = 1, c = .1, w = 2) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -97,7 +97,7 @@ conic.spiral <- function( n = 10000, a = .2, b = 1, c = .1, w = 2){
 }
 
 #' @keywords internal
-conic_spiral_row <- function( a, b, c, w) {
+conic_spiral_row <- function(a, b, c, w) {
   u <- runif( 1, min = 0, max = 2 * pi)
   v <- runif( 1, min = 0, max = 2 * pi)
 
@@ -131,7 +131,7 @@ conic_spiral_row <- function( a, b, c, w) {
 #'
 #' @keywords dynamic
 #' @export
-conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
+conic.spiral.nautilus <- function(n = 10000, a = .2, b = .1, c = 0, w = 2) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -166,7 +166,7 @@ conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
 #'
 #' @keywords dynamic
 #' @export
-cross.cap <- function( n = 10000){
+cross.cap <- function(n = 10000) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -213,7 +213,7 @@ cross_cap_row <- function( ) {
 #'
 #' @keywords dynamic
 #' @export
-dini.surface <- function( n = 10000, a = 1, b = 1){
+dini.surface <- function(n = 10000, a = 1, b = 1) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -232,7 +232,7 @@ dini.surface <- function( n = 10000, a = 1, b = 1){
 }
 
 #' @keywords internal
-dini_surface_row <- function( a = 1, b = 1) {
+dini_surface_row <- function(a = 1, b = 1) {
   u <- runif( 1, min = 0, max = 4 * pi)
   v <- runif( 1, min = 0.0000000001, max = 2)
   x <- a * cos( u) * sin( v)
@@ -261,7 +261,7 @@ dini_surface_row <- function( a = 1, b = 1) {
 #'
 #' @keywords dynamic
 #' @export
-ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
+ellipsoid <- function(n = 10000, a = 1, b = 1, c = 3) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -280,7 +280,7 @@ ellipsoid <- function( n = 10000, a = 1, b = 1, c = 3){
 }
 
 #' @keywords internal
-ellipsoid_row <- function( a, b, c) {
+ellipsoid_row <- function(a, b, c) {
   u <- runif( 1, min = 0, max = 2 * pi)
   v <- runif( 1, min = 0, max = 2 * pi)
   x <- a * cos( u) * sin( v)
@@ -307,7 +307,7 @@ ellipsoid_row <- function( a, b, c) {
 #'
 #' @keywords dynamic
 #' @export
-enneper.surface <- function( n = 10000, a = 4){
+enneper.surface <- function(n = 10000, a = 4) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -355,7 +355,7 @@ enneper_surface_row <- function( a = 4) {
 #'
 #' @keywords dynamic
 #' @export
-klein.fig.eight <- function( n = 10000, a = 3, b = 1){
+klein.fig.eight <- function(n = 10000, a = 3, b = 1) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -404,7 +404,7 @@ klein_fig_eight_row <- function( a = 3, b = 1) {
 #'
 #' @keywords dynamic
 #' @export
-roman.surface <- function( n = 10000, a = 1){
+roman.surface <- function(n = 10000, a = 1) {
   vert <- matrix(
     do.call(
       "rbind",
@@ -423,7 +423,7 @@ roman.surface <- function( n = 10000, a = 1){
 }
 
 #' @keywords internal
-roman_surface_row <- function( a = 1) {
+roman_surface_row <- function(a = 1) {
   u <- runif( 1, min = 0, max = pi)
   v <- runif( 1, min = 0, max = pi)
   x <- a ^ 2 * cos( v) * cos( v) * sin( 2 * u) / 2

@@ -1,6 +1,6 @@
 ##Cube Vertice and Wire Function
 #' @keywords internal
-cube_vertices <- function(p) {
+cube_vertices <- function(p = 3) {
   as.matrix(
     do.call(expand.grid, rep(list(c(0, 1)), p))
   )
@@ -8,7 +8,7 @@ cube_vertices <- function(p) {
 
 #' @keywords internal
 #' @importFrom bitops bitXor
-cube_wires <- function(p) {
+cube_wires <- function(p = 3) {
   vertices <- 0:(2 ^ p - 1)
   from <- vertices[rep(1:length(vertices), each = p)]
   edges <- 2 ^ (0:(p - 1))
@@ -61,7 +61,7 @@ cube.iterate <- function(p = 3){
 #'
 #' @keywords dynamic
 #' @export
-cube.solid.random <- function(p, n = 850 * (2 ^ p)){
+cube.solid.random <- function(p = 3, n = 850 * (2 ^ p)){
     n <- min(n, 75000)
   suppressWarnings(solid <- matrix( runif(n * p), ncol = p))
 

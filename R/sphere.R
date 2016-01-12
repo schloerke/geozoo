@@ -27,7 +27,7 @@ l2norm_vec <- function(x) {
 #'
 #' @keywords dynamic
 #' @export
-sphere.hollow <- function(p, n = p * 500) {
+sphere.hollow <- function(p = 3, n = p * 500) {
   tmp <- matrix(rnorm(n * p), ncol = p)
   vert <- t(apply(tmp, 1, l2norm_vec))
   wires <- NULL
@@ -94,7 +94,7 @@ sphere.solid.grid <- function(p = 3, n = 8){
 #'
 #' @keywords dynamic
 #' @export
-sphere.solid.random <- function(p, n = p * 500) {
+sphere.solid.random <- function(p = 3, n = p * 500) {
   sphere <- sphere.hollow(p, n)$points
   vert <- sphere * runif(n) ^ (1 / p)
   wires <- NULL
