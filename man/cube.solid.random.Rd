@@ -27,7 +27,7 @@ cube.solid.random(p = 3, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/cube/}
+\url{http://schloerke.github.io/geozoo/cube/}
 }
 \keyword{dynamic}
 

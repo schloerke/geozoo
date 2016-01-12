@@ -25,7 +25,7 @@ simplex(p = 3)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/simplices/}
+\url{http://schloerke.github.io/geozoo/simplices/}
 }
 \keyword{dynamic}
 

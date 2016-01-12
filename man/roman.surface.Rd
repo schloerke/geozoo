@@ -27,7 +27,7 @@ roman.surface(n = 1000, a = 1)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/mobius/other/}
+\url{http://schloerke.github.io/geozoo/mobius/other/}
 }
 \keyword{dynamic}
 

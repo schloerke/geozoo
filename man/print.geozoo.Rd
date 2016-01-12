@@ -24,7 +24,7 @@ example(cube.face)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/}
+\url{http://schloerke.github.io/geozoo/}
 }
 \keyword{dynamic}
 

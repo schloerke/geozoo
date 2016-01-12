@@ -6,7 +6,7 @@
 #' @method print geozoo
 #' @param x geozoo object
 #' @param ... other arguements
-#' @references \url{http://barretschloerke.com/GeoZoo/}
+#' @references \url{http://schloerke.github.io/geozoo/}
 #' @author Barret Schloerke
 #' @examples
 #' \dontrun{
@@ -48,7 +48,7 @@ print.geozoo <- function(x, ...){
 #' @method print geozooNoScale
 #' @param x geozoo object
 #' @param ... other arguements
-#' @references \url{http://barretschloerke.com/GeoZoo/}
+#' @references \url{http://schloerke.github.io/geozoo/}
 #' @author Barret Schloerke
 #' @examples
 #' \dontrun{

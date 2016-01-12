@@ -23,7 +23,7 @@ mobius(3, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/mobius/mobius/}
+\url{http://schloerke.github.io/geozoo/mobius/mobius/}
 }
 \keyword{dynamic}
 

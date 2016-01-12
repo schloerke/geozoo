@@ -29,7 +29,7 @@ torus(p = 3, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/mobius/torus/}
+\url{http://schloerke.github.io/geozoo/mobius/torus/}
 }
 \keyword{dynamic}
 

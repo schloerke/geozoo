@@ -27,7 +27,7 @@ sphere.solid.random(p = 3, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/sphere/}
+\url{http://schloerke.github.io/geozoo/sphere/}
 }
 \keyword{dynamic}
 

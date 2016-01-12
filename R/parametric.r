@@ -5,7 +5,7 @@
 #' A function to produce a Boy Surface.
 #'
 #' @param n number of points
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a Boy Surface
@@ -70,7 +70,7 @@ boy_surface_row <- function( ){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a Conic Spiral
@@ -123,7 +123,7 @@ conic_spiral_row <- function( a, b, c, w) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a Nautilus Conic Spiral
@@ -158,7 +158,7 @@ conic.spiral.nautilus <- function( n = 10000, a = .2, b = .1, c = 0, w = 2){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a Cross Cap
@@ -205,7 +205,7 @@ cross_cap_row <- function( ) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a Dini Surface
@@ -253,7 +253,7 @@ dini_surface_row <- function( a = 1, b = 1) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates an ellipsoid
@@ -299,7 +299,7 @@ ellipsoid_row <- function( a, b, c) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates an Enneper Surface
@@ -347,7 +347,7 @@ enneper_surface_row <- function( a = 4) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a figure eight Klein bottle.
@@ -396,7 +396,7 @@ klein_fig_eight_row <- function( a = 3, b = 1) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/mobius/other/}
+#' @references \url{http://schloerke.github.io/geozoo/mobius/other/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a Roman surface.

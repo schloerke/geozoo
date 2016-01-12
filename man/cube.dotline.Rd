@@ -25,7 +25,7 @@ cube.dotline(p = 3)
 Barret Schloerke
 }
 \references{
-\url{http://barretschloerke.com/GeoZoo/cube/}
+\url{http://schloerke.github.io/geozoo/cube/}
 }
 \keyword{dynamic}
 
