@@ -1,8 +1,0 @@
-functions.txt
-load.r
-.DS_Store
-man/.DS_Store
-..Rcheck
-.git
-.lintr
-.travis.yml
