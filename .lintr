@@ -2,7 +2,7 @@ linters: with_defaults(
     NULL
   )
 exclusions: c(
-    "R/xml.r"
+    "R/xml.R"
   )
 lintr_code_to_create_lintr:
   library(magrittr)
