@@ -3,9 +3,11 @@ Version: 0.4.3.9999
 Date: 2014-01-01
 Title: Zoo of Geometric Objects
 Description: The package allows geometric objects defined in geozoo to be displayed in the R package tourr.
-Author: Barret Schloerke <schloerke@gmail.com>, with contributions from Dianne
-    Cook <dicook@iastate.edu> and Hadley Wickham <h.wickham@gmail.com>.
-Maintainer: Barret Schloerke <schloerke@gmail.com>
+Authors@R: c(
+    person("Barret", "Schloerke", role = c("aut", "cre"), email = "schloerke@gmail.com"),
+    person("Di", "Cook", role = "ths", email = "dicook@monash.edu"),
+    person("Hadley", "Wickham", role = "ths", email = "h.wickham@gmail.com")
+  )
 Depends:
     R (>= 1.8.0)
 Imports:
