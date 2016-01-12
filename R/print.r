@@ -42,7 +42,7 @@ print.geozoo <- function(x, ...){
 
 #' Print Without Rescale
 #'
-#' Prints objects without rescaling them to 0,1 in each dim
+#' Prints objects without rescaling them to 0, 1 in each dim
 #'
 #' @export
 #' @method print geozooNoScale

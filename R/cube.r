@@ -94,7 +94,7 @@ cube.solid.random <- function(p, n = 850 * (2 ^ p)){
 #' @keywords dynamic
 #' @export
 cube.solid.grid <- function(p = 3, n = 8){
-  cube_verts <- do.call(expand.grid, rep(list(c( (0:n) / n)),p))
+  cube_verts <- do.call(expand.grid, rep(list(c( (0:n) / n)), p))
   vert <- unique(rbind(cube_vertices(p), as.matrix(cube_verts)))
   wires <- cube_wires(p)
   structure(
@@ -126,12 +126,12 @@ cube.face <- function(p = 3){
   tmp <- NULL
   faces <- NULL
   for (i in 1:p) {
-    tmp <- matrix( runif(1890 * p),ncol = p)
+    tmp <- matrix( runif(1890 * p), ncol = p)
     tmp[1:(945), i] <- 0
     tmp[(946):1890, i] <- 1
     faces <- rbind(faces, tmp)
   }
-  vert <- rbind(cube_verts,faces)
+  vert <- rbind(cube_verts, faces)
 
   wires <- cube_wires(p)
   structure(
@@ -167,9 +167,9 @@ cube.dotline <- function(p = 3){
   dot_lines <- NULL
   n <- 8
   for (j in 1:(nrow(cube_wire))) {
-    x <- cube_wire[j,2]
-    y <- cube_wire[j,1]
-    d1 <- (cube_verts[x,] - cube_verts[y,])
+    x <- cube_wire[j, 2]
+    y <- cube_wire[j, 1]
+    d1 <- (cube_verts[x, ] - cube_verts[y, ])
     d3 <- sum(d1 ^ 2)
     if (d3 == 1) {
       d2 <- sum(abs(d1))
@@ -177,7 +177,7 @@ cube.dotline <- function(p = 3){
         for (k in 1:p) {
           if (d1[k] == 1){
             tmp <- matrix(
-              rep(cube_verts[y,], n + 1),
+              rep(cube_verts[y, ], n + 1),
               ncol = p, byrow = TRUE
             )
             tmp[2:(n + 1), k] <- seq(
@@ -185,7 +185,7 @@ cube.dotline <- function(p = 3){
               from = 1 / (n + 1),
               by = 1 / (n + 1)
             )
-            dot_lines <- rbind(dot_lines,tmp[2:(n + 1), ])
+            dot_lines <- rbind(dot_lines, tmp[2:(n + 1), ])
           }
         }
       }

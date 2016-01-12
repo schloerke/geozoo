@@ -17,7 +17,7 @@
 #'
 #' @keywords dynamic
 #' @export
-torus <- function(p = 3,n = 10000, radius = 2 ^ ( (p - 2):0) ){
+torus <- function(p = 3, n = 10000, radius = 2 ^ ( (p - 2):0) ){
   if (length(radius) != (p - 1)) {
     stop("'radius' length does not equal p")
   }
@@ -80,7 +80,7 @@ torus_row <- function(radius, p) {
 #'
 #' @keywords dynamic
 #' @export
-torus.flat <- function(p = 4,n = 10000){
+torus.flat <- function(p = 4, n = 10000){
   p <- floor(p / 2)
   vert <- do.call("rbind", replicate(n, torus_flat_row(p), simplify = FALSE))
   wires <- NULL
@@ -93,5 +93,5 @@ torus.flat <- function(p = 4,n = 10000){
 #' @keywords internal
 torus_flat_row <- function(p){
   a <- runif(p, min = 0, max = 2 * pi)
-  as.vector(rbind(cos(a),sin(a)))
+  as.vector(rbind(cos(a), sin(a)))
 }

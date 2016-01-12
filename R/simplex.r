@@ -43,7 +43,7 @@ simplex <- function(p = 3){
   structure(
     list(
       points = vert,
-      edges = wires[! (wires[,1] == wires[,2]),]
+      edges = wires[! (wires[, 1] == wires[, 2]), ]
     ),
     class = c("geozooNoScale", "geozoo")
   )

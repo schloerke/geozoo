@@ -112,7 +112,7 @@ mobius_experiment_row <- function(){
       0,
       cos(k),
       -sin(k),
-      1,0,0,0,
+      1, 0, 0, 0,
       sin(k),
       cos(k)
     ),
@@ -126,7 +126,7 @@ mobius_experiment_row <- function(){
       0,
       sin(2 * k),
       cos(2 * k),
-      0,0,0,1
+      0, 0, 0, 1
     ),
     ncol = 3, byrow = TRUE
   )

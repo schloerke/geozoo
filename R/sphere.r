@@ -28,7 +28,7 @@ l2norm_vec <- function(x) {
 #' @keywords dynamic
 #' @export
 sphere.hollow <- function(p, n = p * 500) {
-  tmp <- matrix(rnorm(n * p),ncol = p)
+  tmp <- matrix(rnorm(n * p), ncol = p)
   vert <- t(apply(tmp, 1, l2norm_vec))
   wires <- NULL
   structure(
@@ -55,17 +55,17 @@ sphere.hollow <- function(p, n = p * 500) {
 #'
 #' @keywords dynamic
 #' @export
-sphere.solid.grid <- function(p = 3,n = 8){
-  cube_solid_grid <- do.call(expand.grid, rep(list(c( (0:n) / n)),p))
+sphere.solid.grid <- function(p = 3, n = 8){
+  cube_solid_grid <- do.call(expand.grid, rep(list(c( (0:n) / n)), p))
   cube_solid_grid <- as.matrix(cube_solid_grid)
 
   cube_solid_grid <- cube_solid_grid - .5
   sphere <- NULL
 
   for (i in 1:nrow(cube_solid_grid)) {
-    tmp <- cube_solid_grid[i,]
+    tmp <- cube_solid_grid[i, ]
     if (l2norm(tmp) <= (1 / 2)){
-      sphere <- rbind(sphere,tmp)
+      sphere <- rbind(sphere, tmp)
     }
   }
   vert <- sphere
