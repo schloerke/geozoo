@@ -27,7 +27,7 @@ f_composition <- function(data){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://barretschloerke.com/GeoZoo/simplex/}
+#' @references \url{http://barretschloerke.com/GeoZoo/simplices/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a simplex
