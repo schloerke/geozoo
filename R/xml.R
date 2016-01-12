@@ -11,7 +11,10 @@ write.xml <- function(object.function,filepath,title) {
   f_write_XML(
     dat1 = object.function$points,
     filename = filepath,
-    data.num = 2,
+    data.num = sum(c(
+      !is.null(object.function$points),
+      !is.null(object.function$edges)
+    )),
     data.name = title,
     dat1.name = "vertices",
     dat2 = object.function$edges,
@@ -42,7 +45,7 @@ cat(sep="",dat1.description,"\n",file=filename,append=T)
 cat(sep="","</description>\n",file=filename,append=T)
 p1<-ncol(dat1)
 n1<-nrow(dat1)
-cat(p1,n1,"\n")
+# cat(p1,n1,"\n")
 var.name1<-colnames(dat1)
 if (is.null(var.name1))
   for (i in 1:p1)
@@ -100,7 +103,7 @@ for(i in 1:n1)
 }
 cat(sep="","</records>\n</data>\n",file=filename,append=T)
 
-if (data.num>1) {
+if (data.num > 1) {
 # 2nd data
 p2<-ncol(dat2)
 n2<-nrow(dat2)
@@ -161,7 +164,7 @@ else {
     cat(sep="","color=\"",dat2.colors[i],"\" ",file=filename,append=T)
     cat(sep="","glyph=\"",dat2.glyphs[i],"\"",file=filename,append=T)
     cat(sep="",">\n",file=filename,append=T)
-    cat(sep=" ",dat2[i,],"\n",file=filename,append=T)
+    cat(sep=" ",unlist(dat2[i,]),"\n",file=filename,append=T)
     cat(sep="","</record>\n",file=filename,append=T)
   }
   cat(sep="","</records>\n</data>\n",file=filename,append=T)
