@@ -10,6 +10,7 @@ Depends:
     R (>= 1.8.0)
 Imports:
     bitops
+    stats
 Suggests:
     tourr,
     roxygen2 (>= 5.0.0),
