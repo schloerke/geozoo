@@ -1,3 +1,24 @@
+geozoo 0.5.0
+-------------------------
+
+Updates
+
+* torus now allows for a radius parameter
+
+Code Structure
+
+* Websites updated to point to github
+
+* integrates with travis.ci
+
+* integrates with lintr
+
+* integrates with covr
+
+
+
+
+
 geozoo 0.4.3
 -------------------------
 
@@ -31,6 +52,3 @@ Previous Changes
   sphere.hollow() <- sphere()
   sphere.solid.grid() <- sphere.solid.eq()
   sphere.solid.random() <- sphere.solid()
-
-
-
