@@ -15,7 +15,7 @@ f_composition <- function(data){
   d <- dim(data)[2]
   hm <- f_helmert(d)
   x <- data - matrix(1 / d, dim(data)[1], d)
-  return((x %*% t(hm))[,-1])
+  return( (x %*% t(hm))[, -1])
 }
 
 

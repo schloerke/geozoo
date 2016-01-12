@@ -62,7 +62,7 @@ sphere.solid.grid <- function(p = 3,n = 8){
   cube_solid_grid <- cube_solid_grid - .5
   sphere <- NULL
 
-  for( i in 1:nrow(cube_solid_grid)) {
+  for (i in 1:nrow(cube_solid_grid)) {
     tmp <- cube_solid_grid[i,]
     if (l2norm(tmp) <= (1 / 2)){
       sphere <- rbind(sphere,tmp)

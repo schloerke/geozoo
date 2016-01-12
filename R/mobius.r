@@ -96,7 +96,7 @@ mobius_experiment_row <- function(){
   a <- c(a, a / 2)
 
   ##Generates Small Radius
-  radius <- c(1,runif(1,min=-.4,max=.4))
+  radius <- c(1, runif(1, min = -.4, max = .4))
 
   ##Generates Row of Data
   mobius <- c(

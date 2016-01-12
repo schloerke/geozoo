@@ -1,4 +1,5 @@
 linters: with_defaults(
+    commas_linter = NULL, # 39
     NULL
   )
 exclusions: c(

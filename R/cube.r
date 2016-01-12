@@ -12,7 +12,7 @@ cube_wires <- function(p) {
   vertices <- 0:(2 ^ p - 1)
   from <- vertices[rep(1:length(vertices), each = p)]
   edges <- 2 ^ (0:(p - 1))
-  to <- bitXor(from, edges)
+  to <- bitXor(from, edges) # nolint
   wires <- subset(data.frame(from, to), from < to) + 1
   row.names(wires) <- 1:nrow(wires)
   wires <- as.matrix(wires)

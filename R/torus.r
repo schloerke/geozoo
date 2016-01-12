@@ -51,7 +51,7 @@ torus_row <- function(radius, p) {
     sin(t[pm1]) * radius[pm1]
   )
 
-  if(p > 2) {
+  if (p > 2) {
     for (i in (pm1):2) {
       for (j in (i - 1):1) {
         torus[j] <- (torus[j] + radius[i - 1]) * cos(t[i - 1])
