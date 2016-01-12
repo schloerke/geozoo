@@ -105,151 +105,70 @@ cat(sep="","</records>\n</data>\n",file=filename,append=T)
 
 if (data.num > 1) {
 # 2nd data
-p2<-ncol(dat2)
-n2<-nrow(dat2)
-var.name2<-colnames(dat2)
-if (is.null(var.name2))
-  for (i in 1:p2)
-    var.name2<-c(var.name2,paste("Var ",i))
-cat(sep="","<data name=\"",dat2.name,"\">\n",file=filename,append=T)
-cat(sep="","<description>\n",file=filename,append=T)
-cat(sep="",dat2.description,"\n",file=filename,append=T)
-cat(sep="","</description>\n",file=filename,append=T)
-cat(sep="","<variables count=\"",p2,"\">\n",file=filename,append=T)
-for (i in 1:p2) {
-  if (i%in%catvars2) {
-    cat(sep="","<categoricalvariable name=\"",var.name2[i],
-      "\" levels=\"auto\"/>\n",file=filename,append=T) # nolint
+  p2<-ncol(dat2)
+  n2<-nrow(dat2)
+  var.name2<-colnames(dat2)
+  if (is.null(var.name2)) {
+    for (i in 1:p2) {
+      var.name2<-c(var.name2,paste("Var ",i))
+    }
   }
-  else
-  cat(sep="","<realvariable name=\"",var.name2[i],"\"/>\n", # nolint
-    file=filename,append=T)
-}
-cat(sep="","</variables>\n",file=filename,append=T)
-cat(sep="","<records count=\"",n2,"\" glyph=\"",default.glyph,
-  "\" color=\"",default.color,"\">\n",file=filename,append=T)
-row.name2<-rownames(dat2)
-if (is.null(row.name2))
-  row.name2<-c(1:n2)
-if (length(dat2.colors)<n2) {
-  if (!is.null(dat2.colors))
-    cat("Length of data 2 colors vector is not the same as the number of rows.\n")
-  dat2.colors<-rep(default.color,n2)
-}
-if (length(dat2.glyphs)<n2) {
-  if (!is.null(dat2.glyphs))
-    cat("Length of data 2 glyphs vector is not the same as the number of rows.\n")
-  dat2.glyphs<-rep(default.glyph,n2)
-}
-if (is.null(dat2.id)) {
-  if (is.null(dat2.source)) {
-  for(i in 1:n2)
-  {
-    cat(sep="","<record  label=\"",
-      row.name2[i],"\" ",file=filename,append=T)
-    cat(sep="","color=\"",dat2.colors[i],"\" ",file=filename,append=T)
-    cat(sep="","glyph=\"",dat2.glyphs[i],"\"",file=filename,append=T)
-    cat(sep="",">\n",file=filename,append=T)
-    cat(sep=" ",dat2[i,],"\n",file=filename,append=T)
-    cat(sep="","</record>\n",file=filename,append=T)
+  cat(sep="","<data name=\"",dat2.name,"\">\n",file=filename,append=T)
+  cat(sep="","<description>\n",file=filename,append=T)
+  cat(sep="",dat2.description,"\n",file=filename,append=T)
+  cat(sep="","</description>\n",file=filename,append=T)
+  cat(sep="","<variables count=\"",p2,"\">\n",file=filename,append=T)
+  for (i in 1:p2) {
+    if (i%in%catvars2) {
+      cat(sep="","<categoricalvariable name=\"",var.name2[i],
+        "\" levels=\"auto\"/>\n",file=filename,append=T) # nolint
+    }
+    else
+    cat(sep="","<realvariable name=\"",var.name2[i],"\"/>\n", # nolint
+      file=filename,append=T)
   }
-  cat(sep="","</records>\n</data>\n",file=filename,append=T)
-}
-else {
-  for(i in 1:n2)
-  {
-    cat(sep="","<record  source=\"",dat2.source[i],
-      "\" destination=\"",dat2.destination[i],
-      "\"  label=\"",row.name2[i],"\" ",file=filename,append=T)
-    cat(sep="","color=\"",dat2.colors[i],"\" ",file=filename,append=T)
-    cat(sep="","glyph=\"",dat2.glyphs[i],"\"",file=filename,append=T)
-    cat(sep="",">\n",file=filename,append=T)
-    cat(sep=" ",unlist(dat2[i,]),"\n",file=filename,append=T)
-    cat(sep="","</record>\n",file=filename,append=T)
+  cat(sep="","</variables>\n",file=filename,append=T)
+  cat(sep="","<records count=\"",n2,"\" glyph=\"",default.glyph,
+    "\" color=\"",default.color,"\">\n",file=filename,append=T)
+  row.name2<-rownames(dat2)
+  if (is.null(row.name2))
+    row.name2<-c(1:n2)
+  if (length(dat2.colors)<n2) {
+    if (!is.null(dat2.colors))
+      cat("Length of data 2 colors vector is not the same as the number of rows.\n")
+    dat2.colors<-rep(default.color,n2)
   }
-  cat(sep="","</records>\n</data>\n",file=filename,append=T)
+  if (length(dat2.glyphs)<n2) {
+    if (!is.null(dat2.glyphs))
+      cat("Length of data 2 glyphs vector is not the same as the number of rows.\n")
+    dat2.glyphs<-rep(default.glyph,n2)
   }
-}
-else {
-  if (is.null(dat2.source)) {
-  for(i in 1:n2)
-  {
-    cat(sep="","<record id=\"",dat2.id[i],"\" label=\"",
-      row.name2[i],"\" ",file=filename,append=T)
-    cat(sep="","color=\"",dat2.colors[i],"\" ",file=filename,append=T)
-    cat(sep="","glyph=\"",dat2.glyphs[i],"\"",file=filename,append=T)
-    cat(sep="",">\n",file=filename,append=T)
-    cat(sep=" ",dat2[i,],"\n",file=filename,append=T)
-    cat(sep="","</record>\n",file=filename,append=T)
-  }
-  cat(sep="","</records>\n</data>\n",file=filename,append=T)
-}
-else {
-  for(i in 1:n2)
-  {
-    cat(sep="","<record id=\"",dat2.id[i],"\" source=\"",dat2.source[i],
-      "\" destination=\"",dat2.destination[i],
-      "\"  label=\"",row.name2[i],"\" ",file=filename,append=T)
-    cat(sep="","color=\"",dat2.colors[i],"\" ",file=filename,append=T)
-    cat(sep="","glyph=\"",dat2.glyphs[i],"\"",file=filename,append=T)
-    cat(sep="",">\n",file=filename,append=T)
-    cat(sep=" ",dat2[i,],"\n",file=filename,append=T)
-    cat(sep="","</record>\n",file=filename,append=T)
-  }
-  cat(sep="","</records>\n</data>\n",file=filename,append=T)
-  }
-}
-}
 
-if (data.num>2) {
-# 3rd data
-p3<-ncol(dat3)
-n3<-nrow(dat3)
-var.name3<-colnames(dat3)
-if (is.null(var.name3))
-  for (i in 1:p1)
-    var.name3<-c(var.name3,paste("Var ",i))
-cat(sep="","<data name=\"",dat3.name,"\">\n",file=filename,append=T)
-cat(sep="","<description>\n",file=filename,append=T)
-cat(sep="",dat3.description,"\n",file=filename,append=T)
-cat(sep="","</description>\n",file=filename,append=T)
-cat(sep="","<variables count=\"",p3,"\">\n",file=filename,append=T)
-for (i in 1:p3) {
-  if (i%in%catvars3) {
-    cat(sep="","<categoricalvariable name=\"",var.name3[i],
-      "\" levels=\"auto\"/>\n",file=filename,append=T) # nolint
+  if (is.null(dat2.source)) {
+    for(i in 1:n2) {
+      cat(sep="","<record  label=\"",
+        row.name2[i],"\" ",file=filename,append=T)
+      cat(sep="","color=\"",dat2.colors[i],"\" ",file=filename,append=T)
+      cat(sep="","glyph=\"",dat2.glyphs[i],"\"",file=filename,append=T)
+      cat(sep="",">\n",file=filename,append=T)
+      cat(sep=" ",dat2[i,],"\n",file=filename,append=T)
+      cat(sep="","</record>\n",file=filename,append=T)
+    }
+    cat(sep="","</records>\n</data>\n",file=filename,append=T)
+  } else {
+    for(i in 1:n2)
+    {
+      cat(sep="","<record  source=\"",dat2.source[i],
+        "\" destination=\"",dat2.destination[i],
+        "\"  label=\"",row.name2[i],"\" ",file=filename,append=T)
+      cat(sep="","color=\"",dat2.colors[i],"\" ",file=filename,append=T)
+      cat(sep="","glyph=\"",dat2.glyphs[i],"\"",file=filename,append=T)
+      cat(sep="",">\n",file=filename,append=T)
+      cat(sep=" ",unlist(dat2[i,]),"\n",file=filename,append=T)
+      cat(sep="","</record>\n",file=filename,append=T)
+    }
+    cat(sep="","</records>\n</data>\n",file=filename,append=T)
   }
-  else
-  cat(sep="","<realvariable name=\"",var.name3[i],"\"/>\n", # nolint
-    file=filename,append=T)
-}
-cat(sep="","</variables>\n",file=filename,append=T)
-cat(sep="","<records count=\"",n3,"\" glyph=\"",default.glyph,
-  "\" color=\"",default.color,"\">\n",file=filename,append=T)
-row.name3<-rownames(dat3)
-if (is.null(row.name3))
-  row.name3<-c(1:n3)
-if (length(dat3.colors)!=n1) {
-  if (!is.null(dat3.colors))
-    cat("Length of data 3 colors vector is not the same as the number of rows.\n")
-  dat3.colors<-rep(default.color,n3)
-}
-if (length(dat3.glyphs)!=n3) {
-  if (!is.null(dat3.glyphs))
-    cat("Length of data 3 glyphs vector is not the same as the number of rows.\n")
-  dat3.glyphs<-rep(default.glyph,n3)
-}
-for(i in 1:n3)
-{
-   cat(sep="","<record id=\"",dat3.id[i],"\" label=\"",
-     row.name3[i],"\"> ",file=filename,append=T)
-   cat(sep="","color=\"",dat3.colors[i],"\" ",file=filename,append=T)
-   cat(sep="","glyph=\"",dat3.glyphs[i],"\"",file=filename,append=T)
-   cat(sep="",">\n",file=filename,append=T)
-   cat(sep=" ",dat3[i,],"\n",file=filename,append=T)
-   cat(sep="","</record>\n",file=filename,append=T)
-}
-cat(sep="","</records>\n</data>\n",file=filename,append=T)
 }
 
 # wrap-up file
