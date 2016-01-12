@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN">
+<html>
+	<head>
+		<title>Cubes and Cross Polytopes</title>
+		<link rel="stylesheet" type="text/css" href="../styles/screen.css" />
+	</head>
+	<body>
+		<div class='container'>
+			<ul id='nav'>
+				<li><a href class='active'>Cubes</a></li>
+				<li><a href='../mobius/'>Mobius</a></li>
+				<li><a href='../polyhedra/'>Polyhedra</a></li>
+				<li><a href='../polytope/'>Polytopes</a></li>
+				<li><a href='../sphere/'>Spheres</a></li>
+				<li><a href='../simplices/'>Simplices</a></li>
+				<li><a href='../'>Home</a></li>
+			</ul>
+		</div>
+		<div class="mid">
+			<h1>Cubes and <br> Cross Polytopes</h1>
+			<p class="slogan">Seeing One in the Other</p>
+		</div>
+		<div class="mid square">
+			<div class="third">
+				<img src="datasets/cube-3-faces-lines-square.jpg" width="140" height="140"/>
+			</div>
+			<div class="third-movie">
+				<embed src="datasets/cube-3-D-lines.mov" width="187" height="140" controller="false" loop="true"></embed>
+			</div>
+			<div class="third">
+				<img src="datasets/cube-4-dotlines-wires-square.jpg" width="140" height="140"/>
+			</div>
+			<br clear="all"/>
+		</div>
+		<br clear="all">
+		<br class="splint">
+		<br class="splint">
+		<div class="mid-table">
+			<h2>Data</h2>
+			<table width="100%">
+				<tr>
+					<td valign="top">
+						<h3>Cube</h3>
+						<dl>
+							<ul>
+<!--					<li>Vertices
+							<dd><a href="datasets/cube-3.csv"> 3</a>,
+								<a href="datasets/cube-4.csv"> 4</a>,
+								<a href="datasets/cube-5.csv"> 5</a>,
+								<a href="datasets/cube-6.csv"> 6</a>,
+								<a href="datasets/cube-7.csv"> 7</a>,
+								<a href="datasets/cube-8.csv"> 8</a>,
+								<a href="datasets/cube-9.csv"> 9</a>,
+								<a href="datasets/cube-10.csv"> 10</a>
+								<br><a href="codes/cube-verticies-csv.txt">Vertices - R</a>
+							</dd>
+						</li>-->
+								<li>Wire Frame
+									<dd><a href="datasets/cube-3.xml"> 3</a>,
+										<a href="datasets/cube-4.xml"> 4</a>,
+										<a href="datasets/cube-5.xml"> 5</a>,
+										<a href="datasets/cube-6.xml"> 6</a>,
+										<a href="datasets/cube-7.xml"> 7</a>,
+										<a href="datasets/cube-8.xml"> 8</a>,
+										<a href="datasets/cube-9.xml"> 9</a>,
+										<a href="datasets/cube-10.xml"> 10</a>
+								<!--<br><a href="codes/cube-wires-xml.txt">Wire Frame - R</a> -->
+									</dd>
+								</li>
+								<li>Solid with Wire Frame
+									<dd><a href="datasets/cube-3-D-lines.xml"> 3</a>,
+										<a href="datasets/cube-4-D-lines.xml"> 4</a>,
+										<a href="datasets/cube-5-D-lines.xml"> 5</a>,
+										<a href="datasets/cube-6-D-lines.xml"> 6</a>,
+										<a href="datasets/cube-7-D-lines.xml"> 7</a>,
+										<a href="datasets/cube-8-D-lines.xml"> 8</a>,
+										<a href="datasets/cube-9-D-lines.xml"> 9</a>,
+										<a href="datasets/cube-10-D-lines.xml"> 10</a>
+								<!--<br><a href="codes/cube-solid-wires-xml.txt">Solid with Wire Frame - R</a> -->
+									</dd>
+								</li>
+								<li>Faces with Wire Frame
+									<dd> <a href="datasets/cube-3-faces-lines.xml"> 3</a>,
+										<a href="datasets/cube-4-faces-lines.xml"> 4</a>,
+										<a href="datasets/cube-5-faces-lines.xml"> 5</a>,
+										<a href="datasets/cube-6-faces-lines.xml"> 6</a>,
+										<a href="datasets/cube-7-faces-lines.xml"> 7</a>,
+										<a href="datasets/cube-8-faces-lines.xml"> 8</a>,
+										<a href="datasets/cube-9-faces-lines.xml"> 9</a>,
+										<a href="datasets/cube-10-faces-lines.xml"> 10</a>
+								<!--<br><a href="codes/cube-faces-wires-xml.txt">Faces with Wire Frame - R</a> -->
+									</dd>
+								</li>
+								<li>Points Along Wire Frame
+									<dd><a href="datasets/cube-3-dotlines-wires.xml"> 3</a>,
+										<a href="datasets/cube-4-dotlines-wires.xml"> 4</a>,
+										<a href="datasets/cube-5-dotlines-wires.xml"> 5</a>,
+										<a href="datasets/cube-6-dotlines-wires.xml"> 6</a>,
+										<a href="datasets/cube-7-dotlines-wires.xml"> 7</a>,
+										<a href="datasets/cube-8-dotlines-wires.xml"> 8</a>,
+										<a href="datasets/cube-9-dotlines-wires.xml"> 9</a>,
+										<a href="datasets/cube-10-dotlines-wires.xml"> 10</a>
+								<!--<br><a href="codes/cube-points-on-wires-xml.txt">Points Along Wire Frame - R</a> -->
+									</dd>
+								</li>
+							</ul>
+						</dl>
+					</td>
+					<td valign="top">
+						<h3>Cross Polytope (Cube Dual)</h3>
+						<dl>
+							<ul>
+								<li>Wire Frame
+									<dd><a href="datasets/cross-polytope-3.xml"> 3</a>,
+										<a href="datasets/cross-polytope-4.xml"> 4</a>,
+										<a href="datasets/cross-polytope-5.xml"> 5</a>,
+										<a href="datasets/cross-polytope-6.xml"> 6</a>,
+										<a href="datasets/cross-polytope-7.xml"> 7</a>,
+										<a href="datasets/cross-polytope-8.xml"> 8</a>,
+										<a href="datasets/cross-polytope-9.xml"> 9</a>,
+										<a href="datasets/cross-polytope-10.xml"> 10</a>
+									</dd>
+								</li>
+							</ul>
+						</dl>
+					</td>
+				</tr>
+			</table>
+<!--				<p><br class="splint" /></p>
+				<h2>Functions Necessary to Work</h2>
+				<a href="codes/writeXML.R"> Write XML</a>
+			</p> -->
+		</div>
+		<p><br class="splint" /></p>
+		<p><br class="splint" /></p>
+		<div class="mid-table"><h2>Pictures and Movies</h2>
+			<ul>
+				<li><h3>Pictures</h3>
+					<table>
+						<tr>
+							<td width="20%">    </td>
+							<td width="40%" valign="top">Cube</td>
+							<td width="40%" valign="top">Cross Polytope</td>
+						</tr>
+						<tr>
+							<td width="20%">Wire Frame</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3.jpg" target="_blank"> 3</a>,
+								<a href="datasets/cube-4.jpg" target="_blank"> 4</a>,
+								<a href="datasets/cube-5.jpg" target="_blank"> 5</a>,
+								<a href="datasets/cube-6.jpg" target="_blank"> 6</a>,
+								<a href="datasets/cube-7.jpg" target="_blank"> 7</a>,
+								<a href="datasets/cube-8.jpg" target="_blank"> 8</a>,
+								<a href="datasets/cube-9.jpg" target="_blank"> 9</a>,
+								<a href="datasets/cube-10.jpg" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"><a href="datasets/cross-polytope-3.jpg" target="_blank"> 3</a>,
+								<a href="datasets/cross-polytope-4.jpg" target="_blank"> 4</a>,
+								<a href="datasets/cross-polytope-5.jpg" target="_blank"> 5</a>,
+								<a href="datasets/cross-polytope-6.jpg" target="_blank"> 6</a>,
+								<a href="datasets/cross-polytope-7.jpg" target="_blank"> 7</a>,
+								<a href="datasets/cross-polytope-8.jpg" target="_blank"> 8</a>,
+								<a href="datasets/cross-polytope-9.jpg" target="_blank"> 9</a>,
+								<a href="datasets/cross-polytope-10.jpg" target="_blank"> 10</a>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%">Solid</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3-D-lines.jpg" target="_blank"> 3</a>,
+								<a href="datasets/cube-4-D-lines.jpg" target="_blank"> 4</a>,
+								<a href="datasets/cube-5-D-lines.jpg" target="_blank"> 5</a>,
+								<a href="datasets/cube-6-D-lines.jpg" target="_blank"> 6</a>,
+								<a href="datasets/cube-7-D-lines.jpg" target="_blank"> 7</a>,
+								<a href="datasets/cube-8-D-lines.jpg" target="_blank"> 8</a>,
+								<a href="datasets/cube-9-D-lines.jpg" target="_blank"> 9</a>,
+								<a href="datasets/cube-10-D-lines.jpg" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"></td>
+						</tr>
+						<tr>
+							<td width="20%">Faces</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3-faces-lines.jpg" target="_blank"> 3</a>,
+								<a href="datasets/cube-4-faces-lines.jpg" target="_blank"> 4</a>,
+								<a href="datasets/cube-5-faces-lines.jpg" target="_blank"> 5</a>,
+								<a href="datasets/cube-6-faces-lines.jpg" target="_blank"> 6</a>,
+								<a href="datasets/cube-7-faces-lines.jpg" target="_blank"> 7</a>,
+								<a href="datasets/cube-8-faces-lines.jpg" target="_blank"> 8</a>,
+								<a href="datasets/cube-9-faces-lines.jpg" target="_blank"> 9</a>,
+								<a href="datasets/cube-10-faces-lines.jpg" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"></td>
+						</tr>
+						<tr>
+							<td width="20%">Points Along Wire Frame</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3-dotlines-wires.jpg" target="_blank"> 3</a>,
+								<a href="datasets/cube-4-dotlines-wires.jpg" target="_blank"> 4</a>,
+								<a href="datasets/cube-5-dotlines-wires.jpg" target="_blank"> 5</a>,
+								<a href="datasets/cube-6-dotlines-wires.jpg" target="_blank"> 6</a>,
+								<a href="datasets/cube-7-dotlines-wires.jpg" target="_blank"> 7</a>,
+								<a href="datasets/cube-8-dotlines-wires.jpg" target="_blank"> 8</a>,
+								<a href="datasets/cube-9-dotlines-wires.jpg" target="_blank"> 9</a>,
+								<a href="datasets/cube-10-dotlines-wires.jpg" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"></td>
+						</tr>
+					</table>
+				</li>
+				<br>
+				<li><h3>Movies</h3>
+					<table>
+						<tr>
+							<td width="20%">    </td>
+							<td width="40%" valign="top">Cube</td>
+							<td width="40%" valign="top">Cross Polytope</td>
+						</tr>
+						<tr>
+							<td width="20%">Wire Frame</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3.mov" target="_blank"> 3</a>,
+								<a href="datasets/cube-4.mov" target="_blank"> 4</a>,
+								<a href="datasets/cube-5.mov" target="_blank"> 5</a>,
+								<a href="datasets/cube-6.mov" target="_blank"> 6</a>,
+								<a href="datasets/cube-7.mov" target="_blank"> 7</a>,
+								<a href="datasets/cube-8.mov" target="_blank"> 8</a>,
+								<a href="datasets/cube-9.mov" target="_blank"> 9</a>,
+								<a href="datasets/cube-10.mov" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"><a href="datasets/cross-polytope-3.mov" target="_blank"> 3</a>,
+								<a href="datasets/cross-polytope-4.mov" target="_blank"> 4</a>,
+								<a href="datasets/cross-polytope-5.mov" target="_blank"> 5</a>,
+								<a href="datasets/cross-polytope-6.mov" target="_blank"> 6</a>,
+								<a href="datasets/cross-polytope-7.mov" target="_blank"> 7</a>,
+								<a href="datasets/cross-polytope-8.mov" target="_blank"> 8</a>,
+								<a href="datasets/cross-polytope-9.mov" target="_blank"> 9</a>,
+								<a href="datasets/cross-polytope-10.mov" target="_blank"> 10</a>
+							</td>
+						</tr>
+						<tr>
+							<td width="20%">Solid</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3-D-lines.mov" target="_blank"> 3</a>,
+								<a href="datasets/cube-4-D-lines.mov" target="_blank"> 4</a>,
+								<a href="datasets/cube-5-D-lines.mov" target="_blank"> 5</a>,
+								<a href="datasets/cube-6-D-lines.mov" target="_blank"> 6</a>,
+								<a href="datasets/cube-7-D-lines.mov" target="_blank"> 7</a>,
+								<a href="datasets/cube-8-D-lines.mov" target="_blank"> 8</a>,
+								<a href="datasets/cube-9-D-lines.mov" target="_blank"> 9</a>,
+								<a href="datasets/cube-10-D-lines.mov" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"></td>
+						</tr>
+						<tr>
+							<td width="20%">Faces</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3-faces-lines.mov" target="_blank"> 3</a>,
+								<a href="datasets/cube-4-faces-lines.mov" target="_blank"> 4</a>,
+								<a href="datasets/cube-5-faces-lines.mov" target="_blank"> 5</a>,
+								<a href="datasets/cube-6-faces-lines.mov" target="_blank"> 6</a>,
+								<a href="datasets/cube-7-faces-lines.mov" target="_blank"> 7</a>,
+								<a href="datasets/cube-8-faces-lines.mov" target="_blank"> 8</a>,
+								<a href="datasets/cube-9-faces-lines.mov" target="_blank"> 9</a>,
+								<a href="datasets/cube-10-faces-lines.mov" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"></td>
+						</tr>
+						<tr>
+							<td width="20%">Points Along Wire Frame</td>
+							<td width="40%" valign="top"><a href="datasets/cube-3-dotlines-wires.mov" target="_blank"> 3</a>,
+								<a href="datasets/cube-4-dotlines-wires.mov" target="_blank"> 4</a>,
+								<a href="datasets/cube-5-dotlines-wires.mov" target="_blank"> 5</a>,
+								<a href="datasets/cube-6-dotlines-wires.mov" target="_blank"> 6</a>,
+								<a href="datasets/cube-7-dotlines-wires.mov" target="_blank"> 7</a>,
+								<a href="datasets/cube-8-dotlines-wires.mov" target="_blank"> 8</a>,
+								<a href="datasets/cube-9-dotlines-wires.mov" target="_blank"> 9</a>,
+								<a href="datasets/cube-10-dotlines-wires.mov" target="_blank"> 10</a>
+							</td>
+							<td width="40%" valign="top"></td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+		</div>
+		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+		</script>
+		<script type="text/javascript">
+			_uacct = "UA-3169413-1";
+			urchinTracker();
+		</script>
+	</body>
+</html>

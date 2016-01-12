@@ -1,0 +1,279 @@
+/* General typograhpy 
+   ================================ */
+
+* {
+	margin: 0; padding:0; 
+	font-family: Verdana, Arial, sans-serif; 
+	line-height: 1.4em;
+	font-size: 1em;
+}
+
+code, pre {font-family: "Andale Mono", Courier;}
+
+body {background: #333 url("gradient.gif") repeat-x bottom fixed; color: #eee}
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, 
+label, ul, ol, dl, fieldset, address, dt { margin: 1em 0; }
+dd { margin-left:3%; }
+fieldset { padding: .5em; }
+
+th {text-align: left; color: #fff;}
+strong {color: #fff;}
+
+body {
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+}
+
+h1 {font-size: 4em; font-family: Georgia; font-weight: normal;
+	margin: 1em 0 0 -3.25em; /* 13 / 4 */ line-height: 1em;
+}
+p.slogan {margin: 0 0 2em -14.444em /* 13 / 1.5 */;}
+.slogan {line-height: 1em; font-size: 0.9em;}
+span.slogan {margin-top: 30px;}
+
+ol, ol li, ul, ul li {
+	list-style-position: inside;
+	margin-left: 0; padding-left: 0;
+}
+
+ul ul li {margin-left: 1em; font-size: 0.9em; margin-bottom: 0.5em;}
+
+ul {list-style: disc}
+ul ul {margin: 0 inherit;}
+li {margin-bottom: 0.7em; }
+li p {margin-bottom: 0em; margin-top: 1em;}
+
+ul.license li {
+  list-style: none;
+  width: 50%; 
+  font-size: 2em; 
+  margin: 0; 
+  padding:0; 
+}
+
+p.download {font-size: 0.8em; margin-top: 0.5em;}
+p.title {font-weight: bold;}
+p.title span, small {font-weight: normal; font-size: 0.8em;}
+
+h2 { 
+	font-weight: normal;
+	font-size: 1.5em;
+	line-height: 1.1em;
+	font-family: Georgia;  
+}
+
+.body h2 {
+  background-color: #111;
+  padding: 5px;
+  margin-top: 2em;
+  margin-bottom: 0em;
+}
+
+.mid h2 {
+	position: absolute;
+	margin-top: 0px;
+	padding-top: 3px;
+	margin-left: -8.6667em; /* 13 / 1.5 */
+	/*border: 1px solid #fff;*/
+	
+	width: 8em; /* 12 / 1.5 */
+	text-align: right;
+}
+
+.mid-display h2 {
+	position: absolute;
+	margin-top: 0px;
+	padding-top: 3px;
+	margin-left: -11.33333em; /* 17 / 1.5 */
+	/*border: 1px solid #fff;*/
+	
+	width: 10.6667em; /* 16 / 1.5 */
+	text-align: right;
+}
+
+.mid-table h2 {
+	position: absolute;
+	margin-top: 0px;
+	padding-top: 3px;
+	margin-left: -8.6667em; /* 13 / 1.5 */
+	/*border: 1px solid #fff;*/
+	
+	width: 8em; /* 12 / 1.5 */
+	text-align: right;
+}
+
+/* Colours
+  --------------------------------- 
+
+  Default ggobi colour scheme:  
+  #984EA3 #F781BF #E41A1C #377EB8 #4DAF4A #FF7F00 #A65628 #999999 #FFFF33  
+*/
+
+h1 {color:#337EB8;}
+h2 {color: #FF7F00; }
+h3 {color: white;}
+
+a:link {color: #FF7F00; text-decoration: none; background-color: #111;}
+a:visited {color: #337EB8; text-decoration: none; background-color: #111;}
+a:hover {background-color: #FF7F00; color: #000;}
+
+a img {border: none;}
+
+.full {background-color: #000; }
+.full .mid a:link, .full .mid a:visited, .full .mid h2 {color:#FF7F00;}
+.full .mid a:hover {background-color: #000; text-decoration: underline;}
+
+.footer .third {background-color: #222; border-color: #333 #333 #111 #111}
+
+/* Layout
+   ==================================== 
+
+  Conceptually, the ggobi site is a 3 column grid, with 1em before and after each
+  column.  And each column is 12 em wide.
+
+  All objects should be some simple fraction (or multiple) or these sizes.
+
+*/
+
+.mid, .body, .mid-display, .mid-table {
+	padding-right: 1em;
+	position: relative;
+}
+
+.mid, .mid-display{
+	margin: 0em auto;
+	width: 25em;
+	padding-left: 13em;
+}
+
+.mid-table{
+	margin: 0em auto;
+	width: 35em;
+	padding-left: 13em;
+}
+
+.body {
+	margin: 3em auto;
+	width: 39em;
+}
+
+.gap {margin-top: 5em; margin-bottom: 8em;}
+
+.full {
+	font-size: 1em;
+	font-weight: bold;
+	margin: 3em 0 2em 0;
+	border: 5px solid black;
+}
+
+.full .mid h2, .full .mid a {font-size: 1em; font-family: Tahoma, sans-serif; margin-top:0; padding:0;}
+.full .mid h2 {margin-top: 1px;}
+
+embed.movie {margin-left: -13em;}
+
+.third-movie {
+	width: 14.66667em; height: 11em; 
+	background-color: #444; 
+	float: left; 
+	margin-right: 1em; 
+	padding: 0.5em;
+	text-align: center;
+	border: 2px solid;
+	border-color: #555 #555 #222 #222;
+}
+.third-movie * {font-size: 0.9em; line-height: 1.2em;}
+.third-movie p {margin-top: 0; margin-bottom: 0.3em;}
+.third-movie * * {font-size: 1em;}
+
+.third {
+	width: 11em; height: 11em; 
+	background-color: #444; 
+	float: left; 
+	margin-right: 1em; 
+	padding: 0.5em;
+	text-align: center;
+	border: 2px solid;
+	border-color: #555 #555 #222 #222;
+}
+.third * {font-size: 0.9em; line-height: 1.2em;}
+.third p {margin-top: 0; margin-bottom: 0.3em;}
+.third * * {font-size: 1em;}
+.mid.square {padding-left: 1em; width: 45em; padding-right: 0;}
+
+.footer {padding-bottom: 2em;}
+.footer .third {text-align: left;}
+.fragment {
+  padding: 5px;
+  background-color: yellow;
+  color: black;
+}
+
+/* Navigation bar
+  From: http://www.simplebits.com/bits/minitabs.html, thanks!
+   ======================================= */
+
+#blog .container { margin-top: 3em;}
+.container {
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	background-color: #000;
+}
+
+.container-sub {
+	width: 100%;
+	padding-left: 0em;
+	margin-right: 5em;
+	position: absolute;
+	top: 2em;
+}
+
+.container-sub-sub {
+	width: 100%;
+	padding-left: 0em;
+	margin-right: 5em;
+	position: absolute;
+	top: 4em;
+}
+
+* html .container {width: 41em;}
+
+#nav, #nav-sub, #nav-sub-sub {
+	width: 41em;
+	margin: 0 auto;
+	padding: 0 0 10px 10px;
+}
+
+#nav li, #nav-sub li, #nav-sub-sub li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+	
+#nav a:link, #nav a:visited, #nav-sub a:link, #nav-sub a:visited , #nav-sub-sub a:link, #nav-sub-sub a:visited {
+	float: left;
+	font-size: 11px;
+	line-height: 14px;
+	font-weight: bold;
+	padding: 6px 12px 6px 12px;
+	text-decoration: none;
+	color: #999;
+}
+
+#nav a:link.active, #nav a:visited.active, #nav a:hover {
+	color: #fff;
+	background: url(tab-peak.gif) no-repeat top center;
+}
+
+#nav-sub a:link.active, #nav-sub a:visited.active, #nav-sub a:hover, #nav-sub-sub a:link.active, #nav-sub-sub a:visited.active, #nav-sub-sub a:hover {
+	color: #fff;
+	background: url(tab-peak.gif) no-repeat top center;
+	background-color:black;	
+}
+
+
+

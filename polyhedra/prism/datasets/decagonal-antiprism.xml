@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<!DOCTYPE ggobidata SYSTEM "ggobi.dtd">
+<ggobidata count="2">
+<data name="vertices">
+<description>
+
+</description>
+<variables count="3">
+  <realvariable name="Var  1"/>
+  <realvariable name="Var  2"/>
+  <realvariable name="Var  3"/>
+</variables>
+<records count="20" glyph="fc 2" color="8" >
+<record id="1" label="1" color="8" glyph="fc 2">
+0  0  1.047801  
+</record>
+<record id="2" label="2" color="8" glyph="fc 2">
+0.5971915  0  0.8609583  
+</record>
+<record id="3" label="3" color="8" glyph="fc 2">
+0.2693671  0.5329907  0.8609583  
+</record>
+<record id="4" label="4" color="8" glyph="fc 2">
+-0.3541919  0.4808178  0.8609583  
+</record>
+<record id="5" label="5" color="8" glyph="fc 2">
+-0.5888883  -0.09923864  0.8609583  
+</record>
+<record id="6" label="6" color="8" glyph="fc 2">
+0.9745794  -0.09923864  0.3717979  
+</record>
+<record id="7" label="7" color="8" glyph="fc 2">
+0.7817338  0.4808178  0.5055625  
+</record>
+<record id="8" label="8" color="8" glyph="fc 2">
+-0.8507649  0.3442276  0.5055625  
+</record>
+<record id="9" label="9" color="8" glyph="fc 2">
+-0.944538  -0.2598101  0.3717979  
+</record>
+<record id="10" label="10" color="8" glyph="fc 2">
+0.9880143  -0.2598101  -0.2328377  
+</record>
+<record id="11" label="11" color="8" glyph="fc 2">
+0.9872015  0.3442276  -0.06948012  
+</record>
+<record id="12" label="12" color="8" glyph="fc 2">
+-1.030678  0.1753927  -0.06948012  
+</record>
+<record id="13" label="13" color="8" glyph="fc 2">
+-0.931103  -0.4203816  -0.2328377  
+</record>
+<record id="14" label="14" color="8" glyph="fc 2">
+0.6323646  -0.4203816  -0.7219981  
+</record>
+<record id="15" label="15" color="8" glyph="fc 2">
+0.8072886  0.1753927  -0.6445227  
+</record>
+<record id="16" label="16" color="8" glyph="fc 2">
+-0.8252102  0.03880243  -0.6445227  
+</record>
+<record id="17" label="17" color="8" glyph="fc 2">
+-0.5537152  -0.5196203  -0.7219981  
+</record>
+<record id="18" label="18" color="8" glyph="fc 2">
+0.04347634  -0.5196203  -0.9088408  
+</record>
+<record id="19" label="19" color="8" glyph="fc 2">
+0.3107156  0.03880243  -0.9999186  
+</record>
+<record id="20" label="20" color="8" glyph="fc 2">
+-0.3128435  -0.01337041  -0.9999186  
+</record>
+</records>
+</data>
+<data name="edges">
+<description>
+
+</description>
+<variables count="2">
+<realvariable name="Var  1"/>
+<realvariable name="Var  2"/>
+</variables>
+<records count="40" glyph="fc 2" color="8">
+<record  source="1" destination="3"  label="1" color="8" glyph="fc 2">
+1 3 
+</record>
+<record  source="1" destination="4"  label="2" color="8" glyph="fc 2">
+1 4 
+</record>
+<record  source="2" destination="3"  label="3" color="8" glyph="fc 2">
+2 3 
+</record>
+<record  source="2" destination="7"  label="4" color="8" glyph="fc 2">
+2 7 
+</record>
+<record  source="4" destination="5"  label="5" color="8" glyph="fc 2">
+4 5 
+</record>
+<record  source="5" destination="8"  label="6" color="8" glyph="fc 2">
+5 8 
+</record>
+<record  source="6" destination="7"  label="7" color="8" glyph="fc 2">
+6 7 
+</record>
+<record  source="6" destination="11"  label="8" color="8" glyph="fc 2">
+6 11 
+</record>
+<record  source="8" destination="9"  label="9" color="8" glyph="fc 2">
+8 9 
+</record>
+<record  source="9" destination="12"  label="10" color="8" glyph="fc 2">
+9 12 
+</record>
+<record  source="10" destination="11"  label="11" color="8" glyph="fc 2">
+10 11 
+</record>
+<record  source="10" destination="15"  label="12" color="8" glyph="fc 2">
+10 15 
+</record>
+<record  source="12" destination="13"  label="13" color="8" glyph="fc 2">
+12 13 
+</record>
+<record  source="13" destination="16"  label="14" color="8" glyph="fc 2">
+13 16 
+</record>
+<record  source="14" destination="15"  label="15" color="8" glyph="fc 2">
+14 15 
+</record>
+<record  source="14" destination="19"  label="16" color="8" glyph="fc 2">
+14 19 
+</record>
+<record  source="16" destination="17"  label="17" color="8" glyph="fc 2">
+16 17 
+</record>
+<record  source="17" destination="20"  label="18" color="8" glyph="fc 2">
+17 20 
+</record>
+<record  source="18" destination="19"  label="19" color="8" glyph="fc 2">
+18 19 
+</record>
+<record  source="18" destination="20"  label="20" color="8" glyph="fc 2">
+18 20 
+</record>
+<record  source="1" destination="5"  label="21" color="8" glyph="fc 2">
+1 5 
+</record>
+<record  source="5" destination="9"  label="22" color="8" glyph="fc 2">
+5 9 
+</record>
+<record  source="9" destination="13"  label="23" color="8" glyph="fc 2">
+9 13 
+</record>
+<record  source="13" destination="17"  label="24" color="8" glyph="fc 2">
+13 17 
+</record>
+<record  source="17" destination="18"  label="25" color="8" glyph="fc 2">
+17 18 
+</record>
+<record  source="18" destination="14"  label="26" color="8" glyph="fc 2">
+18 14 
+</record>
+<record  source="14" destination="10"  label="27" color="8" glyph="fc 2">
+14 10 
+</record>
+<record  source="10" destination="6"  label="28" color="8" glyph="fc 2">
+10 6 
+</record>
+<record  source="6" destination="2"  label="29" color="8" glyph="fc 2">
+6 2 
+</record>
+<record  source="2" destination="1"  label="30" color="8" glyph="fc 2">
+2 1 
+</record>
+<record  source="3" destination="7"  label="31" color="8" glyph="fc 2">
+3 7 
+</record>
+<record  source="7" destination="11"  label="32" color="8" glyph="fc 2">
+7 11 
+</record>
+<record  source="11" destination="15"  label="33" color="8" glyph="fc 2">
+11 15 
+</record>
+<record  source="15" destination="19"  label="34" color="8" glyph="fc 2">
+15 19 
+</record>
+<record  source="19" destination="20"  label="35" color="8" glyph="fc 2">
+19 20 
+</record>
+<record  source="20" destination="16"  label="36" color="8" glyph="fc 2">
+20 16 
+</record>
+<record  source="16" destination="12"  label="37" color="8" glyph="fc 2">
+16 12 
+</record>
+<record  source="12" destination="8"  label="38" color="8" glyph="fc 2">
+12 8 
+</record>
+<record  source="8" destination="4"  label="39" color="8" glyph="fc 2">
+8 4 
+</record>
+<record  source="4" destination="3"  label="40" color="8" glyph="fc 2">
+4 3 
+</record>
+</records>
+</data>
+</ggobidata>

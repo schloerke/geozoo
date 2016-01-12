@@ -1,0 +1,928 @@
+<?xml version="1.0"?>
+<!DOCTYPE ggobidata SYSTEM "ggobi.dtd">
+
+<ggobidata count="2">
+<data name="vertices">
+<description>
+This is XML created by GGobi
+</description>
+<variables count="3">
+   <realvariable name="Var  1" nickname="Va"/>
+   <realvariable name="Var  2" nickname="Va"/>
+   <realvariable name="Var  3" nickname="Va"/>
+</variables>
+<records count="120" glyph="fc 2" color="8">
+<record id="1" label="1">
+0 0 1.00876
+</record>
+<record id="2" label="2">
+0.262992 0 0.973874
+</record>
+<record id="3" label="3">
+-0.00462747 0.262951 0.973874
+</record>
+<record id="4" label="4">
+-0.221136 -0.14235 0.973874
+</record>
+<record id="5" label="5">
+0.258365 0.262951 0.938989
+</record>
+<record id="6" label="6">
+0.467386 -0.14235 0.882543
+</record>
+<record id="7" label="7">
+-0.230391 0.383553 0.904103
+</record>
+<record id="8" label="8">
+-0.31595 -0.372678 0.882543
+</record>
+<record id="9" label="9">
+-0.4469 -0.0217492 0.904103
+</record>
+<record id="10" label="10">
+0.458131 0.383553 0.812772
+</record>
+<record id="11" label="11">
+0.53511 -0.372678 0.769651
+</record>
+<record id="12" label="12">
+0.667153 -0.0217492 0.756326
+</record>
+<record id="13" label="13">
+-0.332693 0.578689 0.756326
+</record>
+<record id="14" label="14">
+-0.451528 0.241202 0.869218
+</record>
+<record id="15" label="15">
+-0.541714 -0.252077 0.812772
+</record>
+<record id="16" label="16">
+-0.248226 -0.603006 0.769651
+</record>
+<record id="17" label="17">
+0.518368 0.578689 0.643435
+</record>
+<record id="18" label="18">
+0.662525 0.241202 0.721441
+</record>
+<record id="19" label="19">
+0.734877 -0.252077 0.643435
+</record>
+<record id="20" label="20">
+0.440297 -0.603006 0.678321
+</record>
+<record id="21" label="21">
+-0.553829 0.436339 0.721441
+</record>
+<record id="22" label="22">
+-0.272456 0.773826 0.586989
+</record>
+<record id="23" label="23">
+-0.699754 -0.361803 0.63011
+</record>
+<record id="24" label="24">
+-0.043832 -0.745356 0.678321
+</record>
+<record id="25" label="25">
+-0.406266 -0.712732 0.586989
+</record>
+<record id="26" label="26">
+0.722762 0.436339 0.552104
+</record>
+<record id="27" label="27">
+0.416067 0.773826 0.495658
+</record>
+<record id="28" label="28">
+0.839829 -0.361803 0.425888
+</record>
+<record id="29" label="29">
+0.21916 -0.745356 0.643435
+</record>
+<record id="30" label="30">
+0.545249 -0.712732 0.460773
+</record>
+<record id="31" label="31">
+-0.714728 0.489125 0.517219
+</record>
+<record id="32" label="32">
+-0.0726893 0.894427 0.460773
+</record>
+<record id="33" label="33">
+-0.433355 0.826612 0.382767
+</record>
+<record id="34" label="34">
+-0.860653 -0.309017 0.425888
+</record>
+<record id="35" label="35">
+-0.632029 -0.592131 0.517219
+</record>
+<record id="36" label="36">
+-0.201872 -0.855083 0.495658
+</record>
+<record id="37" label="37">
+0.824855 0.489125 0.312996
+</record>
+<record id="38" label="38">
+0.190303 0.894427 0.425888
+</record>
+<record id="39" label="39">
+0.518159 0.826612 0.25655
+</record>
+<record id="40" label="40">
+0.941922 -0.309017 0.18678
+</record>
+<record id="41" label="41">
+0.745016 -0.592131 0.334557
+</record>
+<record id="42" label="42">
+0.324113 -0.855083 0.425888
+</record>
+<record id="43" label="43">
+-0.872768 0.379399 0.334557
+</record>
+<record id="44" label="44">
+-0.654492 0.684262 0.347882
+</record>
+<record id="45" label="45">
+-0.233589 0.947214 0.25655
+</record>
+<record id="46" label="46">
+-0.792929 -0.539345 0.312996
+</record>
+<record id="47" label="47">
+-0.962954 -0.11388 0.278111
+</record>
+<record id="48" label="48">
+-0.096919 -0.964809 0.278111
+</record>
+<record id="49" label="49">
+0.929807 0.379399 0.0954487
+</record>
+<record id="50" label="50">
+0.722553 0.684262 0.165219
+</record>
+<record id="51" label="51">
+0.292396 0.947214 0.18678
+</record>
+<record id="52" label="52">
+0.847108 -0.539345 0.0954487
+</record>
+<record id="53" label="53">
+1.00216 -0.11388 0.0174427
+</record>
+<record id="54" label="54">
+0.166073 -0.964809 0.243225
+</record>
+<record id="55" label="55">
+-0.812531 0.574536 0.165219
+</record>
+<record id="56" label="56">
+-0.967582 0.149071 0.243225
+</record>
+<record id="57" label="57">
+-0.131496 1 0.0174427
+</record>
+<record id="58" label="58">
+-0.827506 -0.574536 0.052328
+</record>
+<record id="59" label="59">
+-0.997531 -0.149071 0.0174427
+</record>
+<record id="60" label="60">
+-0.131496 -1 0.0174427
+</record>
+<record id="61" label="61">
+0.827506 0.574536 -0.052328
+</record>
+<record id="62" label="62">
+0.997531 0.149071 -0.0174427
+</record>
+<record id="63" label="63">
+0.131496 1 -0.0174427
+</record>
+<record id="64" label="64">
+0.812531 -0.574536 -0.165219
+</record>
+<record id="65" label="65">
+0.967582 -0.149071 -0.243225
+</record>
+<record id="66" label="66">
+0.131496 -1 -0.0174427
+</record>
+<record id="67" label="67">
+-0.847108 0.539345 -0.0954487
+</record>
+<record id="68" label="68">
+-1.00216 0.11388 -0.0174427
+</record>
+<record id="69" label="69">
+-0.166073 0.964809 -0.243225
+</record>
+<record id="70" label="70">
+-0.722553 -0.684262 -0.165219
+</record>
+<record id="71" label="71">
+-0.929807 -0.379399 -0.0954487
+</record>
+<record id="72" label="72">
+-0.292396 -0.947214 -0.18678
+</record>
+<record id="73" label="73">
+0.792929 0.539345 -0.312996
+</record>
+<record id="74" label="74">
+0.962954 0.11388 -0.278111
+</record>
+<record id="75" label="75">
+0.096919 0.964809 -0.278111
+</record>
+<record id="76" label="76">
+0.654492 -0.684262 -0.347882
+</record>
+<record id="77" label="77">
+0.872768 -0.379399 -0.334557
+</record>
+<record id="78" label="78">
+0.233589 -0.947214 -0.25655
+</record>
+<record id="79" label="79">
+-0.745016 0.592131 -0.334557
+</record>
+<record id="80" label="80">
+-0.941922 0.309017 -0.18678
+</record>
+<record id="81" label="81">
+-0.324113 0.855083 -0.425888
+</record>
+<record id="82" label="82">
+-0.824855 -0.489125 -0.312996
+</record>
+<record id="83" label="83">
+-0.518159 -0.826612 -0.25655
+</record>
+<record id="84" label="84">
+-0.190303 -0.894427 -0.425888
+</record>
+<record id="85" label="85">
+0.632029 0.592131 -0.517219
+</record>
+<record id="86" label="86">
+0.860653 0.309017 -0.425888
+</record>
+<record id="87" label="87">
+0.201872 0.855083 -0.495658
+</record>
+<record id="88" label="88">
+0.714728 -0.489125 -0.517219
+</record>
+<record id="89" label="89">
+0.433355 -0.826612 -0.382767
+</record>
+<record id="90" label="90">
+0.0726893 -0.894427 -0.460773
+</record>
+<record id="91" label="91">
+-0.839829 0.361803 -0.425888
+</record>
+<record id="92" label="92">
+-0.545249 0.712732 -0.460773
+</record>
+<record id="93" label="93">
+-0.21916 0.745356 -0.643435
+</record>
+<record id="94" label="94">
+-0.722762 -0.436339 -0.552104
+</record>
+<record id="95" label="95">
+-0.416067 -0.773826 -0.495658
+</record>
+<record id="96" label="96">
+0.699754 0.361803 -0.63011
+</record>
+<record id="97" label="97">
+0.406266 0.712732 -0.586989
+</record>
+<record id="98" label="98">
+0.043832 0.745356 -0.678321
+</record>
+<record id="99" label="99">
+0.553829 -0.436339 -0.721441
+</record>
+<record id="100" label="100">
+0.272456 -0.773826 -0.586989
+</record>
+<record id="101" label="101">
+-0.734877 0.252077 -0.643435
+</record>
+<record id="102" label="102">
+-0.440297 0.603006 -0.678321
+</record>
+<record id="103" label="103">
+-0.662525 -0.241202 -0.721441
+</record>
+<record id="104" label="104">
+-0.518368 -0.578689 -0.643435
+</record>
+<record id="105" label="105">
+0.541714 0.252077 -0.812772
+</record>
+<record id="106" label="106">
+0.248226 0.603006 -0.769651
+</record>
+<record id="107" label="107">
+0.451528 -0.241202 -0.869218
+</record>
+<record id="108" label="108">
+0.332693 -0.578689 -0.756326
+</record>
+<record id="109" label="109">
+-0.667153 0.0217492 -0.756326
+</record>
+<record id="110" label="110">
+-0.53511 0.372678 -0.769651
+</record>
+<record id="111" label="111">
+-0.458131 -0.383553 -0.812772
+</record>
+<record id="112" label="112">
+0.4469 0.0217492 -0.904103
+</record>
+<record id="113" label="113">
+0.31595 0.372678 -0.882543
+</record>
+<record id="114" label="114">
+0.230391 -0.383553 -0.904103
+</record>
+<record id="115" label="115">
+-0.467386 0.14235 -0.882543
+</record>
+<record id="116" label="116">
+-0.258365 -0.262951 -0.938989
+</record>
+<record id="117" label="117">
+0.221136 0.14235 -0.973874
+</record>
+<record id="118" label="118">
+0.00462747 -0.262951 -0.973874
+</record>
+<record id="119" label="119">
+-0.262992 0 -0.973874
+</record>
+<record id="120" label="120">
+0 0 -1.00876
+</record>
+</records>
+</data>
+<data name="edges">
+<description>
+This is XML created by GGobi
+</description>
+<variables count="2">
+   <realvariable name="Var  1" nickname="Va"/>
+   <realvariable name="Var  2" nickname="Va"/>
+</variables>
+<records count="180" glyph="fc 2" color="8" missingValue="na">
+<record source="1" destination="4" label="1">
+1 4
+</record>
+<record source="4" destination="8" label="2">
+4 8
+</record>
+<record source="8" destination="16" label="3">
+8 16
+</record>
+<record source="16" destination="24" label="4">
+16 24
+</record>
+<record source="24" destination="29" label="5">
+24 29
+</record>
+<record source="29" destination="20" label="6">
+29 20
+</record>
+<record source="20" destination="11" label="7">
+20 11
+</record>
+<record source="11" destination="6" label="8">
+11 6
+</record>
+<record source="6" destination="2" label="9">
+6 2
+</record>
+<record source="2" destination="1" label="10">
+2 1
+</record>
+<record source="3" destination="5" label="11">
+3 5
+</record>
+<record source="5" destination="10" label="12">
+5 10
+</record>
+<record source="10" destination="17" label="13">
+10 17
+</record>
+<record source="17" destination="27" label="14">
+17 27
+</record>
+<record source="27" destination="38" label="15">
+27 38
+</record>
+<record source="38" destination="32" label="16">
+38 32
+</record>
+<record source="32" destination="22" label="17">
+32 22
+</record>
+<record source="22" destination="13" label="18">
+22 13
+</record>
+<record source="13" destination="7" label="19">
+13 7
+</record>
+<record source="7" destination="3" label="20">
+7 3
+</record>
+<record source="9" destination="14" label="21">
+9 14
+</record>
+<record source="14" destination="21" label="22">
+14 21
+</record>
+<record source="21" destination="31" label="23">
+21 31
+</record>
+<record source="31" destination="43" label="24">
+31 43
+</record>
+<record source="43" destination="56" label="25">
+43 56
+</record>
+<record source="56" destination="47" label="26">
+56 47
+</record>
+<record source="47" destination="34" label="27">
+47 34
+</record>
+<record source="34" destination="23" label="28">
+34 23
+</record>
+<record source="23" destination="15" label="29">
+23 15
+</record>
+<record source="15" destination="9" label="30">
+15 9
+</record>
+<record source="12" destination="19" label="31">
+12 19
+</record>
+<record source="19" destination="28" label="32">
+19 28
+</record>
+<record source="28" destination="40" label="33">
+28 40
+</record>
+<record source="40" destination="53" label="34">
+40 53
+</record>
+<record source="53" destination="62" label="35">
+53 62
+</record>
+<record source="62" destination="49" label="36">
+62 49
+</record>
+<record source="49" destination="37" label="37">
+49 37
+</record>
+<record source="37" destination="26" label="38">
+37 26
+</record>
+<record source="26" destination="18" label="39">
+26 18
+</record>
+<record source="18" destination="12" label="40">
+18 12
+</record>
+<record source="25" destination="35" label="41">
+25 35
+</record>
+<record source="35" destination="46" label="42">
+35 46
+</record>
+<record source="46" destination="58" label="43">
+46 58
+</record>
+<record source="58" destination="70" label="44">
+58 70
+</record>
+<record source="70" destination="83" label="45">
+70 83
+</record>
+<record source="83" destination="72" label="46">
+83 72
+</record>
+<record source="72" destination="60" label="47">
+72 60
+</record>
+<record source="60" destination="48" label="48">
+60 48
+</record>
+<record source="48" destination="36" label="49">
+48 36
+</record>
+<record source="36" destination="25" label="50">
+36 25
+</record>
+<record source="30" destination="42" label="51">
+30 42
+</record>
+<record source="42" destination="54" label="52">
+42 54
+</record>
+<record source="54" destination="66" label="53">
+54 66
+</record>
+<record source="66" destination="78" label="54">
+66 78
+</record>
+<record source="78" destination="89" label="55">
+78 89
+</record>
+<record source="89" destination="76" label="56">
+89 76
+</record>
+<record source="76" destination="64" label="57">
+76 64
+</record>
+<record source="64" destination="52" label="58">
+64 52
+</record>
+<record source="52" destination="41" label="59">
+52 41
+</record>
+<record source="41" destination="30" label="60">
+41 30
+</record>
+<record source="33" destination="45" label="61">
+33 45
+</record>
+<record source="45" destination="57" label="62">
+45 57
+</record>
+<record source="57" destination="69" label="63">
+57 69
+</record>
+<record source="69" destination="81" label="64">
+69 81
+</record>
+<record source="81" destination="92" label="65">
+81 92
+</record>
+<record source="92" destination="79" label="66">
+92 79
+</record>
+<record source="79" destination="67" label="67">
+79 67
+</record>
+<record source="67" destination="55" label="68">
+67 55
+</record>
+<record source="55" destination="44" label="69">
+55 44
+</record>
+<record source="44" destination="33" label="70">
+44 33
+</record>
+<record source="39" destination="50" label="71">
+39 50
+</record>
+<record source="50" destination="61" label="72">
+50 61
+</record>
+<record source="61" destination="73" label="73">
+61 73
+</record>
+<record source="73" destination="85" label="74">
+73 85
+</record>
+<record source="85" destination="97" label="75">
+85 97
+</record>
+<record source="97" destination="87" label="76">
+97 87
+</record>
+<record source="87" destination="75" label="77">
+87 75
+</record>
+<record source="75" destination="63" label="78">
+75 63
+</record>
+<record source="63" destination="51" label="79">
+63 51
+</record>
+<record source="51" destination="39" label="80">
+51 39
+</record>
+<record source="59" destination="68" label="81">
+59 68
+</record>
+<record source="68" destination="80" label="82">
+68 80
+</record>
+<record source="80" destination="91" label="83">
+80 91
+</record>
+<record source="91" destination="101" label="84">
+91 101
+</record>
+<record source="101" destination="109" label="85">
+101 109
+</record>
+<record source="109" destination="103" label="86">
+109 103
+</record>
+<record source="103" destination="94" label="87">
+103 94
+</record>
+<record source="94" destination="82" label="88">
+94 82
+</record>
+<record source="82" destination="71" label="89">
+82 71
+</record>
+<record source="71" destination="59" label="90">
+71 59
+</record>
+<record source="65" destination="77" label="91">
+65 77
+</record>
+<record source="77" destination="88" label="92">
+77 88
+</record>
+<record source="88" destination="99" label="93">
+88 99
+</record>
+<record source="99" destination="107" label="94">
+99 107
+</record>
+<record source="107" destination="112" label="95">
+107 112
+</record>
+<record source="112" destination="105" label="96">
+112 105
+</record>
+<record source="105" destination="96" label="97">
+105 96
+</record>
+<record source="96" destination="86" label="98">
+96 86
+</record>
+<record source="86" destination="74" label="99">
+86 74
+</record>
+<record source="74" destination="65" label="100">
+74 65
+</record>
+<record source="84" destination="95" label="101">
+84 95
+</record>
+<record source="95" destination="104" label="102">
+95 104
+</record>
+<record source="104" destination="111" label="103">
+104 111
+</record>
+<record source="111" destination="116" label="104">
+111 116
+</record>
+<record source="116" destination="118" label="105">
+116 118
+</record>
+<record source="118" destination="114" label="106">
+118 114
+</record>
+<record source="114" destination="108" label="107">
+114 108
+</record>
+<record source="108" destination="100" label="108">
+108 100
+</record>
+<record source="100" destination="90" label="109">
+100 90
+</record>
+<record source="90" destination="84" label="110">
+90 84
+</record>
+<record source="93" destination="98" label="111">
+93 98
+</record>
+<record source="98" destination="106" label="112">
+98 106
+</record>
+<record source="106" destination="113" label="113">
+106 113
+</record>
+<record source="113" destination="117" label="114">
+113 117
+</record>
+<record source="117" destination="120" label="115">
+117 120
+</record>
+<record source="120" destination="119" label="116">
+120 119
+</record>
+<record source="119" destination="115" label="117">
+119 115
+</record>
+<record source="115" destination="110" label="118">
+115 110
+</record>
+<record source="110" destination="102" label="119">
+110 102
+</record>
+<record source="102" destination="93" label="120">
+102 93
+</record>
+<record source="13" destination="21" label="121" glyph="fc 1">
+na  na 
+</record>
+<record source="14" destination="7" label="122" glyph="fc 1">
+na  na 
+</record>
+<record source="9" destination="4" label="123" glyph="fc 1">
+na  na 
+</record>
+<record source="3" destination="1" label="124" glyph="fc 1">
+na  na 
+</record>
+<record source="15" destination="8" label="125" glyph="fc 1">
+na  na 
+</record>
+<record source="16" destination="25" label="126" glyph="fc 1">
+na  na 
+</record>
+<record source="35" destination="23" label="127" glyph="fc 1">
+na  na 
+</record>
+<record source="119" destination="116" label="128" glyph="fc 1">
+na  na 
+</record>
+<record source="115" destination="109" label="129" glyph="fc 1">
+na  na 
+</record>
+<record source="103" destination="111" label="130" glyph="fc 1">
+na  na 
+</record>
+<record source="44" destination="31" label="131" glyph="fc 1">
+na  na 
+</record>
+<record source="55" destination="43" label="132" glyph="fc 1">
+na  na 
+</record>
+<record source="33" destination="22" label="133" glyph="fc 1">
+na  na 
+</record>
+<record source="45" destination="32" label="134" glyph="fc 1">
+na  na 
+</record>
+<record source="57" destination="63" label="135" glyph="fc 1">
+na  na 
+</record>
+<record source="51" destination="38" label="136" glyph="fc 1">
+na  na 
+</record>
+<record source="39" destination="27" label="137" glyph="fc 1">
+na  na 
+</record>
+<record source="50" destination="37" label="138" glyph="fc 1">
+na  na 
+</record>
+<record source="61" destination="49" label="139" glyph="fc 1">
+na  na 
+</record>
+<record source="26" destination="17" label="140" glyph="fc 1">
+na  na 
+</record>
+<record source="10" destination="18" label="141" glyph="fc 1">
+na  na 
+</record>
+<record source="12" destination="6" label="142" glyph="fc 1">
+na  na 
+</record>
+<record source="5" destination="2" label="143" glyph="fc 1">
+na  na 
+</record>
+<record source="107" destination="114" label="144" glyph="fc 1">
+na  na 
+</record>
+<record source="99" destination="108" label="145" glyph="fc 1">
+na  na 
+</record>
+<record source="104" destination="94" label="146" glyph="fc 1">
+na  na 
+</record>
+<record source="84" destination="72" label="147" glyph="fc 1">
+na  na 
+</record>
+<record source="67" destination="80" label="148" glyph="fc 1">
+na  na 
+</record>
+<record source="91" destination="79" label="149" glyph="fc 1">
+na  na 
+</record>
+<record source="92" destination="102" label="150" glyph="fc 1">
+na  na 
+</record>
+<record source="110" destination="101" label="151" glyph="fc 1">
+na  na 
+</record>
+<record source="40" destination="52" label="152" glyph="fc 1">
+na  na 
+</record>
+<record source="41" destination="28" label="153" glyph="fc 1">
+na  na 
+</record>
+<record source="19" destination="11" label="154" glyph="fc 1">
+na  na 
+</record>
+<record source="30" destination="20" label="155" glyph="fc 1">
+na  na 
+</record>
+<record source="59" destination="47" label="156" glyph="fc 1">
+na  na 
+</record>
+<record source="56" destination="68" label="157" glyph="fc 1">
+na  na 
+</record>
+<record source="82" destination="70" label="158" glyph="fc 1">
+na  na 
+</record>
+<record source="83" destination="95" label="159" glyph="fc 1">
+na  na 
+</record>
+<record source="71" destination="58" label="160" glyph="fc 1">
+na  na 
+</record>
+<record source="46" destination="34" label="161" glyph="fc 1">
+na  na 
+</record>
+<record source="64" destination="77" label="162" glyph="fc 1">
+na  na 
+</record>
+<record source="65" destination="53" label="163" glyph="fc 1">
+na  na 
+</record>
+<record source="62" destination="74" label="164" glyph="fc 1">
+na  na 
+</record>
+<record source="73" destination="86" label="165" glyph="fc 1">
+na  na 
+</record>
+<record source="85" destination="96" label="166" glyph="fc 1">
+na  na 
+</record>
+<record source="98" destination="87" label="167" glyph="fc 1">
+na  na 
+</record>
+<record source="97" destination="106" label="168" glyph="fc 1">
+na  na 
+</record>
+<record source="113" destination="105" label="169" glyph="fc 1">
+na  na 
+</record>
+<record source="117" destination="112" label="170" glyph="fc 1">
+na  na 
+</record>
+<record source="120" destination="118" label="171" glyph="fc 1">
+na  na 
+</record>
+<record source="76" destination="88" label="172" glyph="fc 1">
+na  na 
+</record>
+<record source="100" destination="89" label="173" glyph="fc 1">
+na  na 
+</record>
+<record source="90" destination="78" label="174" glyph="fc 1">
+na  na 
+</record>
+<record source="60" destination="66" label="175" glyph="fc 1">
+na  na 
+</record>
+<record source="48" destination="54" label="176" glyph="fc 1">
+na  na 
+</record>
+<record source="36" destination="24" label="177" glyph="fc 1">
+na  na 
+</record>
+<record source="29" destination="42" label="178" glyph="fc 1">
+na  na 
+</record>
+<record source="93" destination="81" label="179" glyph="fc 1">
+na  na 
+</record>
+<record source="69" destination="75" label="180" glyph="fc 1">
+na  na 
+</record>
+</records>
+</data>
+</ggobidata>

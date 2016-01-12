@@ -1,0 +1,567 @@
+<?xml version="1.0"?>
+<!DOCTYPE ggobidata SYSTEM "ggobi.dtd">
+<ggobidata count="2">
+<data name="vertices">
+<description>
+
+</description>
+<variables count="3">
+  <realvariable name="Var  1"/>
+  <realvariable name="Var  2"/>
+  <realvariable name="Var  3"/>
+</variables>
+<records count="60" glyph="fc 2" color="8" >
+<record id="1" label="1" color="8" glyph="fc 2">
+0  0  1.026054  
+</record>
+<record id="2" label="2" color="8" glyph="fc 2">
+0.447838  0  0.9231617  
+</record>
+<record id="3" label="3" color="8" glyph="fc 2">
+-0.02363976  0.4472136  0.9231617  
+</record>
+<record id="4" label="4" color="8" glyph="fc 2">
+-0.4050732  0.190983  0.9231617  
+</record>
+<record id="5" label="5" color="8" glyph="fc 2">
+-0.1693344  -0.4145898  0.9231617  
+</record>
+<record id="6" label="6" color="8" glyph="fc 2">
+0.4241982  0.4472136  0.8202696  
+</record>
+<record id="7" label="7" color="8" glyph="fc 2">
+0.7673818  0.190983  0.6537868  
+</record>
+<record id="8" label="8" color="8" glyph="fc 2">
+0.5552827  -0.4145898  0.7566788  
+</record>
+<record id="9" label="9" color="8" glyph="fc 2">
+-0.2312241  0.7562306  0.6537868  
+</record>
+<record id="10" label="10" color="8" glyph="fc 2">
+-0.5744076  -0.2236068  0.8202696  
+</record>
+<record id="11" label="11" color="8" glyph="fc 2">
+-0.6126576  0.5  0.6537868  
+</record>
+<record id="12" label="12" color="8" glyph="fc 2">
+0.1738492  -0.6708204  0.7566788  
+</record>
+<record id="13" label="13" color="8" glyph="fc 2">
+-0.4669629  -0.6381966  0.6537868  
+</record>
+<record id="14" label="14" color="8" glyph="fc 2">
+0.493393  0.7562306  0.4873039  
+</record>
+<record id="15" label="15" color="8" glyph="fc 2">
+0.8748265  -0.2236068  0.4873039  
+</record>
+<record id="16" label="16" color="8" glyph="fc 2">
+0.8365765  0.5  0.320821  
+</record>
+<record id="17" label="17" color="8" glyph="fc 2">
+0.7054921  -0.6381966  0.3844118  
+</record>
+<record id="18" label="18" color="8" glyph="fc 2">
+0.08831973  0.9472136  0.3844118  
+</record>
+<record id="19" label="19" color="8" glyph="fc 2">
+-0.5434628  0.809017  0.320821  
+</record>
+<record id="20" label="20" color="8" glyph="fc 2">
+-0.8866463  -0.1708204  0.4873039  
+</record>
+<record id="21" label="21" color="8" glyph="fc 2">
+-0.9102861  0.2763932  0.3844118  
+</record>
+<record id="22" label="22" color="8" glyph="fc 2">
+-0.1237794  -0.8944272  0.4873039  
+</record>
+<record id="23" label="23" color="8" glyph="fc 2">
+0.3240586  -0.8944272  0.3844118  
+</record>
+<record id="24" label="24" color="8" glyph="fc 2">
+-0.7792016  -0.5854102  0.320821  
+</record>
+<record id="25" label="25" color="8" glyph="fc 2">
+0.6289922  0.809017  0.05144604  
+</record>
+<record id="26" label="26" color="8" glyph="fc 2">
+1.010426  -0.1708204  0.05144604  
+</record>
+<record id="27" label="27" color="8" glyph="fc 2">
+0.9867859  0.2763932  -0.05144604  
+</record>
+<record id="28" label="28" color="8" glyph="fc 2">
+0.8410913  -0.5854102  -0.05144604  
+</record>
+<record id="29" label="29" color="8" glyph="fc 2">
+-0.223919  1  0.05144604  
+</record>
+<record id="30" label="30" color="8" glyph="fc 2">
+0.223919  1  -0.05144604  
+</record>
+<record id="31" label="31" color="8" glyph="fc 2">
+-0.8410913  0.5854102  0.05144604  
+</record>
+<record id="32" label="32" color="8" glyph="fc 2">
+-0.9867859  -0.2763932  0.05144604  
+</record>
+<record id="33" label="33" color="8" glyph="fc 2">
+-1.010426  0.1708204  -0.05144604  
+</record>
+<record id="34" label="34" color="8" glyph="fc 2">
+-0.223919  -1  0.05144604  
+</record>
+<record id="35" label="35" color="8" glyph="fc 2">
+0.223919  -1  -0.05144604  
+</record>
+<record id="36" label="36" color="8" glyph="fc 2">
+-0.6289922  -0.809017  -0.05144604  
+</record>
+<record id="37" label="37" color="8" glyph="fc 2">
+0.7792016  0.5854102  -0.320821  
+</record>
+<record id="38" label="38" color="8" glyph="fc 2">
+0.9102861  -0.2763932  -0.3844118  
+</record>
+<record id="39" label="39" color="8" glyph="fc 2">
+0.8866463  0.1708204  -0.4873039  
+</record>
+<record id="40" label="40" color="8" glyph="fc 2">
+0.5434628  -0.809017  -0.320821  
+</record>
+<record id="41" label="41" color="8" glyph="fc 2">
+-0.3240586  0.8944272  -0.3844118  
+</record>
+<record id="42" label="42" color="8" glyph="fc 2">
+0.1237794  0.8944272  -0.4873039  
+</record>
+<record id="43" label="43" color="8" glyph="fc 2">
+-0.7054921  0.6381966  -0.3844118  
+</record>
+<record id="44" label="44" color="8" glyph="fc 2">
+-0.8365765  -0.5  -0.320821  
+</record>
+<record id="45" label="45" color="8" glyph="fc 2">
+-0.8748265  0.2236068  -0.4873039  
+</record>
+<record id="46" label="46" color="8" glyph="fc 2">
+-0.08831973  -0.9472136  -0.3844118  
+</record>
+<record id="47" label="47" color="8" glyph="fc 2">
+-0.493393  -0.7562306  -0.4873039  
+</record>
+<record id="48" label="48" color="8" glyph="fc 2">
+0.4669629  0.6381966  -0.6537868  
+</record>
+<record id="49" label="49" color="8" glyph="fc 2">
+0.6126576  -0.5  -0.6537868  
+</record>
+<record id="50" label="50" color="8" glyph="fc 2">
+0.5744076  0.2236068  -0.8202696  
+</record>
+<record id="51" label="51" color="8" glyph="fc 2">
+0.2312241  -0.7562306  -0.6537868  
+</record>
+<record id="52" label="52" color="8" glyph="fc 2">
+-0.1738492  0.6708204  -0.7566788  
+</record>
+<record id="53" label="53" color="8" glyph="fc 2">
+-0.5552827  0.4145898  -0.7566788  
+</record>
+<record id="54" label="54" color="8" glyph="fc 2">
+-0.7673818  -0.190983  -0.6537868  
+</record>
+<record id="55" label="55" color="8" glyph="fc 2">
+-0.4241982  -0.4472136  -0.8202696  
+</record>
+<record id="56" label="56" color="8" glyph="fc 2">
+0.1693344  0.4145898  -0.9231617  
+</record>
+<record id="57" label="57" color="8" glyph="fc 2">
+0.4050732  -0.190983  -0.9231617  
+</record>
+<record id="58" label="58" color="8" glyph="fc 2">
+0.02363976  -0.4472136  -0.9231617  
+</record>
+<record id="59" label="59" color="8" glyph="fc 2">
+-0.447838  0  -0.9231617  
+</record>
+<record id="60" label="60" color="8" glyph="fc 2">
+0  0  -1.026054  
+</record>
+</records>
+</data>
+<data name="edges">
+<description>
+
+</description>
+<variables count="2">
+<realvariable name="Var  1"/>
+<realvariable name="Var  2"/>
+</variables>
+<records count="120" glyph="fc 2" color="8">
+<record  source="1" destination="3"  label="1" color="8" glyph="fc 2">
+1 3 
+</record>
+<record  source="3" destination="4"  label="2" color="8" glyph="fc 2">
+3 4 
+</record>
+<record  source="4" destination="1"  label="3" color="8" glyph="fc 2">
+4 1 
+</record>
+<record  source="2" destination="7"  label="4" color="8" glyph="fc 2">
+2 7 
+</record>
+<record  source="7" destination="6"  label="5" color="8" glyph="fc 2">
+7 6 
+</record>
+<record  source="6" destination="2"  label="6" color="8" glyph="fc 2">
+6 2 
+</record>
+<record  source="5" destination="10"  label="7" color="8" glyph="fc 2">
+5 10 
+</record>
+<record  source="10" destination="13"  label="8" color="8" glyph="fc 2">
+10 13 
+</record>
+<record  source="13" destination="5"  label="9" color="8" glyph="fc 2">
+13 5 
+</record>
+<record  source="8" destination="17"  label="10" color="8" glyph="fc 2">
+8 17 
+</record>
+<record  source="17" destination="15"  label="11" color="8" glyph="fc 2">
+17 15 
+</record>
+<record  source="15" destination="8"  label="12" color="8" glyph="fc 2">
+15 8 
+</record>
+<record  source="9" destination="19"  label="13" color="8" glyph="fc 2">
+9 19 
+</record>
+<record  source="19" destination="11"  label="14" color="8" glyph="fc 2">
+19 11 
+</record>
+<record  source="11" destination="9"  label="15" color="8" glyph="fc 2">
+11 9 
+</record>
+<record  source="12" destination="22"  label="16" color="8" glyph="fc 2">
+12 22 
+</record>
+<record  source="22" destination="23"  label="17" color="8" glyph="fc 2">
+22 23 
+</record>
+<record  source="23" destination="12"  label="18" color="8" glyph="fc 2">
+23 12 
+</record>
+<record  source="14" destination="16"  label="19" color="8" glyph="fc 2">
+14 16 
+</record>
+<record  source="16" destination="25"  label="20" color="8" glyph="fc 2">
+16 25 
+</record>
+<record  source="25" destination="14"  label="21" color="8" glyph="fc 2">
+25 14 
+</record>
+<record  source="18" destination="30"  label="22" color="8" glyph="fc 2">
+18 30 
+</record>
+<record  source="30" destination="29"  label="23" color="8" glyph="fc 2">
+30 29 
+</record>
+<record  source="29" destination="18"  label="24" color="8" glyph="fc 2">
+29 18 
+</record>
+<record  source="20" destination="32"  label="25" color="8" glyph="fc 2">
+20 32 
+</record>
+<record  source="32" destination="24"  label="26" color="8" glyph="fc 2">
+32 24 
+</record>
+<record  source="24" destination="20"  label="27" color="8" glyph="fc 2">
+24 20 
+</record>
+<record  source="21" destination="31"  label="28" color="8" glyph="fc 2">
+21 31 
+</record>
+<record  source="31" destination="33"  label="29" color="8" glyph="fc 2">
+31 33 
+</record>
+<record  source="33" destination="21"  label="30" color="8" glyph="fc 2">
+33 21 
+</record>
+<record  source="26" destination="28"  label="31" color="8" glyph="fc 2">
+26 28 
+</record>
+<record  source="28" destination="38"  label="32" color="8" glyph="fc 2">
+28 38 
+</record>
+<record  source="38" destination="26"  label="33" color="8" glyph="fc 2">
+38 26 
+</record>
+<record  source="27" destination="39"  label="34" color="8" glyph="fc 2">
+27 39 
+</record>
+<record  source="39" destination="37"  label="35" color="8" glyph="fc 2">
+39 37 
+</record>
+<record  source="37" destination="27"  label="36" color="8" glyph="fc 2">
+37 27 
+</record>
+<record  source="34" destination="46"  label="37" color="8" glyph="fc 2">
+34 46 
+</record>
+<record  source="46" destination="35"  label="38" color="8" glyph="fc 2">
+46 35 
+</record>
+<record  source="35" destination="34"  label="39" color="8" glyph="fc 2">
+35 34 
+</record>
+<record  source="36" destination="44"  label="40" color="8" glyph="fc 2">
+36 44 
+</record>
+<record  source="44" destination="47"  label="41" color="8" glyph="fc 2">
+44 47 
+</record>
+<record  source="47" destination="36"  label="42" color="8" glyph="fc 2">
+47 36 
+</record>
+<record  source="40" destination="51"  label="43" color="8" glyph="fc 2">
+40 51 
+</record>
+<record  source="51" destination="49"  label="44" color="8" glyph="fc 2">
+51 49 
+</record>
+<record  source="49" destination="40"  label="45" color="8" glyph="fc 2">
+49 40 
+</record>
+<record  source="41" destination="42"  label="46" color="8" glyph="fc 2">
+41 42 
+</record>
+<record  source="42" destination="52"  label="47" color="8" glyph="fc 2">
+42 52 
+</record>
+<record  source="52" destination="41"  label="48" color="8" glyph="fc 2">
+52 41 
+</record>
+<record  source="43" destination="53"  label="49" color="8" glyph="fc 2">
+43 53 
+</record>
+<record  source="53" destination="45"  label="50" color="8" glyph="fc 2">
+53 45 
+</record>
+<record  source="45" destination="43"  label="51" color="8" glyph="fc 2">
+45 43 
+</record>
+<record  source="48" destination="50"  label="52" color="8" glyph="fc 2">
+48 50 
+</record>
+<record  source="50" destination="56"  label="53" color="8" glyph="fc 2">
+50 56 
+</record>
+<record  source="56" destination="48"  label="54" color="8" glyph="fc 2">
+56 48 
+</record>
+<record  source="54" destination="59"  label="55" color="8" glyph="fc 2">
+54 59 
+</record>
+<record  source="59" destination="55"  label="56" color="8" glyph="fc 2">
+59 55 
+</record>
+<record  source="55" destination="54"  label="57" color="8" glyph="fc 2">
+55 54 
+</record>
+<record  source="57" destination="58"  label="58" color="8" glyph="fc 2">
+57 58 
+</record>
+<record  source="58" destination="60"  label="59" color="8" glyph="fc 2">
+58 60 
+</record>
+<record  source="60" destination="57"  label="60" color="8" glyph="fc 2">
+60 57 
+</record>
+<record  source="1" destination="5"  label="61" color="8" glyph="fc 2">
+1 5 
+</record>
+<record  source="5" destination="12"  label="62" color="8" glyph="fc 2">
+5 12 
+</record>
+<record  source="12" destination="8"  label="63" color="8" glyph="fc 2">
+12 8 
+</record>
+<record  source="8" destination="2"  label="64" color="8" glyph="fc 2">
+8 2 
+</record>
+<record  source="2" destination="1"  label="65" color="8" glyph="fc 2">
+2 1 
+</record>
+<record  source="3" destination="6"  label="66" color="8" glyph="fc 2">
+3 6 
+</record>
+<record  source="6" destination="14"  label="67" color="8" glyph="fc 2">
+6 14 
+</record>
+<record  source="14" destination="18"  label="68" color="8" glyph="fc 2">
+14 18 
+</record>
+<record  source="18" destination="9"  label="69" color="8" glyph="fc 2">
+18 9 
+</record>
+<record  source="9" destination="3"  label="70" color="8" glyph="fc 2">
+9 3 
+</record>
+<record  source="4" destination="11"  label="71" color="8" glyph="fc 2">
+4 11 
+</record>
+<record  source="11" destination="21"  label="72" color="8" glyph="fc 2">
+11 21 
+</record>
+<record  source="21" destination="20"  label="73" color="8" glyph="fc 2">
+21 20 
+</record>
+<record  source="20" destination="10"  label="74" color="8" glyph="fc 2">
+20 10 
+</record>
+<record  source="10" destination="4"  label="75" color="8" glyph="fc 2">
+10 4 
+</record>
+<record  source="7" destination="15"  label="76" color="8" glyph="fc 2">
+7 15 
+</record>
+<record  source="15" destination="26"  label="77" color="8" glyph="fc 2">
+15 26 
+</record>
+<record  source="26" destination="27"  label="78" color="8" glyph="fc 2">
+26 27 
+</record>
+<record  source="27" destination="16"  label="79" color="8" glyph="fc 2">
+27 16 
+</record>
+<record  source="16" destination="7"  label="80" color="8" glyph="fc 2">
+16 7 
+</record>
+<record  source="13" destination="24"  label="81" color="8" glyph="fc 2">
+13 24 
+</record>
+<record  source="24" destination="36"  label="82" color="8" glyph="fc 2">
+24 36 
+</record>
+<record  source="36" destination="34"  label="83" color="8" glyph="fc 2">
+36 34 
+</record>
+<record  source="34" destination="22"  label="84" color="8" glyph="fc 2">
+34 22 
+</record>
+<record  source="22" destination="13"  label="85" color="8" glyph="fc 2">
+22 13 
+</record>
+<record  source="17" destination="23"  label="86" color="8" glyph="fc 2">
+17 23 
+</record>
+<record  source="23" destination="35"  label="87" color="8" glyph="fc 2">
+23 35 
+</record>
+<record  source="35" destination="40"  label="88" color="8" glyph="fc 2">
+35 40 
+</record>
+<record  source="40" destination="28"  label="89" color="8" glyph="fc 2">
+40 28 
+</record>
+<record  source="28" destination="17"  label="90" color="8" glyph="fc 2">
+28 17 
+</record>
+<record  source="19" destination="29"  label="91" color="8" glyph="fc 2">
+19 29 
+</record>
+<record  source="29" destination="41"  label="92" color="8" glyph="fc 2">
+29 41 
+</record>
+<record  source="41" destination="43"  label="93" color="8" glyph="fc 2">
+41 43 
+</record>
+<record  source="43" destination="31"  label="94" color="8" glyph="fc 2">
+43 31 
+</record>
+<record  source="31" destination="19"  label="95" color="8" glyph="fc 2">
+31 19 
+</record>
+<record  source="25" destination="37"  label="96" color="8" glyph="fc 2">
+25 37 
+</record>
+<record  source="37" destination="48"  label="97" color="8" glyph="fc 2">
+37 48 
+</record>
+<record  source="48" destination="42"  label="98" color="8" glyph="fc 2">
+48 42 
+</record>
+<record  source="42" destination="30"  label="99" color="8" glyph="fc 2">
+42 30 
+</record>
+<record  source="30" destination="25"  label="100" color="8" glyph="fc 2">
+30 25 
+</record>
+<record  source="32" destination="33"  label="101" color="8" glyph="fc 2">
+32 33 
+</record>
+<record  source="33" destination="45"  label="102" color="8" glyph="fc 2">
+33 45 
+</record>
+<record  source="45" destination="54"  label="103" color="8" glyph="fc 2">
+45 54 
+</record>
+<record  source="54" destination="44"  label="104" color="8" glyph="fc 2">
+54 44 
+</record>
+<record  source="44" destination="32"  label="105" color="8" glyph="fc 2">
+44 32 
+</record>
+<record  source="38" destination="49"  label="106" color="8" glyph="fc 2">
+38 49 
+</record>
+<record  source="49" destination="57"  label="107" color="8" glyph="fc 2">
+49 57 
+</record>
+<record  source="57" destination="50"  label="108" color="8" glyph="fc 2">
+57 50 
+</record>
+<record  source="50" destination="39"  label="109" color="8" glyph="fc 2">
+50 39 
+</record>
+<record  source="39" destination="38"  label="110" color="8" glyph="fc 2">
+39 38 
+</record>
+<record  source="46" destination="47"  label="111" color="8" glyph="fc 2">
+46 47 
+</record>
+<record  source="47" destination="55"  label="112" color="8" glyph="fc 2">
+47 55 
+</record>
+<record  source="55" destination="58"  label="113" color="8" glyph="fc 2">
+55 58 
+</record>
+<record  source="58" destination="51"  label="114" color="8" glyph="fc 2">
+58 51 
+</record>
+<record  source="51" destination="46"  label="115" color="8" glyph="fc 2">
+51 46 
+</record>
+<record  source="52" destination="56"  label="116" color="8" glyph="fc 2">
+52 56 
+</record>
+<record  source="56" destination="60"  label="117" color="8" glyph="fc 2">
+56 60 
+</record>
+<record  source="60" destination="59"  label="118" color="8" glyph="fc 2">
+60 59 
+</record>
+<record  source="59" destination="53"  label="119" color="8" glyph="fc 2">
+59 53 
+</record>
+<record  source="53" destination="52"  label="120" color="8" glyph="fc 2">
+53 52 
+</record>
+</records>
+</data>
+</ggobidata>

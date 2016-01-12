@@ -1,0 +1,1325 @@
+<?xml version="1.0"?>
+<!DOCTYPE ggobidata SYSTEM "ggobi.dtd">
+
+<ggobidata count="2">
+<data name="vertices">
+<description>
+This is XML created by GGobi
+</description>
+<variables count="4">
+   <realvariable name="X1" nickname="X1"/>
+   <realvariable name="X2" nickname="X2"/>
+   <realvariable name="X3" nickname="X3"/>
+   <realvariable name="X4" nickname="X4"/>
+</variables>
+<records count="400" glyph="fc 1" color="3">
+<record id="1" label="1">
+0 0 0 0
+</record>
+<record id="2" label="2">
+1 0 0 0
+</record>
+<record id="3" label="3">
+0 1 0 0
+</record>
+<record id="4" label="4">
+1 1 0 0
+</record>
+<record id="5" label="5">
+0 0 1 0
+</record>
+<record id="6" label="6">
+1 0 1 0
+</record>
+<record id="7" label="7">
+0 1 1 0
+</record>
+<record id="8" label="8">
+1 1 1 0
+</record>
+<record id="9" label="9">
+0 0 0 1
+</record>
+<record id="10" label="10">
+1 0 0 1
+</record>
+<record id="11" label="11">
+0 1 0 1
+</record>
+<record id="12" label="12">
+1 1 0 1
+</record>
+<record id="13" label="13">
+0 0 1 1
+</record>
+<record id="14" label="14">
+1 0 1 1
+</record>
+<record id="15" label="15">
+0 1 1 1
+</record>
+<record id="16" label="16">
+1 1 1 1
+</record>
+<record id="17" label="17">
+0.0769231 0 0 0
+</record>
+<record id="18" label="18">
+0.153846 0 0 0
+</record>
+<record id="19" label="19">
+0.230769 0 0 0
+</record>
+<record id="20" label="20">
+0.307692 0 0 0
+</record>
+<record id="21" label="21">
+0.384615 0 0 0
+</record>
+<record id="22" label="22">
+0.461538 0 0 0
+</record>
+<record id="23" label="23">
+0.538462 0 0 0
+</record>
+<record id="24" label="24">
+0.615385 0 0 0
+</record>
+<record id="25" label="25">
+0.692308 0 0 0
+</record>
+<record id="26" label="26">
+0.769231 0 0 0
+</record>
+<record id="27" label="27">
+0.846154 0 0 0
+</record>
+<record id="28" label="28">
+0.923077 0 0 0
+</record>
+<record id="29" label="29">
+0 0.0769231 0 0
+</record>
+<record id="30" label="30">
+0 0.153846 0 0
+</record>
+<record id="31" label="31">
+0 0.230769 0 0
+</record>
+<record id="32" label="32">
+0 0.307692 0 0
+</record>
+<record id="33" label="33">
+0 0.384615 0 0
+</record>
+<record id="34" label="34">
+0 0.461538 0 0
+</record>
+<record id="35" label="35">
+0 0.538462 0 0
+</record>
+<record id="36" label="36">
+0 0.615385 0 0
+</record>
+<record id="37" label="37">
+0 0.692308 0 0
+</record>
+<record id="38" label="38">
+0 0.769231 0 0
+</record>
+<record id="39" label="39">
+0 0.846154 0 0
+</record>
+<record id="40" label="40">
+0 0.923077 0 0
+</record>
+<record id="41" label="41">
+0 0 0.0769231 0
+</record>
+<record id="42" label="42">
+0 0 0.153846 0
+</record>
+<record id="43" label="43">
+0 0 0.230769 0
+</record>
+<record id="44" label="44">
+0 0 0.307692 0
+</record>
+<record id="45" label="45">
+0 0 0.384615 0
+</record>
+<record id="46" label="46">
+0 0 0.461538 0
+</record>
+<record id="47" label="47">
+0 0 0.538462 0
+</record>
+<record id="48" label="48">
+0 0 0.615385 0
+</record>
+<record id="49" label="49">
+0 0 0.692308 0
+</record>
+<record id="50" label="50">
+0 0 0.769231 0
+</record>
+<record id="51" label="51">
+0 0 0.846154 0
+</record>
+<record id="52" label="52">
+0 0 0.923077 0
+</record>
+<record id="53" label="53">
+0 0 0 0.0769231
+</record>
+<record id="54" label="54">
+0 0 0 0.153846
+</record>
+<record id="55" label="55">
+0 0 0 0.230769
+</record>
+<record id="56" label="56">
+0 0 0 0.307692
+</record>
+<record id="57" label="57">
+0 0 0 0.384615
+</record>
+<record id="58" label="58">
+0 0 0 0.461538
+</record>
+<record id="59" label="59">
+0 0 0 0.538462
+</record>
+<record id="60" label="60">
+0 0 0 0.615385
+</record>
+<record id="61" label="61">
+0 0 0 0.692308
+</record>
+<record id="62" label="62">
+0 0 0 0.769231
+</record>
+<record id="63" label="63">
+0 0 0 0.846154
+</record>
+<record id="64" label="64">
+0 0 0 0.923077
+</record>
+<record id="65" label="65">
+1 0.0769231 0 0
+</record>
+<record id="66" label="66">
+1 0.153846 0 0
+</record>
+<record id="67" label="67">
+1 0.230769 0 0
+</record>
+<record id="68" label="68">
+1 0.307692 0 0
+</record>
+<record id="69" label="69">
+1 0.384615 0 0
+</record>
+<record id="70" label="70">
+1 0.461538 0 0
+</record>
+<record id="71" label="71">
+1 0.538462 0 0
+</record>
+<record id="72" label="72">
+1 0.615385 0 0
+</record>
+<record id="73" label="73">
+1 0.692308 0 0
+</record>
+<record id="74" label="74">
+1 0.769231 0 0
+</record>
+<record id="75" label="75">
+1 0.846154 0 0
+</record>
+<record id="76" label="76">
+1 0.923077 0 0
+</record>
+<record id="77" label="77">
+1 0 0.0769231 0
+</record>
+<record id="78" label="78">
+1 0 0.153846 0
+</record>
+<record id="79" label="79">
+1 0 0.230769 0
+</record>
+<record id="80" label="80">
+1 0 0.307692 0
+</record>
+<record id="81" label="81">
+1 0 0.384615 0
+</record>
+<record id="82" label="82">
+1 0 0.461538 0
+</record>
+<record id="83" label="83">
+1 0 0.538462 0
+</record>
+<record id="84" label="84">
+1 0 0.615385 0
+</record>
+<record id="85" label="85">
+1 0 0.692308 0
+</record>
+<record id="86" label="86">
+1 0 0.769231 0
+</record>
+<record id="87" label="87">
+1 0 0.846154 0
+</record>
+<record id="88" label="88">
+1 0 0.923077 0
+</record>
+<record id="89" label="89">
+1 0 0 0.0769231
+</record>
+<record id="90" label="90">
+1 0 0 0.153846
+</record>
+<record id="91" label="91">
+1 0 0 0.230769
+</record>
+<record id="92" label="92">
+1 0 0 0.307692
+</record>
+<record id="93" label="93">
+1 0 0 0.384615
+</record>
+<record id="94" label="94">
+1 0 0 0.461538
+</record>
+<record id="95" label="95">
+1 0 0 0.538462
+</record>
+<record id="96" label="96">
+1 0 0 0.615385
+</record>
+<record id="97" label="97">
+1 0 0 0.692308
+</record>
+<record id="98" label="98">
+1 0 0 0.769231
+</record>
+<record id="99" label="99">
+1 0 0 0.846154
+</record>
+<record id="100" label="100">
+1 0 0 0.923077
+</record>
+<record id="101" label="101">
+0.0769231 1 0 0
+</record>
+<record id="102" label="102">
+0.153846 1 0 0
+</record>
+<record id="103" label="103">
+0.230769 1 0 0
+</record>
+<record id="104" label="104">
+0.307692 1 0 0
+</record>
+<record id="105" label="105">
+0.384615 1 0 0
+</record>
+<record id="106" label="106">
+0.461538 1 0 0
+</record>
+<record id="107" label="107">
+0.538462 1 0 0
+</record>
+<record id="108" label="108">
+0.615385 1 0 0
+</record>
+<record id="109" label="109">
+0.692308 1 0 0
+</record>
+<record id="110" label="110">
+0.769231 1 0 0
+</record>
+<record id="111" label="111">
+0.846154 1 0 0
+</record>
+<record id="112" label="112">
+0.923077 1 0 0
+</record>
+<record id="113" label="113">
+0 1 0.0769231 0
+</record>
+<record id="114" label="114">
+0 1 0.153846 0
+</record>
+<record id="115" label="115">
+0 1 0.230769 0
+</record>
+<record id="116" label="116">
+0 1 0.307692 0
+</record>
+<record id="117" label="117">
+0 1 0.384615 0
+</record>
+<record id="118" label="118">
+0 1 0.461538 0
+</record>
+<record id="119" label="119">
+0 1 0.538462 0
+</record>
+<record id="120" label="120">
+0 1 0.615385 0
+</record>
+<record id="121" label="121">
+0 1 0.692308 0
+</record>
+<record id="122" label="122">
+0 1 0.769231 0
+</record>
+<record id="123" label="123">
+0 1 0.846154 0
+</record>
+<record id="124" label="124">
+0 1 0.923077 0
+</record>
+<record id="125" label="125">
+0 1 0 0.0769231
+</record>
+<record id="126" label="126">
+0 1 0 0.153846
+</record>
+<record id="127" label="127">
+0 1 0 0.230769
+</record>
+<record id="128" label="128">
+0 1 0 0.307692
+</record>
+<record id="129" label="129">
+0 1 0 0.384615
+</record>
+<record id="130" label="130">
+0 1 0 0.461538
+</record>
+<record id="131" label="131">
+0 1 0 0.538462
+</record>
+<record id="132" label="132">
+0 1 0 0.615385
+</record>
+<record id="133" label="133">
+0 1 0 0.692308
+</record>
+<record id="134" label="134">
+0 1 0 0.769231
+</record>
+<record id="135" label="135">
+0 1 0 0.846154
+</record>
+<record id="136" label="136">
+0 1 0 0.923077
+</record>
+<record id="137" label="137">
+1 1 0.0769231 0
+</record>
+<record id="138" label="138">
+1 1 0.153846 0
+</record>
+<record id="139" label="139">
+1 1 0.230769 0
+</record>
+<record id="140" label="140">
+1 1 0.307692 0
+</record>
+<record id="141" label="141">
+1 1 0.384615 0
+</record>
+<record id="142" label="142">
+1 1 0.461538 0
+</record>
+<record id="143" label="143">
+1 1 0.538462 0
+</record>
+<record id="144" label="144">
+1 1 0.615385 0
+</record>
+<record id="145" label="145">
+1 1 0.692308 0
+</record>
+<record id="146" label="146">
+1 1 0.769231 0
+</record>
+<record id="147" label="147">
+1 1 0.846154 0
+</record>
+<record id="148" label="148">
+1 1 0.923077 0
+</record>
+<record id="149" label="149">
+1 1 0 0.0769231
+</record>
+<record id="150" label="150">
+1 1 0 0.153846
+</record>
+<record id="151" label="151">
+1 1 0 0.230769
+</record>
+<record id="152" label="152">
+1 1 0 0.307692
+</record>
+<record id="153" label="153">
+1 1 0 0.384615
+</record>
+<record id="154" label="154">
+1 1 0 0.461538
+</record>
+<record id="155" label="155">
+1 1 0 0.538462
+</record>
+<record id="156" label="156">
+1 1 0 0.615385
+</record>
+<record id="157" label="157">
+1 1 0 0.692308
+</record>
+<record id="158" label="158">
+1 1 0 0.769231
+</record>
+<record id="159" label="159">
+1 1 0 0.846154
+</record>
+<record id="160" label="160">
+1 1 0 0.923077
+</record>
+<record id="161" label="161">
+0.0769231 0 1 0
+</record>
+<record id="162" label="162">
+0.153846 0 1 0
+</record>
+<record id="163" label="163">
+0.230769 0 1 0
+</record>
+<record id="164" label="164">
+0.307692 0 1 0
+</record>
+<record id="165" label="165">
+0.384615 0 1 0
+</record>
+<record id="166" label="166">
+0.461538 0 1 0
+</record>
+<record id="167" label="167">
+0.538462 0 1 0
+</record>
+<record id="168" label="168">
+0.615385 0 1 0
+</record>
+<record id="169" label="169">
+0.692308 0 1 0
+</record>
+<record id="170" label="170">
+0.769231 0 1 0
+</record>
+<record id="171" label="171">
+0.846154 0 1 0
+</record>
+<record id="172" label="172">
+0.923077 0 1 0
+</record>
+<record id="173" label="173">
+0 0.0769231 1 0
+</record>
+<record id="174" label="174">
+0 0.153846 1 0
+</record>
+<record id="175" label="175">
+0 0.230769 1 0
+</record>
+<record id="176" label="176">
+0 0.307692 1 0
+</record>
+<record id="177" label="177">
+0 0.384615 1 0
+</record>
+<record id="178" label="178">
+0 0.461538 1 0
+</record>
+<record id="179" label="179">
+0 0.538462 1 0
+</record>
+<record id="180" label="180">
+0 0.615385 1 0
+</record>
+<record id="181" label="181">
+0 0.692308 1 0
+</record>
+<record id="182" label="182">
+0 0.769231 1 0
+</record>
+<record id="183" label="183">
+0 0.846154 1 0
+</record>
+<record id="184" label="184">
+0 0.923077 1 0
+</record>
+<record id="185" label="185">
+0 0 1 0.0769231
+</record>
+<record id="186" label="186">
+0 0 1 0.153846
+</record>
+<record id="187" label="187">
+0 0 1 0.230769
+</record>
+<record id="188" label="188">
+0 0 1 0.307692
+</record>
+<record id="189" label="189">
+0 0 1 0.384615
+</record>
+<record id="190" label="190">
+0 0 1 0.461538
+</record>
+<record id="191" label="191">
+0 0 1 0.538462
+</record>
+<record id="192" label="192">
+0 0 1 0.615385
+</record>
+<record id="193" label="193">
+0 0 1 0.692308
+</record>
+<record id="194" label="194">
+0 0 1 0.769231
+</record>
+<record id="195" label="195">
+0 0 1 0.846154
+</record>
+<record id="196" label="196">
+0 0 1 0.923077
+</record>
+<record id="197" label="197">
+1 0.0769231 1 0
+</record>
+<record id="198" label="198">
+1 0.153846 1 0
+</record>
+<record id="199" label="199">
+1 0.230769 1 0
+</record>
+<record id="200" label="200">
+1 0.307692 1 0
+</record>
+<record id="201" label="201">
+1 0.384615 1 0
+</record>
+<record id="202" label="202">
+1 0.461538 1 0
+</record>
+<record id="203" label="203">
+1 0.538462 1 0
+</record>
+<record id="204" label="204">
+1 0.615385 1 0
+</record>
+<record id="205" label="205">
+1 0.692308 1 0
+</record>
+<record id="206" label="206">
+1 0.769231 1 0
+</record>
+<record id="207" label="207">
+1 0.846154 1 0
+</record>
+<record id="208" label="208">
+1 0.923077 1 0
+</record>
+<record id="209" label="209">
+1 0 1 0.0769231
+</record>
+<record id="210" label="210">
+1 0 1 0.153846
+</record>
+<record id="211" label="211">
+1 0 1 0.230769
+</record>
+<record id="212" label="212">
+1 0 1 0.307692
+</record>
+<record id="213" label="213">
+1 0 1 0.384615
+</record>
+<record id="214" label="214">
+1 0 1 0.461538
+</record>
+<record id="215" label="215">
+1 0 1 0.538462
+</record>
+<record id="216" label="216">
+1 0 1 0.615385
+</record>
+<record id="217" label="217">
+1 0 1 0.692308
+</record>
+<record id="218" label="218">
+1 0 1 0.769231
+</record>
+<record id="219" label="219">
+1 0 1 0.846154
+</record>
+<record id="220" label="220">
+1 0 1 0.923077
+</record>
+<record id="221" label="221">
+0.0769231 1 1 0
+</record>
+<record id="222" label="222">
+0.153846 1 1 0
+</record>
+<record id="223" label="223">
+0.230769 1 1 0
+</record>
+<record id="224" label="224">
+0.307692 1 1 0
+</record>
+<record id="225" label="225">
+0.384615 1 1 0
+</record>
+<record id="226" label="226">
+0.461538 1 1 0
+</record>
+<record id="227" label="227">
+0.538462 1 1 0
+</record>
+<record id="228" label="228">
+0.615385 1 1 0
+</record>
+<record id="229" label="229">
+0.692308 1 1 0
+</record>
+<record id="230" label="230">
+0.769231 1 1 0
+</record>
+<record id="231" label="231">
+0.846154 1 1 0
+</record>
+<record id="232" label="232">
+0.923077 1 1 0
+</record>
+<record id="233" label="233">
+0 1 1 0.0769231
+</record>
+<record id="234" label="234">
+0 1 1 0.153846
+</record>
+<record id="235" label="235">
+0 1 1 0.230769
+</record>
+<record id="236" label="236">
+0 1 1 0.307692
+</record>
+<record id="237" label="237">
+0 1 1 0.384615
+</record>
+<record id="238" label="238">
+0 1 1 0.461538
+</record>
+<record id="239" label="239">
+0 1 1 0.538462
+</record>
+<record id="240" label="240">
+0 1 1 0.615385
+</record>
+<record id="241" label="241">
+0 1 1 0.692308
+</record>
+<record id="242" label="242">
+0 1 1 0.769231
+</record>
+<record id="243" label="243">
+0 1 1 0.846154
+</record>
+<record id="244" label="244">
+0 1 1 0.923077
+</record>
+<record id="245" label="245">
+1 1 1 0.0769231
+</record>
+<record id="246" label="246">
+1 1 1 0.153846
+</record>
+<record id="247" label="247">
+1 1 1 0.230769
+</record>
+<record id="248" label="248">
+1 1 1 0.307692
+</record>
+<record id="249" label="249">
+1 1 1 0.384615
+</record>
+<record id="250" label="250">
+1 1 1 0.461538
+</record>
+<record id="251" label="251">
+1 1 1 0.538462
+</record>
+<record id="252" label="252">
+1 1 1 0.615385
+</record>
+<record id="253" label="253">
+1 1 1 0.692308
+</record>
+<record id="254" label="254">
+1 1 1 0.769231
+</record>
+<record id="255" label="255">
+1 1 1 0.846154
+</record>
+<record id="256" label="256">
+1 1 1 0.923077
+</record>
+<record id="257" label="257">
+0.0769231 0 0 1
+</record>
+<record id="258" label="258">
+0.153846 0 0 1
+</record>
+<record id="259" label="259">
+0.230769 0 0 1
+</record>
+<record id="260" label="260">
+0.307692 0 0 1
+</record>
+<record id="261" label="261">
+0.384615 0 0 1
+</record>
+<record id="262" label="262">
+0.461538 0 0 1
+</record>
+<record id="263" label="263">
+0.538462 0 0 1
+</record>
+<record id="264" label="264">
+0.615385 0 0 1
+</record>
+<record id="265" label="265">
+0.692308 0 0 1
+</record>
+<record id="266" label="266">
+0.769231 0 0 1
+</record>
+<record id="267" label="267">
+0.846154 0 0 1
+</record>
+<record id="268" label="268">
+0.923077 0 0 1
+</record>
+<record id="269" label="269">
+0 0.0769231 0 1
+</record>
+<record id="270" label="270">
+0 0.153846 0 1
+</record>
+<record id="271" label="271">
+0 0.230769 0 1
+</record>
+<record id="272" label="272">
+0 0.307692 0 1
+</record>
+<record id="273" label="273">
+0 0.384615 0 1
+</record>
+<record id="274" label="274">
+0 0.461538 0 1
+</record>
+<record id="275" label="275">
+0 0.538462 0 1
+</record>
+<record id="276" label="276">
+0 0.615385 0 1
+</record>
+<record id="277" label="277">
+0 0.692308 0 1
+</record>
+<record id="278" label="278">
+0 0.769231 0 1
+</record>
+<record id="279" label="279">
+0 0.846154 0 1
+</record>
+<record id="280" label="280">
+0 0.923077 0 1
+</record>
+<record id="281" label="281">
+0 0 0.0769231 1
+</record>
+<record id="282" label="282">
+0 0 0.153846 1
+</record>
+<record id="283" label="283">
+0 0 0.230769 1
+</record>
+<record id="284" label="284">
+0 0 0.307692 1
+</record>
+<record id="285" label="285">
+0 0 0.384615 1
+</record>
+<record id="286" label="286">
+0 0 0.461538 1
+</record>
+<record id="287" label="287">
+0 0 0.538462 1
+</record>
+<record id="288" label="288">
+0 0 0.615385 1
+</record>
+<record id="289" label="289">
+0 0 0.692308 1
+</record>
+<record id="290" label="290">
+0 0 0.769231 1
+</record>
+<record id="291" label="291">
+0 0 0.846154 1
+</record>
+<record id="292" label="292">
+0 0 0.923077 1
+</record>
+<record id="293" label="293">
+1 0.0769231 0 1
+</record>
+<record id="294" label="294">
+1 0.153846 0 1
+</record>
+<record id="295" label="295">
+1 0.230769 0 1
+</record>
+<record id="296" label="296">
+1 0.307692 0 1
+</record>
+<record id="297" label="297">
+1 0.384615 0 1
+</record>
+<record id="298" label="298">
+1 0.461538 0 1
+</record>
+<record id="299" label="299">
+1 0.538462 0 1
+</record>
+<record id="300" label="300">
+1 0.615385 0 1
+</record>
+<record id="301" label="301">
+1 0.692308 0 1
+</record>
+<record id="302" label="302">
+1 0.769231 0 1
+</record>
+<record id="303" label="303">
+1 0.846154 0 1
+</record>
+<record id="304" label="304">
+1 0.923077 0 1
+</record>
+<record id="305" label="305">
+1 0 0.0769231 1
+</record>
+<record id="306" label="306">
+1 0 0.153846 1
+</record>
+<record id="307" label="307">
+1 0 0.230769 1
+</record>
+<record id="308" label="308">
+1 0 0.307692 1
+</record>
+<record id="309" label="309">
+1 0 0.384615 1
+</record>
+<record id="310" label="310">
+1 0 0.461538 1
+</record>
+<record id="311" label="311">
+1 0 0.538462 1
+</record>
+<record id="312" label="312">
+1 0 0.615385 1
+</record>
+<record id="313" label="313">
+1 0 0.692308 1
+</record>
+<record id="314" label="314">
+1 0 0.769231 1
+</record>
+<record id="315" label="315">
+1 0 0.846154 1
+</record>
+<record id="316" label="316">
+1 0 0.923077 1
+</record>
+<record id="317" label="317">
+0.0769231 1 0 1
+</record>
+<record id="318" label="318">
+0.153846 1 0 1
+</record>
+<record id="319" label="319">
+0.230769 1 0 1
+</record>
+<record id="320" label="320">
+0.307692 1 0 1
+</record>
+<record id="321" label="321">
+0.384615 1 0 1
+</record>
+<record id="322" label="322">
+0.461538 1 0 1
+</record>
+<record id="323" label="323">
+0.538462 1 0 1
+</record>
+<record id="324" label="324">
+0.615385 1 0 1
+</record>
+<record id="325" label="325">
+0.692308 1 0 1
+</record>
+<record id="326" label="326">
+0.769231 1 0 1
+</record>
+<record id="327" label="327">
+0.846154 1 0 1
+</record>
+<record id="328" label="328">
+0.923077 1 0 1
+</record>
+<record id="329" label="329">
+0 1 0.0769231 1
+</record>
+<record id="330" label="330">
+0 1 0.153846 1
+</record>
+<record id="331" label="331">
+0 1 0.230769 1
+</record>
+<record id="332" label="332">
+0 1 0.307692 1
+</record>
+<record id="333" label="333">
+0 1 0.384615 1
+</record>
+<record id="334" label="334">
+0 1 0.461538 1
+</record>
+<record id="335" label="335">
+0 1 0.538462 1
+</record>
+<record id="336" label="336">
+0 1 0.615385 1
+</record>
+<record id="337" label="337">
+0 1 0.692308 1
+</record>
+<record id="338" label="338">
+0 1 0.769231 1
+</record>
+<record id="339" label="339">
+0 1 0.846154 1
+</record>
+<record id="340" label="340">
+0 1 0.923077 1
+</record>
+<record id="341" label="341">
+1 1 0.0769231 1
+</record>
+<record id="342" label="342">
+1 1 0.153846 1
+</record>
+<record id="343" label="343">
+1 1 0.230769 1
+</record>
+<record id="344" label="344">
+1 1 0.307692 1
+</record>
+<record id="345" label="345">
+1 1 0.384615 1
+</record>
+<record id="346" label="346">
+1 1 0.461538 1
+</record>
+<record id="347" label="347">
+1 1 0.538462 1
+</record>
+<record id="348" label="348">
+1 1 0.615385 1
+</record>
+<record id="349" label="349">
+1 1 0.692308 1
+</record>
+<record id="350" label="350">
+1 1 0.769231 1
+</record>
+<record id="351" label="351">
+1 1 0.846154 1
+</record>
+<record id="352" label="352">
+1 1 0.923077 1
+</record>
+<record id="353" label="353">
+0.0769231 0 1 1
+</record>
+<record id="354" label="354">
+0.153846 0 1 1
+</record>
+<record id="355" label="355">
+0.230769 0 1 1
+</record>
+<record id="356" label="356">
+0.307692 0 1 1
+</record>
+<record id="357" label="357">
+0.384615 0 1 1
+</record>
+<record id="358" label="358">
+0.461538 0 1 1
+</record>
+<record id="359" label="359">
+0.538462 0 1 1
+</record>
+<record id="360" label="360">
+0.615385 0 1 1
+</record>
+<record id="361" label="361">
+0.692308 0 1 1
+</record>
+<record id="362" label="362">
+0.769231 0 1 1
+</record>
+<record id="363" label="363">
+0.846154 0 1 1
+</record>
+<record id="364" label="364">
+0.923077 0 1 1
+</record>
+<record id="365" label="365">
+0 0.0769231 1 1
+</record>
+<record id="366" label="366">
+0 0.153846 1 1
+</record>
+<record id="367" label="367">
+0 0.230769 1 1
+</record>
+<record id="368" label="368">
+0 0.307692 1 1
+</record>
+<record id="369" label="369">
+0 0.384615 1 1
+</record>
+<record id="370" label="370">
+0 0.461538 1 1
+</record>
+<record id="371" label="371">
+0 0.538462 1 1
+</record>
+<record id="372" label="372">
+0 0.615385 1 1
+</record>
+<record id="373" label="373">
+0 0.692308 1 1
+</record>
+<record id="374" label="374">
+0 0.769231 1 1
+</record>
+<record id="375" label="375">
+0 0.846154 1 1
+</record>
+<record id="376" label="376">
+0 0.923077 1 1
+</record>
+<record id="377" label="377">
+1 0.0769231 1 1
+</record>
+<record id="378" label="378">
+1 0.153846 1 1
+</record>
+<record id="379" label="379">
+1 0.230769 1 1
+</record>
+<record id="380" label="380">
+1 0.307692 1 1
+</record>
+<record id="381" label="381">
+1 0.384615 1 1
+</record>
+<record id="382" label="382">
+1 0.461538 1 1
+</record>
+<record id="383" label="383">
+1 0.538462 1 1
+</record>
+<record id="384" label="384">
+1 0.615385 1 1
+</record>
+<record id="385" label="385">
+1 0.692308 1 1
+</record>
+<record id="386" label="386">
+1 0.769231 1 1
+</record>
+<record id="387" label="387">
+1 0.846154 1 1
+</record>
+<record id="388" label="388">
+1 0.923077 1 1
+</record>
+<record id="389" label="389">
+0.0769231 1 1 1
+</record>
+<record id="390" label="390">
+0.153846 1 1 1
+</record>
+<record id="391" label="391">
+0.230769 1 1 1
+</record>
+<record id="392" label="392">
+0.307692 1 1 1
+</record>
+<record id="393" label="393">
+0.384615 1 1 1
+</record>
+<record id="394" label="394">
+0.461538 1 1 1
+</record>
+<record id="395" label="395">
+0.538462 1 1 1
+</record>
+<record id="396" label="396">
+0.615385 1 1 1
+</record>
+<record id="397" label="397">
+0.692308 1 1 1
+</record>
+<record id="398" label="398">
+0.769231 1 1 1
+</record>
+<record id="399" label="399">
+0.846154 1 1 1
+</record>
+<record id="400" label="400">
+0.923077 1 1 1
+</record>
+</records>
+</data>
+<data name="edges">
+<description>
+This is XML created by GGobi
+</description>
+<variables count="2">
+   <realvariable name="Var  1" nickname="Va"/>
+   <realvariable name="Var  2" nickname="Va"/>
+</variables>
+<records count="32" glyph="fc 2" color="8">
+<record source="1" destination="2" label="1">
+1 2
+</record>
+<record source="1" destination="3" label="2">
+1 3
+</record>
+<record source="1" destination="5" label="3">
+1 5
+</record>
+<record source="1" destination="9" label="4">
+1 9
+</record>
+<record source="2" destination="4" label="5">
+2 4
+</record>
+<record source="2" destination="6" label="6">
+2 6
+</record>
+<record source="2" destination="10" label="7">
+2 10
+</record>
+<record source="3" destination="4" label="8">
+3 4
+</record>
+<record source="3" destination="7" label="9">
+3 7
+</record>
+<record source="3" destination="11" label="10">
+3 11
+</record>
+<record source="4" destination="8" label="11">
+4 8
+</record>
+<record source="4" destination="12" label="12">
+4 12
+</record>
+<record source="5" destination="6" label="13">
+5 6
+</record>
+<record source="5" destination="7" label="14">
+5 7
+</record>
+<record source="5" destination="13" label="15">
+5 13
+</record>
+<record source="6" destination="8" label="16">
+6 8
+</record>
+<record source="6" destination="14" label="17">
+6 14
+</record>
+<record source="7" destination="8" label="18">
+7 8
+</record>
+<record source="7" destination="15" label="19">
+7 15
+</record>
+<record source="8" destination="16" label="20">
+8 16
+</record>
+<record source="9" destination="10" label="21">
+9 10
+</record>
+<record source="9" destination="11" label="22">
+9 11
+</record>
+<record source="9" destination="13" label="23">
+9 13
+</record>
+<record source="10" destination="12" label="24">
+10 12
+</record>
+<record source="10" destination="14" label="25">
+10 14
+</record>
+<record source="11" destination="12" label="26">
+11 12
+</record>
+<record source="11" destination="15" label="27">
+11 15
+</record>
+<record source="12" destination="16" label="28">
+12 16
+</record>
+<record source="13" destination="14" label="29">
+13 14
+</record>
+<record source="13" destination="15" label="30">
+13 15
+</record>
+<record source="14" destination="16" label="31">
+14 16
+</record>
+<record source="15" destination="16" label="32">
+15 16
+</record>
+</records>
+</data>
+</ggobidata>
