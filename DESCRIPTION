@@ -8,6 +8,8 @@ Authors@R: c(
     person("Di", "Cook", role = "ths", email = "dicook@monash.edu"),
     person("Hadley", "Wickham", role = "ths", email = "h.wickham@gmail.com")
   )
+URL: https://github.com/schloerke/geozoo
+BugReports: https://github.com/schloerke/geozoo/issues
 Depends:
     R (>= 1.8.0)
 Imports:
