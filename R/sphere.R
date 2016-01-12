@@ -1,13 +1,11 @@
 ## Sphere
 #' @keywords internal
 l2norm <- function(x) {
-  x <- sqrt(sum(x ^ 2))
-  x
+  sqrt(sum(x ^ 2))
 }
 #' @keywords internal
 l2norm_vec <- function(x) {
-  x <- x / sqrt(sum(x ^ 2))
-  x
+  x / sqrt(sum(x ^ 2))
 }
 
 #' Sphere
