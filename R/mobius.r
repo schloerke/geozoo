@@ -4,7 +4,7 @@
 #'
 #' @param p dimension of object.  (3)
 #' @param n number of points
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/}
+#' @references \url{http://barretschloerke.com/GeoZoo/mobius/mobius/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a mobius strip.
@@ -58,7 +58,7 @@ mobius_row <- function(p) {
 #'
 #' @param p dimension of object.  (5)
 #' @param n number of points
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/}
+#' @references \url{http://barretschloerke.com/GeoZoo/mobius/mobius/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a mobius strip.

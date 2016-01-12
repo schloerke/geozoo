@@ -27,7 +27,7 @@ cube.solid.random(p = 3, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+\url{http://barretschloerke.com/GeoZoo/cube/}
 }
 \keyword{dynamic}
 

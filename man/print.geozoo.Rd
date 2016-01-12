@@ -24,7 +24,7 @@ example(cube.face)
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/}
+\url{http://barretschloerke.com/GeoZoo/}
 }
 \keyword{dynamic}
 

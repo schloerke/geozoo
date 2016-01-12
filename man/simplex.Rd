@@ -25,7 +25,7 @@ simplex(p = 3)
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/simplex/}
+\url{http://barretschloerke.com/GeoZoo/simplex/}
 }
 \keyword{dynamic}
 

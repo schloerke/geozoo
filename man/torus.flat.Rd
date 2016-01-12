@@ -27,7 +27,7 @@ torus.flat(p = 4, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/}
+\url{http://barretschloerke.com/GeoZoo/mobius/torus/}
 }
 \keyword{dynamic}
 

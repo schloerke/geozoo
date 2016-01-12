@@ -19,7 +19,7 @@ cross_polytope_wires <- function(p){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+#' @references \url{http://barretschloerke.com/GeoZoo/cube/}
 #' @author Barret Schloerke
 #' @examples
 #' # Generates a 3-D Cross Polytope

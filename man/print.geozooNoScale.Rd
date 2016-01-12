@@ -12,7 +12,7 @@
 \item{...}{other arguements}
 }
 \description{
-Prints objects without rescaling them to 0,1 in each dim
+Prints objects without rescaling them to 0, 1 in each dim
 }
 \examples{
 \dontrun{
@@ -23,7 +23,7 @@ torus()
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/}
+\url{http://barretschloerke.com/GeoZoo/}
 }
 \keyword{dynamic}
 

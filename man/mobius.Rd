@@ -23,7 +23,7 @@ mobius(3, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/mobius/}
+\url{http://barretschloerke.com/GeoZoo/mobius/mobius/}
 }
 \keyword{dynamic}
 

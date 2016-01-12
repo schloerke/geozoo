@@ -27,7 +27,7 @@ cube_wires <- function(p) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+#' @references \url{http://barretschloerke.com/GeoZoo/cube/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a cube
@@ -53,7 +53,7 @@ cube.iterate <- function(p = 3){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+#' @references \url{http://barretschloerke.com/GeoZoo/cube/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a solid cube with random points
@@ -85,7 +85,7 @@ cube.solid.random <- function(p, n = 850 * (2 ^ p)){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+#' @references \url{http://barretschloerke.com/GeoZoo/cube/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a solid cube with equidistant points
@@ -113,7 +113,7 @@ cube.solid.grid <- function(p = 3, n = 8){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+#' @references \url{http://barretschloerke.com/GeoZoo/cube/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a cube with points on its face
@@ -151,7 +151,7 @@ cube.face <- function(p = 3){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+#' @references \url{http://barretschloerke.com/GeoZoo/cube/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a cube with points along its wire frame

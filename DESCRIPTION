@@ -15,6 +15,5 @@ Suggests:
     roxygen2 (>= 5.0.0),
     testthat
 License: GPL-2
-URL: http://streaming.stat.iastate.edu/~dicook/geometric-data/,
-    http://www.ggobi.org
+URL: http://barretschloerke.com/GeoZoo/, http://www.ggobi.org
 RoxygenNote: 5.0.1

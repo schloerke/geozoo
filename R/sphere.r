@@ -19,7 +19,7 @@ l2norm_vec <- function(x) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/}
+#' @references \url{http://barretschloerke.com/GeoZoo/sphere/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a sphere with points on the surface
@@ -47,7 +47,7 @@ sphere.hollow <- function(p, n = p * 500) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/}
+#' @references \url{http://barretschloerke.com/GeoZoo/sphere/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a solid sphere with equidistant points
@@ -86,7 +86,7 @@ sphere.solid.grid <- function(p = 3, n = 8){
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/}
+#' @references \url{http://barretschloerke.com/GeoZoo/sphere/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a solid sphere with random points.

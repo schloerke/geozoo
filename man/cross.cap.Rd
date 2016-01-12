@@ -25,7 +25,7 @@ cross.cap( n = 1000 )
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/other/}
+\url{http://barretschloerke.com/GeoZoo/mobius/other/}
 }
 \keyword{dynamic}
 

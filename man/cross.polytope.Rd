@@ -25,7 +25,7 @@ cross.polytope(p = 3)
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/cube/}
+\url{http://barretschloerke.com/GeoZoo/cube/}
 }
 \keyword{dynamic}
 

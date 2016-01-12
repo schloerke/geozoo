@@ -27,7 +27,7 @@ sphere.hollow(p = 3, n = 1000)
 Barret Schloerke
 }
 \references{
-\url{http://streaming.stat.iastate.edu/~dicook/geometric-data/sphere/}
+\url{http://barretschloerke.com/GeoZoo/sphere/}
 }
 \keyword{dynamic}
 

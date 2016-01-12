@@ -9,7 +9,7 @@
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/}
+#' @references \url{http://barretschloerke.com/GeoZoo/mobius/torus/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a torus
@@ -72,7 +72,7 @@ torus_row <- function(radius, p) {
 #' @return
 #'  \item{points }{location of points}
 #'  \item{edges }{edges of the object (null)}
-#' @references \url{http://streaming.stat.iastate.edu/~dicook/geometric-data/mobius/torus/}
+#' @references \url{http://barretschloerke.com/GeoZoo/mobius/torus/}
 #' @author Barret Schloerke
 #' @examples
 #' ## Generates a Flat Torus
