@@ -2,9 +2,15 @@ context("run everything with defaults")
 
 test_that("base functions", {
 
-  w <- function(x) {
-    write.xml(x, file.path("", "dev", "null"), "TITLE!")
-  }
+  w <- (function(){
+    fp <- switch(.Platform$OS.type,
+      windows = "nul",
+      file.path("", "dev", "null")
+    )
+    function(x) {
+      write.xml(x, fp, "TITLE!")
+    }
+  })()
 
   w(cross.polytope())
 
