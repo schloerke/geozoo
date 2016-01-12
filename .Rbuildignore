@@ -6,3 +6,4 @@ man/.DS_Store
 .git
 .lintr
 .travis.yml
+cran-comments.md
