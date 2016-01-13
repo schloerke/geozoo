@@ -14,19 +14,20 @@
 
 * win-builder (devel and release)
   * There were no ERRORs, WARNINGs.  
-  * There is one NOTE. The author was changed, as I made a silly spelling mistake of my name.  The spelling is a false positive.
+  * There is one NOTE.
+    * The author was changed, as I made a silly spelling mistake of my name previously.  The possibly mis-spelled words are correctly spelled.
 
-    * checking CRAN incoming feasibility ... NOTE
-    Maintainer: 'Barret Schloerke <schloerke@gmail.com>'
+      * checking CRAN incoming feasibility ... NOTE
+      Maintainer: 'Barret Schloerke <schloerke@gmail.com>'
 
-    New maintainer:
-      Barret Schloerke <schloerke@gmail.com>
-    Old maintainer(s):
-      Barret Scloerke <schloerke@gmail.com>
+      New maintainer:
+        Barret Schloerke <schloerke@gmail.com>
+      Old maintainer(s):
+        Barret Scloerke <schloerke@gmail.com>
 
-    Possibly mis-spelled words in DESCRIPTION:
-      geozoo (5:43)
-      tourr (5:98)
+      Possibly mis-spelled words in DESCRIPTION:
+        geozoo (5:43)
+        tourr (5:98)
 
 
 ## Downstream dependencies
