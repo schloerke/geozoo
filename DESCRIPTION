@@ -1,5 +1,5 @@
 Package: geozoo
-Version: 0.5.0
+Version: 0.5.0.9999
 Date: 2016-01-13
 Title: Zoo of Geometric Objects
 Description: Geometric objects defined in 'geozoo' can be simulated or displayed in the R package 'tourr'.
