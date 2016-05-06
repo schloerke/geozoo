@@ -9,14 +9,7 @@
   * There were no ERRORs, WARNINGs or NOTEs.
 
 * win-builder (release only (no devel available))
-  * There were no ERRORs, WARNINGs.  
-
-  * There is one NOTE while checking CRAN incoming feasibility
-
-    * False positive spelling
-      Possibly mis-spelled words in DESCRIPTION:
-        geozoo (5:43)
-        tourr (5:97)
+  * There were no ERRORs, WARNINGs or NOTEs.  
 
 ## Downstream dependencies
 There are 0 downstream dependencies. (Yay!)
