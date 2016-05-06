@@ -18,15 +18,5 @@
         geozoo (5:43)
         tourr (5:97)
 
-    * This url is from a download count badge (that displays in github) which are counts provided by rstudio.  My thought is it should point to their servers for this reason.  I'd be happy to change if it makes things easier.
-
-      Found the following (possibly) invalid URLs:
-        URL: http://cran.rstudio.com/web/packages/geozoo/index.html (moved to https://cran.rstudio.com/web/packages/geozoo/index.html)
-          From: README.md
-          Status: 200
-          Message: OK
-          CRAN URL not in canonical form
-        A canonical CRAN URL starts with https://cran.r-project.org/
-
 ## Downstream dependencies
 There are 0 downstream dependencies. (Yay!)
