@@ -1,5 +1,15 @@
-## Simplex
-#' @keywords internal
+#' f_helmert
+#'
+#' Function to set up a Helmert transformation of a (d-1)-dimensional 
+#' shape in p-space down into its (p-1)-space. Mostly internally used, 
+#' but could be useful for setting up new compositional data.
+#'
+#' @param d object
+#' @return
+#'  \item{helmert }{transformation matrix}
+#' @references \url{http://schloerke.github.io/geozoo/simplices/}
+#' @author Di Cook
+#' @export
 f_helmert <- function(d){
   helmert <- rep(1 / sqrt(d), d)
   for (i in 1:(d - 1)){
@@ -10,7 +20,20 @@ f_helmert <- function(d){
   }
   return(helmert)
 }
-#' @keywords internal
+
+#' f_composition
+#'
+#' Function to take a d-dimensional compositional data set and 
+#' transform it using a Helmert transformation into (p-1)-space, 
+#' where it lives. Mostly internally used, but could be useful 
+#' for setting up new compositional data.
+#'
+#' @param data object
+#' @return
+#'  \item{data }{points in (d-1)-dimensional space}
+#' @references \url{http://schloerke.github.io/geozoo/simplices/}
+#' @author Di Cook
+#' @export
 f_composition <- function(data){
   d <- dim(data)[2]
   hm <- f_helmert(d)

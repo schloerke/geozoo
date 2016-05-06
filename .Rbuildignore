@@ -7,3 +7,5 @@ man/.DS_Store
 .lintr
 .travis.yml
 ^cran-comments\.md$
+^.*\.Rproj$
+^\.Rproj\.user$
