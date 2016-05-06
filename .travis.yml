@@ -1,7 +1,12 @@
 # Sample .travis.yml for R projects from https://github.com/craigcitro/r-travis
 
 language: r
-sudo: required
+# https://blog.rstudio.org/2016/03/09/r-on-travis-ci/
+sudo: false
+cache: packages
+
+env:
+  - WARNINGS_ARE_ERRORS=1
 
 r_github_packages:
   - jimhester/lintr # R lint testing
@@ -9,9 +14,6 @@ r_github_packages:
 
 after_success:
   - Rscript -e 'covr::codecov()'
-
-env:
-  - WARNINGS_ARE_ERRORS=1
 
 branches:
   only:
