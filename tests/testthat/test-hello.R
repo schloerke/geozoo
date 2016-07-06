@@ -16,6 +16,8 @@ test_that("base functions", {
 
   w(cube.iterate())
   w(cube.face())
+  w(cube.face.random())
+  w(cube.face.grid())
   w(cube.solid.random())
   w(cube.solid.grid())
   w(cube.dotline())
